@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>方言识别与学习工具 | Chinese Dialect Scope</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --line: #d8e0ef;
+      --text: #1f2937;
+      --muted: #5b6474;
+      --brand: #2563eb;
+      --brand-soft: #dbeafe;
+      --accent: #14b8a6;
+      --shadow: 0 10px 28px rgba(37, 99, 235, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+      background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 45%, #fbfcff 100%);
+      color: var(--text);
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    .hero {
+      background: radial-gradient(circle at top right, #c7d8ff, transparent 35%), var(--card);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      padding: 28px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      margin: 0 0 10px;
+      font-size: clamp(28px, 4vw, 42px);
+    }
+
+    .hero p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      padding: 20px;
+    }
+
+    .card h2, .card h3 {
+      margin-top: 0;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 160px;
+      resize: vertical;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      padding: 14px 16px;
+      font-size: 16px;
+      line-height: 1.6;
+      background: #fcfdff;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 14px;
+      align-items: center;
+    }
+
+    button {
+      border: none;
+      border-radius: 999px;
+      padding: 12px 20px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+
+    button:hover { transform: translateY(-1px); }
+
+    .primary {
+      background: var(--brand);
+      color: #fff;
+    }
+
+    .ghost {
+      background: var(--brand-soft);
+      color: var(--brand);
+    }
+
+    .examples {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .chip {
+      border: 1px solid #bfd1ff;
+      background: #f8fbff;
+      color: #2449a8;
+      border-radius: 999px;
+      padding: 10px 14px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .section-label {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 16px 0 8px;
+    }
+
+    .result-item {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 14px;
+      margin-bottom: 12px;
+      background: #fafcff;
+    }
+
+    .result-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: baseline;
+      margin-bottom: 10px;
+    }
+
+    .family-tag {
+      display: inline-block;
+      background: #eef6ff;
+      color: #2553b8;
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-size: 12px;
+      margin-top: 6px;
+    }
+
+    .bar {
+      width: 100%;
+      height: 10px;
+      background: #e7eefc;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .bar > span {
+      display: block;
+      height: 100%;
+      background: linear-gradient(90deg, var(--brand), var(--accent));
+      border-radius: inherit;
+    }
+
+    .features, .cards {
+      display: grid;
+      gap: 12px;
+    }
+
+    .feature-card, .flash-card {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 14px;
+      background: #fff;
+    }
+
+    .feature-card p, .flash-card p, .muted {
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .flash-card {
+      background: linear-gradient(180deg, #ffffff 0%, #f6fbff 100%);
+    }
+
+    ul.inline-list {
+      margin: 10px 0 0;
+      padding-left: 18px;
+    }
+
+    .footer-note {
+      margin-top: 12px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 860px) {
+      .grid { grid-template-columns: 1fr; }
+      .hero, .card { padding: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <h1>方言识别与学习工具 <span style="font-size:0.48em; color:#4b5563;">Chinese Dialect Scope</span></h1>
+      <p>通过一句方言样例，快速判断可能地区，并用可解释的方式学习各地乡音。输入一句中文方言文本，系统会返回可能地区、语言特征解释，以及可直接上手的学习卡片。</p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>输入方言样例 <span class="muted" style="font-size:0.68em;">Dialect Sample Input</span></h2>
+        <textarea id="sampleInput" placeholder="例如：你搁这儿嘎哈呢？ / 我冇带钥匙，食咗饭未啊？"></textarea>
+        <div class="actions">
+          <button class="primary" id="identifyBtn">识别 Identify</button>
+          <button class="ghost" id="clearBtn">清空 Clear</button>
+        </div>
+        <div class="section-label">试试这些例句 Click to try</div>
+        <div class="examples" id="examples"></div>
+        <div class="footer-note">提示：目前优先支持文本识别，音频识别可在未来扩展到语音特征。</div>
+      </div>
+
+      <div class="card">
+        <h2>支持的方言家族 <span class="muted" style="font-size:0.68em;">Supported Families</span></h2>
+        <div id="dialectFamilies" class="features"></div>
+      </div>
+    </section>
+
+    <section class="grid" style="margin-top: 20px;">
+      <div class="card">
+        <h2>识别结果 <span class="muted" style="font-size:0.68em;">Top Region Matches</span></h2>
+        <div id="regionsResult" class="muted">输入一句方言后点击“识别”，这里会显示最可能的地区与置信度。</div>
+      </div>
+
+      <div class="card">
+        <h2>语言特征解释 <span class="muted" style="font-size:0.68em;">Linguistic Features</span></h2>
+        <div id="featuresResult" class="features muted">系统会解释命中的词汇、语法或音韵线索。</div>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:20px;">
+      <h2>学习卡片 <span class="muted" style="font-size:0.68em;">Learning Cards</span></h2>
+      <div id="cardsResult" class="cards muted">识别后可看到对应方言的词汇、表达套路与观察重点。</div>
+    </section>
+  </div>
+
+  <script>
+    const examplePhrases = [
+      "你搁这儿嘎哈呢？",
+      "我冇带钥匙，食咗饭未啊？",
+      "这顿火锅巴适得很。",
+      "歹势啦，我袂晓按怎做。",
+      "侬哪能现在才来？",
+      "厓爱转屋下食饭。",
+      "这场演出真嬲塞。",
+      "你在搞么子，恰噶冇？"
+    ];
+
+    const sampleInput = document.getElementById('sampleInput');
+    const identifyBtn = document.getElementById('identifyBtn');
+    const clearBtn = document.getElementById('clearBtn');
+    const examplesEl = document.getElementById('examples');
+    const dialectFamiliesEl = document.getElementById('dialectFamilies');
+    const regionsResultEl = document.getElementById('regionsResult');
+    const featuresResultEl = document.getElementById('featuresResult');
+    const cardsResultEl = document.getElementById('cardsResult');
+
+    function renderExamples() {
+      examplesEl.innerHTML = '';
+      examplePhrases.forEach((phrase) => {
+        const button = document.createElement('button');
+        button.className = 'chip';
+        button.textContent = phrase;
+        button.addEventListener('click', () => {
+          sampleInput.value = phrase;
+          identifyDialect();
+        });
+        examplesEl.appendChild(button);
+      });
+    }
+
+    function renderFamilies(families) {
+      dialectFamiliesEl.innerHTML = '';
+      families.forEach((family) => {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'feature-card';
+        wrapper.innerHTML = `
+          <strong>${family.name} / ${family.english_name}</strong>
+          <p>${family.summary}</p>
+          <div class="muted">代表方言：${family.dialects.map((item) => item.name).join('、')}</div>
+        `;
+        dialectFamiliesEl.appendChild(wrapper);
+      });
+    }
+
+    function renderRegions(items) {
+      if (!items.length) {
+        regionsResultEl.className = 'muted';
+        regionsResultEl.textContent = '暂无结果。';
+        return;
+      }
+      regionsResultEl.className = '';
+      regionsResultEl.innerHTML = items.map((item) => `
+        <div class="result-item">
+          <div class="result-header">
+            <div>
+              <strong>${item.region}</strong>
+              <div class="family-tag">${item.dialect_family} · ${item.dialect}</div>
+            </div>
+            <strong>${Math.round(item.score * 100)}%</strong>
+          </div>
+          <div class="bar"><span style="width:${Math.max(item.score * 100, 6)}%"></span></div>
+        </div>
+      `).join('');
+    }
+
+    function renderFeatures(items) {
+      if (!items.length) {
+        featuresResultEl.className = 'features muted';
+        featuresResultEl.textContent = '暂无命中特征。';
+        return;
+      }
+      featuresResultEl.className = 'features';
+      featuresResultEl.innerHTML = items.map((item) => `
+        <div class="feature-card">
+          <strong>${item.name}</strong>
+          <p>${item.description}</p>
+          <div class="muted">例子 Example: ${item.example}</div>
+        </div>
+      `).join('');
+    }
+
+    function renderCards(items) {
+      if (!items.length) {
+        cardsResultEl.className = 'cards muted';
+        cardsResultEl.textContent = '暂无学习卡片。';
+        return;
+      }
+      cardsResultEl.className = 'cards';
+      cardsResultEl.innerHTML = items.map((item) => `
+        <div class="flash-card">
+          <strong>${item.title}</strong>
+          <p>${item.content}</p>
+          <ul class="inline-list">${item.examples.map((example) => `<li>${example}</li>`).join('')}</ul>
+        </div>
+      `).join('');
+    }
+
+    async function loadFamilies() {
+      const response = await fetch('/api/dialects');
+      const data = await response.json();
+      renderFamilies(data);
+    }
+
+    async function identifyDialect() {
+      const text = sampleInput.value.trim();
+      if (!text) {
+        renderRegions([]);
+        renderFeatures([]);
+        renderCards([]);
+        return;
+      }
+
+      identifyBtn.disabled = true;
+      identifyBtn.textContent = '识别中...';
+      try {
+        const response = await fetch('/api/identify', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ text })
+        });
+        const data = await response.json();
+        renderRegions(data.possible_regions || []);
+        renderFeatures(data.features || []);
+        renderCards(data.learning_cards || []);
+      } catch (error) {
+        regionsResultEl.className = 'muted';
+        regionsResultEl.textContent = '识别失败，请稍后再试。';
+      } finally {
+        identifyBtn.disabled = false;
+        identifyBtn.textContent = '识别 Identify';
+      }
+    }
+
+    identifyBtn.addEventListener('click', identifyDialect);
+    clearBtn.addEventListener('click', () => {
+      sampleInput.value = '';
+      renderRegions([]);
+      renderFeatures([]);
+      renderCards([]);
+    });
+
+    renderExamples();
+    loadFamilies();
+  </script>
+</body>
+</html>
