@@ -1,0 +1,418 @@
+from __future__ import annotations
+
+DIALECT_FAMILIES = [
+    {
+        "slug": "mandarin",
+        "name": "官话",
+        "english_name": "Mandarin Dialects",
+        "summary": "覆盖中国北方与西南地区，内部差异大，但共享较高互通度。",
+        "regions": ["北京", "东北", "西南", "西北"],
+        "learning_focus": ["儿化", "语气词", "词汇差异"],
+    },
+    {
+        "slug": "cantonese",
+        "name": "粤语",
+        "english_name": "Cantonese",
+        "summary": "保留较多古汉语音韵层次，口语词丰富，地区风格鲜明。",
+        "regions": ["广州", "香港"],
+        "learning_focus": ["句末助词", "口语词", "入声与变调感知"],
+    },
+    {
+        "slug": "minnan",
+        "name": "闽南语",
+        "english_name": "Min Nan",
+        "summary": "词汇与语音系统独特，在福建南部、台湾及潮汕周边影响广。",
+        "regions": ["闽南", "潮汕"],
+        "learning_focus": ["鼻化韵", "保留古词", "常用寒暄表达"],
+    },
+    {
+        "slug": "wu",
+        "name": "吴语",
+        "english_name": "Wu",
+        "summary": "分布于长三角，声调与连读变调丰富，语气词细腻。",
+        "regions": ["上海", "苏州"],
+        "learning_focus": ["软糯语气", "人称与指示词", "连读节奏"],
+    },
+    {
+        "slug": "hakka",
+        "name": "客家话",
+        "english_name": "Hakka",
+        "summary": "跨省分布广，保留较多中古汉语痕迹，词汇稳健朴实。",
+        "regions": ["梅州", "赣南", "闽西"],
+        "learning_focus": ["亲属称谓", "保留古音", "日常动作词"],
+    },
+    {
+        "slug": "xiang",
+        "name": "湘语",
+        "english_name": "Xiang",
+        "summary": "湖南代表性方言，语气鲜明，常见口语副词很有辨识度。",
+        "regions": ["长沙"],
+        "learning_focus": ["语气词", "高频副词", "地方口语词"],
+    },
+    {
+        "slug": "gan",
+        "name": "赣语",
+        "english_name": "Gan",
+        "summary": "江西代表方言，词汇特色强，兼具古汉语遗留与区域创新。",
+        "regions": ["南昌"],
+        "learning_focus": ["疑问表达", "日常动词", "口语节奏"],
+    },
+]
+
+DIALECTS = [
+    {
+        "slug": "beijinghua",
+        "name": "北京话",
+        "region": "北京",
+        "dialect_family": "官话",
+        "family_slug": "mandarin",
+        "overview": "典型北方官话代表，儿化、京味语气词和口语缩略十分鲜明。",
+        "vocabulary": [
+            {"term": "甭", "weight": 2.2, "description": "表示“不用、不必”，北京口语高频。", "example": "甭客气，进来坐。"},
+            {"term": "倍儿", "weight": 2.8, "description": "副词，表示“特别、非常”。", "example": "今儿这天儿倍儿好。"},
+            {"term": "局气", "weight": 2.6, "description": "夸人仗义、讲究。", "example": "这人真局气。"},
+            {"term": "贫", "weight": 1.8, "description": "贫嘴、爱逗趣。", "example": "你又跟我这儿贫呢。"},
+            {"term": "搁", "weight": 1.6, "description": "表示“在、放在”。", "example": "你把书搁桌上。"},
+        ],
+        "grammar_features": [
+            {"name": "儿化显著", "keywords": ["儿", "这儿", "那儿", "玩儿", "今儿"], "weight": 1.8, "description": "名词、时间词和口语动词后常带儿化，形成强烈京味。", "example": "今儿一块儿去玩儿。"},
+            {"name": "语气词“吧/呗/呢”连用自然", "keywords": ["呗", "呢", "吧"], "weight": 1.2, "description": "北京话常以语气词调节轻松、熟络的口吻。", "example": "那就这么着吧。"},
+        ],
+        "phonological_features": [
+            {"name": "卷舌感强", "markers": ["zh", "ch", "sh", "儿化"], "description": "在文字转写中常表现为儿化与卷舌色彩提示。", "example": "这事儿说着容易做着难。"},
+        ],
+        "expressions": [
+            {"text": "您吃了吗", "meaning": "老北京式寒暄，重礼貌与熟人关系。"},
+            {"text": "得嘞", "meaning": "表示收到、答应，节奏干脆。"},
+            {"text": "怎么着", "meaning": "询问情况或带点调侃。"},
+        ],
+    },
+    {
+        "slug": "dongbeihua",
+        "name": "东北话",
+        "region": "东北地区",
+        "dialect_family": "官话",
+        "family_slug": "mandarin",
+        "overview": "节奏爽快，语气夸张生动，副词与句末语气很有喜感。",
+        "vocabulary": [
+            {"term": "嘎哈", "weight": 3.0, "description": "表示“干什么、做什么”。", "example": "你搁这儿嘎哈呢？"},
+            {"term": "唠嗑", "weight": 2.8, "description": "聊天、闲谈。", "example": "没事儿咱就唠嗑。"},
+            {"term": "埋汰", "weight": 2.4, "description": "脏、寒碜，也可指挖苦人。", "example": "别埋汰人啊。"},
+            {"term": "老鼻子", "weight": 2.6, "description": "表示很多、非常。", "example": "今天人老鼻子多了。"},
+            {"term": "整", "weight": 1.8, "description": "做、弄、安排。", "example": "晚上整点烧烤。"},
+        ],
+        "grammar_features": [
+            {"name": "“搁这儿嘎哈”式场景问句", "keywords": ["嘎哈", "搁这儿"], "weight": 1.8, "description": "东北话常把“搁+地点”与“嘎哈”连用，形成非常典型的日常问句。", "example": "你搁这儿嘎哈呢？"},
+            {"name": "“你瞅/我寻思”口语链", "keywords": ["瞅", "寻思", "咋整"], "weight": 1.5, "description": "东北话高频使用动作词转心理、判断表达。", "example": "我寻思这事儿能成。"},
+            {"name": "句末“呗/啊/呀”增强亲切感", "keywords": ["呗", "啊", "呀"], "weight": 1.0, "description": "语气直接热络，常与夸张副词连用。", "example": "那就这么办呗。"},
+        ],
+        "phonological_features": [
+            {"name": "开口度大、重音明显", "markers": ["嘎", "嗑", "整"], "description": "书面转写常保留豪爽、抬高语调的节奏感。", "example": "这玩意儿可带劲了。"},
+        ],
+        "expressions": [
+            {"text": "你瞅啥", "meaning": "东北口语标志性表达，既可玩笑也可挑衅。"},
+            {"text": "可劲儿", "meaning": "尽情地、使劲地。"},
+            {"text": "老铁", "meaning": "关系亲近的朋友称呼。"},
+        ],
+    },
+    {
+        "slug": "xinan-guanhua",
+        "name": "西南官话",
+        "region": "四川重庆及西南地区",
+        "dialect_family": "官话",
+        "family_slug": "mandarin",
+        "overview": "覆盖面广，词汇生活化，常见“啥子、安逸、巴适”等特色表达。",
+        "vocabulary": [
+            {"term": "啥子", "weight": 2.8, "description": "表示“什么”。", "example": "你说啥子哦？"},
+            {"term": "安逸", "weight": 2.6, "description": "舒服、巴适，也可夸赞很不错。", "example": "这个地方住起安逸。"},
+            {"term": "巴适", "weight": 3.0, "description": "表示“好、舒服、到位”。", "example": "这顿火锅巴适得很。"},
+            {"term": "摆龙门阵", "weight": 3.1, "description": "聊天、摆谈。", "example": "坐到起摆龙门阵。"},
+            {"term": "莫得", "weight": 2.4, "description": "表示“没有”。", "example": "我莫得意见。"},
+        ],
+        "grammar_features": [
+            {"name": "“得很/得板”程度补语", "keywords": ["得很", "得板"], "weight": 1.5, "description": "通过后置结构增强程度表达。", "example": "今天热得很。"},
+            {"name": "“起”字口语化补足", "keywords": ["住起", "坐到起", "看起"], "weight": 1.6, "description": "西南口语中“起”常参与状态或结果表达。", "example": "你先坐到起。"},
+        ],
+        "phonological_features": [
+            {"name": "n/l、平翘舌弱化较常见", "markers": ["啥子", "莫得"], "description": "书面输入难完全体现，但特色词往往足以提示西南官话。", "example": "莫得关系。"},
+        ],
+        "expressions": [
+            {"text": "雄起", "meaning": "加油、振作，带鼓劲意味。"},
+            {"text": "耍朋友", "meaning": "谈恋爱。"},
+            {"text": "爪子", "meaning": "怎么了、干嘛。"},
+        ],
+    },
+    {
+        "slug": "lanyin-guanhua",
+        "name": "兰银官话",
+        "region": "甘肃宁夏青海一带",
+        "dialect_family": "官话",
+        "family_slug": "mandarin",
+        "overview": "西北色彩鲜明，常见“哈怂、尕、攒劲”等词，语音硬朗。",
+        "vocabulary": [
+            {"term": "尕", "weight": 3.0, "description": "西北方言中常表示“小”，也用于昵称。", "example": "那个尕娃真机灵。"},
+            {"term": "哈怂", "weight": 2.8, "description": "可作责怪或调侃语。", "example": "你这个哈怂又忘了。"},
+            {"term": "攒劲", "weight": 3.0, "description": "厉害、给力。", "example": "这个手艺真攒劲。"},
+            {"term": "满福", "weight": 2.2, "description": "舒服、满足。", "example": "喝碗热汤满福得很。"},
+            {"term": "咋咧", "weight": 2.0, "description": "怎么了。", "example": "你今儿咋咧？"},
+        ],
+        "grammar_features": [
+            {"name": "名词前缀“尕”高辨识度", "keywords": ["尕娃", "尕妹", "尕"], "weight": 1.7, "description": "“尕”作为昵称、小称前缀非常有西北地域感。", "example": "尕妹子回来了。"},
+            {"name": "“很/得很”与本地词并用", "keywords": ["攒劲", "满福", "得很"], "weight": 1.2, "description": "程度表达常和本地方言形容词结合。", "example": "这饭吃着满福。"},
+        ],
+        "phonological_features": [
+            {"name": "西北官话硬朗声气", "markers": ["哈", "尕", "咧"], "description": "转写中常带粗犷、短促的语感提示。", "example": "哈麻批（部分地区口语，需注意礼貌场景）"},
+        ],
+        "expressions": [
+            {"text": "走，浪一圈", "meaning": "出去转转、逛逛。"},
+            {"text": "美得很", "meaning": "很好、很满意。"},
+            {"text": "咋咧嘛", "meaning": "怎么回事。"},
+        ],
+    },
+    {
+        "slug": "guangzhouhua",
+        "name": "广州话",
+        "region": "广州",
+        "dialect_family": "粤语",
+        "family_slug": "cantonese",
+        "overview": "粤语核心代表，句末助词系统发达，口语词密集。",
+        "vocabulary": [
+            {"term": "咩", "weight": 2.6, "description": "表示“什么”。", "example": "你讲咩啊？"},
+            {"term": "冇", "weight": 3.2, "description": "表示“没有”。", "example": "我冇带钥匙。"},
+            {"term": "佢", "weight": 2.8, "description": "表示“他/她/它”。", "example": "佢今日唔得闲。"},
+            {"term": "食咗饭未", "weight": 3.0, "description": "典型粤语寒暄。", "example": "喂，食咗饭未啊？"},
+            {"term": "靓", "weight": 2.0, "description": "漂亮、好看。", "example": "呢件衫好靓。"},
+        ],
+        "grammar_features": [
+            {"name": "句末助词丰富", "keywords": ["啊", "啦", "喇", "喎", "咯"], "weight": 1.6, "description": "粤语用助词表达提醒、确认、感叹等细微语气。", "example": "快啲啦！"},
+            {"name": "否定式“唔/冇”", "keywords": ["唔", "冇"], "weight": 2.0, "description": "粤语中“唔”表一般否定，“冇”表“没有”。", "example": "我唔知。"},
+        ],
+        "phonological_features": [
+            {"name": "保留入声感", "markers": ["食", "急", "得"], "description": "虽文字难显音高，但粤语短促收尾词丰富。", "example": "食得快。"},
+        ],
+        "expressions": [
+            {"text": "好犀利", "meaning": "很厉害。"},
+            {"text": "冇问题", "meaning": "没问题。"},
+            {"text": "快啲", "meaning": "快一点。"},
+        ],
+    },
+    {
+        "slug": "hongkong-cantonese",
+        "name": "香港粤语",
+        "region": "香港",
+        "dialect_family": "粤语",
+        "family_slug": "cantonese",
+        "overview": "香港都市口语风格强，常见英文借词与港式表达。",
+        "vocabulary": [
+            {"term": "搞掂", "weight": 2.8, "description": "搞定、处理好。", "example": "件事已经搞掂。"},
+            {"term": "的士", "weight": 2.4, "description": "出租车。", "example": "落楼截架的士。"},
+            {"term": "收工", "weight": 2.0, "description": "下班。", "example": "我收工先返去。"},
+            {"term": "拍拖", "weight": 2.6, "description": "谈恋爱。", "example": "佢哋拍拖好耐。"},
+            {"term": "掂", "weight": 2.2, "description": "行、可以、好。", "example": "咁样都掂。"},
+        ],
+        "grammar_features": [
+            {"name": "港式口语助词频繁", "keywords": ["喎", "啫", "囉", "吖"], "weight": 1.8, "description": "香港粤语助词更具都市会话节奏。", "example": "唔系咁喎。"},
+            {"name": "英语借词自然嵌入", "keywords": ["的士", "巴士", "call", "file"], "weight": 1.4, "description": "港式生活词汇常夹杂英语来源借词。", "example": "我send个file畀你。"},
+        ],
+        "phonological_features": [
+            {"name": "快节奏都市口语", "markers": ["喎", "啫", "囉"], "description": "文字转写中助词密度高，语感更紧凑。", "example": "得啦，走先啦。"},
+        ],
+        "expressions": [
+            {"text": "唔该晒", "meaning": "非常感谢。"},
+            {"text": "迟啲见", "meaning": "晚点见。"},
+            {"text": "冇眼睇", "meaning": "看不下去，多为吐槽。"},
+        ],
+    },
+    {
+        "slug": "chaoshanhua",
+        "name": "潮汕话",
+        "region": "潮汕地区",
+        "dialect_family": "闽南语",
+        "family_slug": "minnan",
+        "overview": "潮汕方言词汇凝练，亲属称谓与礼貌表达很有地方特色。",
+        "vocabulary": [
+            {"term": "食未", "weight": 2.8, "description": "潮汕式寒暄：吃了吗。", "example": "食未？入来坐。"},
+            {"term": "物件", "weight": 1.8, "description": "东西、物品。", "example": "这件物件是你的。"},
+            {"term": "乜个", "weight": 2.6, "description": "什么。", "example": "你讲乜个？"},
+            {"term": "胶己人", "weight": 3.0, "description": "自己人、同乡人。", "example": "大家都是胶己人。"},
+            {"term": "有闲", "weight": 2.0, "description": "有空。", "example": "你有闲来食茶。"},
+        ],
+        "grammar_features": [
+            {"name": "疑问词“乜个”", "keywords": ["乜个", "乜"], "weight": 1.9, "description": "潮汕口语用“乜个”表示“什么”。", "example": "这是乜个意思？"},
+            {"name": "“胶己”构词", "keywords": ["胶己"], "weight": 1.8, "description": "“胶己”表示自己、本地，地方身份感很强。", "example": "胶己人免客气。"},
+        ],
+        "phonological_features": [
+            {"name": "保留古音层次", "markers": ["食", "乜", "胶己"], "description": "潮汕话常被认为保留较多古汉语成分。", "example": "食茶未。"},
+        ],
+        "expressions": [
+            {"text": "食茶", "meaning": "喝茶，也带社交意味。"},
+            {"text": "免细义", "meaning": "不用客气。"},
+            {"text": "爱拼才会赢", "meaning": "闽南文化圈常见励志表达。"},
+        ],
+    },
+    {
+        "slug": "fujian-minnan",
+        "name": "闽南话(福建)",
+        "region": "福建闽南地区",
+        "dialect_family": "闽南语",
+        "family_slug": "minnan",
+        "overview": "闽南语代表之一，常见“啥物、歹势、袂晓”等高辨识词。",
+        "vocabulary": [
+            {"term": "啥物", "weight": 2.8, "description": "什么。", "example": "你欲讲啥物？"},
+            {"term": "歹势", "weight": 3.0, "description": "不好意思、抱歉。", "example": "歹势，借过一下。"},
+            {"term": "袂晓", "weight": 2.8, "description": "不会、不懂。", "example": "我袂晓按怎做。"},
+            {"term": "按怎", "weight": 2.6, "description": "怎么。", "example": "这要按怎处理？"},
+            {"term": "呷饱未", "weight": 3.0, "description": "吃饱了吗。", "example": "呷饱未？"},
+        ],
+        "grammar_features": [
+            {"name": "“欲/袂/会晓”表达意愿与能力", "keywords": ["欲", "袂", "会晓", "袂晓"], "weight": 1.9, "description": "闽南语常用独特功能词表达将来、否定能力。", "example": "我欲去。"},
+            {"name": "“按怎/啥物”疑问系统", "keywords": ["按怎", "啥物"], "weight": 1.8, "description": "闽南语疑问词极具辨识度。", "example": "你按怎知影？"},
+        ],
+        "phonological_features": [
+            {"name": "鼻化韵与入声痕迹", "markers": ["呷", "袂", "歹势"], "description": "书写中常保留闽南语独特汉字用法。", "example": "呷茶。"},
+        ],
+        "expressions": [
+            {"text": "歹势啦", "meaning": "不好意思啦。"},
+            {"text": "真拍谢", "meaning": "非常感谢或很不好意思。"},
+            {"text": "呷茶", "meaning": "喝茶。"},
+        ],
+    },
+    {
+        "slug": "shanghaihua",
+        "name": "上海话",
+        "region": "上海",
+        "dialect_family": "吴语",
+        "family_slug": "wu",
+        "overview": "吴语城市代表，口气柔和，常见“侬、阿拉、哪能”等。",
+        "vocabulary": [
+            {"term": "侬", "weight": 3.0, "description": "你。", "example": "侬好。"},
+            {"term": "阿拉", "weight": 3.0, "description": "我们。", "example": "阿拉一道去。"},
+            {"term": "哪能", "weight": 2.8, "description": "怎么、如何。", "example": "侬哪能这样讲？"},
+            {"term": "交关", "weight": 2.4, "description": "很、非常。", "example": "今朝交关热。"},
+            {"term": "小辰光", "weight": 2.6, "description": "小时候。", "example": "小辰光常去弄堂白相。"},
+        ],
+        "grammar_features": [
+            {"name": "人称代词系统独特", "keywords": ["侬", "阿拉", "伊"], "weight": 2.0, "description": "吴语人称系统与普通话差异明显。", "example": "阿拉帮侬想办法。"},
+            {"name": "“哪能”“做啥”式疑问", "keywords": ["哪能", "做啥"], "weight": 1.6, "description": "上海话疑问表达口语感强。", "example": "侬做啥去？"},
+        ],
+        "phonological_features": [
+            {"name": "吴语连读柔和", "markers": ["侬", "阿拉", "白相"], "description": "转写中常能看到轻柔、黏连的口语词。", "example": "到外头白相去。"},
+        ],
+        "expressions": [
+            {"text": "白相", "meaning": "玩、逛。"},
+            {"text": "辰光", "meaning": "时间。"},
+            {"text": "蛮灵光", "meaning": "很聪明、很不错。"},
+        ],
+    },
+    {
+        "slug": "suzhouhua",
+        "name": "苏州话",
+        "region": "苏州",
+        "dialect_family": "吴语",
+        "family_slug": "wu",
+        "overview": "吴侬软语代表之一，语感婉转，生活词汇古雅。",
+        "vocabulary": [
+            {"term": "倷", "weight": 2.8, "description": "你。", "example": "倷到哉。"},
+            {"term": "俚笃", "weight": 3.0, "description": "你们。", "example": "俚笃先吃茶。"},
+            {"term": "弗", "weight": 2.4, "description": "不。", "example": "我弗晓得。"},
+            {"term": "啥体", "weight": 2.6, "description": "什么。", "example": "这是啥体？"},
+            {"term": "吃茶", "weight": 1.8, "description": "喝茶。", "example": "一道去吃茶。"},
+        ],
+        "grammar_features": [
+            {"name": "否定词“弗”", "keywords": ["弗"], "weight": 1.8, "description": "吴语区常见否定词，在苏州话中辨识度很高。", "example": "我弗去。"},
+            {"name": "人称“倷/俚笃”", "keywords": ["倷", "俚笃"], "weight": 2.0, "description": "人称代词不同于普通话。", "example": "倷今朝忙伐？"},
+        ],
+        "phonological_features": [
+            {"name": "软糯舒展的吴语节奏", "markers": ["弗", "倷", "啥体"], "description": "文字输入常通过特定代词和否定词传达吴语气质。", "example": "倷好伐。"},
+        ],
+        "expressions": [
+            {"text": "今朝", "meaning": "今天。"},
+            {"text": "伐", "meaning": "吗、吧一类疑问或语气成分。"},
+            {"text": "灵格", "meaning": "很好、很灵巧。"},
+        ],
+    },
+    {
+        "slug": "hakkahua",
+        "name": "客家话",
+        "region": "梅州及客家地区",
+        "dialect_family": "客家话",
+        "family_slug": "hakka",
+        "overview": "客家方言分布广，保留古汉语痕迹较多，称谓与动词很有特色。",
+        "vocabulary": [
+            {"term": "亻厓", "weight": 3.2, "description": "我。常见书写为“厓”。", "example": "厓今日爱出门。"},
+            {"term": "若个", "weight": 2.6, "description": "那个、那个东西。", "example": "若个就系厓个。"},
+            {"term": "食朝", "weight": 2.2, "description": "吃早饭。", "example": "食朝未？"},
+            {"term": "去哪位", "weight": 2.4, "description": "去哪里。", "example": "你去哪位？"},
+            {"term": "恁仔细", "weight": 2.0, "description": "这么认真、这么细致。", "example": "佢做事恁仔细。"},
+        ],
+        "grammar_features": [
+            {"name": "人称“厓/你/佢”体系", "keywords": ["厓", "佢"], "weight": 2.0, "description": "客家话保留稳定的人称用法。", "example": "厓同佢一道去。"},
+            {"name": "“爱”表示将要/想要", "keywords": ["爱"], "weight": 1.3, "description": "客家话中“爱”常作意愿或将来标记。", "example": "厓爱转屋下。"},
+        ],
+        "phonological_features": [
+            {"name": "保留入声与塞尾痕迹", "markers": ["食", "屋下", "恁"], "description": "词形常体现古音保留特点。", "example": "转屋下食饭。"},
+        ],
+        "expressions": [
+            {"text": "屋下", "meaning": "家里。"},
+            {"text": "有闲来尞", "meaning": "有空来玩。"},
+            {"text": "食饱吂", "meaning": "吃饱了吗。"},
+        ],
+    },
+    {
+        "slug": "changshahua",
+        "name": "长沙话",
+        "region": "长沙",
+        "dialect_family": "湘语",
+        "family_slug": "xiang",
+        "overview": "长沙话口气利落，语气词和高频副词突出，地方色彩强。",
+        "vocabulary": [
+            {"term": "嬲塞", "weight": 3.0, "description": "厉害、了不起，也可表示热闹好玩。", "example": "这场演出真嬲塞。"},
+            {"term": "何解", "weight": 2.4, "description": "为什么、怎么会。", "example": "你何解不早讲？"},
+            {"term": "策", "weight": 2.0, "description": "聊天、说。", "example": "莫乱策。"},
+            {"term": "霸蛮", "weight": 2.6, "description": "倔强、逞强，也可指拼劲。", "example": "他做事有股霸蛮劲。"},
+            {"term": "恰得苦", "weight": 2.2, "description": "能吃苦。", "example": "这伢子蛮恰得苦。"},
+        ],
+        "grammar_features": [
+            {"name": "“蛮”作高频程度副词", "keywords": ["蛮"], "weight": 1.6, "description": "湘语区常用“蛮”表示相当、很。", "example": "今朝蛮热。"},
+            {"name": "“莫”作禁止或否定", "keywords": ["莫"], "weight": 1.2, "description": "长沙话中“莫”很常见。", "example": "莫急，慢慢来。"},
+        ],
+        "phonological_features": [
+            {"name": "湘语声调起伏鲜明", "markers": ["嬲", "霸蛮", "蛮"], "description": "书写中常由特色词承载音系印象。", "example": "蛮韵味。"},
+        ],
+        "expressions": [
+            {"text": "恰饭", "meaning": "吃饭。"},
+            {"text": "满哥", "meaning": "大哥、哥哥。"},
+            {"text": "哦豁", "meaning": "惊讶、感叹。"},
+        ],
+    },
+    {
+        "slug": "nanchanghua",
+        "name": "南昌话",
+        "region": "南昌",
+        "dialect_family": "赣语",
+        "family_slug": "gan",
+        "overview": "赣语代表之一，疑问词、动作词和日常表达很有地方特色。",
+        "vocabulary": [
+            {"term": "恰噶", "weight": 2.8, "description": "吃饭了没有、吃了吗的口语寒暄。", "example": "恰噶冇？"},
+            {"term": "几杂", "weight": 2.6, "description": "多少、几个。", "example": "这个几杂钱？"},
+            {"term": "作兴", "weight": 2.2, "description": "流行、兴许、可能，语义随语境变化。", "example": "今朝作兴会落雨。"},
+            {"term": "恰", "weight": 2.0, "description": "吃。", "example": "一道去恰饭。"},
+            {"term": "搞么子", "weight": 2.8, "description": "做什么。", "example": "你在搞么子？"},
+        ],
+        "grammar_features": [
+            {"name": "“么子”疑问表达", "keywords": ["么子", "搞么子"], "weight": 1.9, "description": "赣语中“么子”对应普通话“什么”。", "example": "这是么子东西？"},
+            {"name": "“冇/无”否定并存", "keywords": ["冇", "无"], "weight": 1.3, "description": "赣语口语里否定形式较灵活。", "example": "我冇看见。"},
+        ],
+        "phonological_features": [
+            {"name": "赣语紧凑语流", "markers": ["恰", "噶", "么子"], "description": "常通过短促词和组合词体现本地方言节奏。", "example": "恰噶未？"},
+        ],
+        "expressions": [
+            {"text": "恰饭", "meaning": "吃饭。"},
+            {"text": "做么子", "meaning": "做什么。"},
+            {"text": "作得", "meaning": "可以、行。"},
+        ],
+    },
+]
+
+DIALECT_LOOKUP = {dialect["slug"]: dialect for dialect in DIALECTS}
+DIALECT_NAME_LOOKUP = {dialect["name"]: dialect for dialect in DIALECTS}
