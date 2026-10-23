@@ -1,0 +1,109 @@
+{
+  "slug": "fujian-minnan",
+  "order": 8,
+  "name": "闽南话(福建)",
+  "region": "福建闽南地区",
+  "dialect_family": "闽南语",
+  "family_slug": "minnan",
+  "overview": "闽南语代表之一，常见“啥物、歹势、袂晓”等高辨识词。",
+  "classification": {
+    "path": [
+      "闽语",
+      "闽南区",
+      "泉漳片"
+    ],
+    "reference": "language-atlas-2012",
+    "confidence": "medium"
+  },
+  "point": {
+    "name": "厦门",
+    "province": "福建",
+    "lat": 24.48,
+    "lon": 118.09
+  },
+  "sources": [
+    "editorial"
+  ],
+  "vocabulary": [
+    {
+      "term": "啥物",
+      "weight": 2.8,
+      "description": "什么。",
+      "example": "你欲讲啥物？"
+    },
+    {
+      "term": "歹势",
+      "weight": 3.0,
+      "description": "不好意思、抱歉。",
+      "example": "歹势，借过一下。"
+    },
+    {
+      "term": "袂晓",
+      "weight": 2.8,
+      "description": "不会、不懂。",
+      "example": "我袂晓按怎做。"
+    },
+    {
+      "term": "按怎",
+      "weight": 2.6,
+      "description": "怎么。",
+      "example": "这要按怎处理？"
+    },
+    {
+      "term": "呷饱未",
+      "weight": 3.0,
+      "description": "吃饱了吗。",
+      "example": "呷饱未？"
+    }
+  ],
+  "grammar_features": [
+    {
+      "name": "“欲/袂/会晓”表达意愿与能力",
+      "keywords": [
+        "欲",
+        "袂",
+        "会晓",
+        "袂晓"
+      ],
+      "weight": 1.9,
+      "description": "闽南语常用独特功能词表达将来、否定能力。",
+      "example": "我欲去。"
+    },
+    {
+      "name": "“按怎/啥物”疑问系统",
+      "keywords": [
+        "按怎",
+        "啥物"
+      ],
+      "weight": 1.8,
+      "description": "闽南语疑问词极具辨识度。",
+      "example": "你按怎知影？"
+    }
+  ],
+  "phonological_features": [
+    {
+      "name": "鼻化韵与入声痕迹",
+      "markers": [
+        "呷",
+        "袂",
+        "歹势"
+      ],
+      "description": "书写中常保留闽南语独特汉字用法。",
+      "example": "呷茶。"
+    }
+  ],
+  "expressions": [
+    {
+      "text": "歹势啦",
+      "meaning": "不好意思啦。"
+    },
+    {
+      "text": "真拍谢",
+      "meaning": "非常感谢或很不好意思。"
+    },
+    {
+      "text": "呷茶",
+      "meaning": "喝茶。"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "slug": "beijinghua",
+  "order": 1,
+  "name": "北京话",
+  "region": "北京",
+  "dialect_family": "官话",
+  "family_slug": "mandarin",
+  "overview": "典型北方官话代表，儿化、京味语气词和口语缩略十分鲜明。",
+  "classification": {
+    "path": [
+      "官话",
+      "北京官话",
+      "京师片"
+    ],
+    "reference": "language-atlas-2012",
+    "confidence": "medium"
+  },
+  "point": {
+    "name": "北京",
+    "province": "北京",
+    "lat": 39.9,
+    "lon": 116.4
+  },
+  "sources": [
+    "editorial"
+  ],
+  "vocabulary": [
+    {
+      "term": "甭",
+      "weight": 2.2,
+      "description": "表示“不用、不必”，北京口语高频。",
+      "example": "甭客气，进来坐。"
+    },
+    {
+      "term": "倍儿",
+      "weight": 2.8,
+      "description": "副词，表示“特别、非常”。",
+      "example": "今儿这天儿倍儿好。"
+    },
+    {
+      "term": "局气",
+      "weight": 2.6,
+      "description": "夸人仗义、讲究。",
+      "example": "这人真局气。"
+    },
+    {
+      "term": "贫",
+      "weight": 1.8,
+      "description": "贫嘴、爱逗趣。",
+      "example": "你又跟我这儿贫呢。"
+    },
+    {
+      "term": "搁",
+      "weight": 1.6,
+      "description": "表示“在、放在”。",
+      "example": "你把书搁桌上。"
+    }
+  ],
+  "grammar_features": [
+    {
+      "name": "儿化显著",
+      "keywords": [
+        "儿",
+        "这儿",
+        "那儿",
+        "玩儿",
+        "今儿"
+      ],
+      "weight": 1.8,
+      "description": "名词、时间词和口语动词后常带儿化，形成强烈京味。",
+      "example": "今儿一块儿去玩儿。"
+    },
+    {
+      "name": "语气词“吧/呗/呢”连用自然",
+      "keywords": [
+        "呗",
+        "呢",
+        "吧"
+      ],
+      "weight": 1.2,
+      "description": "北京话常以语气词调节轻松、熟络的口吻。",
+      "example": "那就这么着吧。"
+    }
+  ],
+  "phonological_features": [
+    {
+      "name": "卷舌感强",
+      "markers": [
+        "zh",
+        "ch",
+        "sh",
+        "儿化"
+      ],
+      "description": "在文字转写中常表现为儿化与卷舌色彩提示。",
+      "example": "这事儿说着容易做着难。"
+    }
+  ],
+  "expressions": [
+    {
+      "text": "您吃了吗",
+      "meaning": "老北京式寒暄，重礼貌与熟人关系。"
+    },
+    {
+      "text": "得嘞",
+      "meaning": "表示收到、答应，节奏干脆。"
+    },
+    {
+      "text": "怎么着",
+      "meaning": "询问情况或带点调侃。"
+    }
+  ]
+}

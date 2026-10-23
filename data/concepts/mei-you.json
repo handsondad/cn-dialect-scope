@@ -1,0 +1,204 @@
+{
+  "slug": "mei-you",
+  "headword": "没有",
+  "gloss": "表示不存在或未拥有（存在否定、领有否定）。",
+  "category": "否定",
+  "aliases": [
+    "没",
+    "无",
+    "冇"
+  ],
+  "related": [
+    {
+      "concept": "chi",
+      "type": "related"
+    }
+  ],
+  "etymology": [
+    {
+      "character": "无",
+      "middle_chinese": {
+        "fanqie": "武夫切",
+        "source": "广韵"
+      },
+      "note": "闽语直接用“无”表示“没有”；粤语、客家话的“冇”一般认为是“无”的口语读音配上俗写字形（把“有”字去掉两横）。",
+      "confidence": "medium",
+      "sources": [
+        "guangyun",
+        "editorial"
+      ]
+    }
+  ],
+  "expressions": [
+    {
+      "dialect": "beijinghua",
+      "form": "没有",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "méiyǒu"
+      },
+      "example": "我没有带钥匙。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "dongbeihua",
+      "form": "没",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "méi"
+      },
+      "example": "兜里没钱了。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "xinan-guanhua",
+      "form": "没得",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "méi de"
+      },
+      "example": "我没得意见。",
+      "example_gloss": "我没有意见。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也常说成或写作“莫得”。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "guangzhouhua",
+      "form": "冇",
+      "orthography": "俗字",
+      "etymon": "无",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "mou5"
+      },
+      "example": "我冇带锁匙。",
+      "example_gloss": "我没带钥匙。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "hongkong-cantonese",
+      "form": "冇",
+      "orthography": "俗字",
+      "etymon": "无",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "mou5"
+      },
+      "example": "冇问题。",
+      "example_gloss": "没问题。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "chaoshanhua",
+      "form": "无",
+      "orthography": "本字",
+      "romanization": {
+        "scheme": "潮州话拼音",
+        "text": "bho5"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "fujian-minnan",
+      "form": "无",
+      "orthography": "本字",
+      "romanization": {
+        "scheme": "台罗",
+        "text": "bô"
+      },
+      "example": "我无闲。",
+      "example_gloss": "我没空。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "shanghaihua",
+      "form": "呒没",
+      "orthography": "借音字",
+      "example": "我呒没铜钿。",
+      "example_gloss": "我没有钱。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "hakkahua",
+      "form": "冇",
+      "orthography": "俗字",
+      "etymon": "无",
+      "example": "𠊎冇钱。",
+      "example_gloss": "我没钱。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "changshahua",
+      "form": "冒得",
+      "orthography": "借音字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也写作“冇得”。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "nanchanghua",
+      "form": "冇",
+      "orthography": "俗字",
+      "example": "我冇看见。",
+      "example_gloss": "我没看见。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "slug": "nanchanghua",
+  "order": 13,
+  "name": "南昌话",
+  "region": "南昌",
+  "dialect_family": "赣语",
+  "family_slug": "gan",
+  "overview": "赣语代表之一，疑问词、动作词和日常表达很有地方特色。",
+  "classification": {
+    "path": [
+      "赣语",
+      "昌都片"
+    ],
+    "reference": "language-atlas-2012",
+    "confidence": "medium"
+  },
+  "point": {
+    "name": "南昌",
+    "province": "江西",
+    "lat": 28.68,
+    "lon": 115.86
+  },
+  "sources": [
+    "editorial"
+  ],
+  "vocabulary": [
+    {
+      "term": "恰噶",
+      "weight": 2.8,
+      "description": "吃饭了没有、吃了吗的口语寒暄。",
+      "example": "恰噶冇？"
+    },
+    {
+      "term": "几杂",
+      "weight": 2.6,
+      "description": "多少、几个。",
+      "example": "这个几杂钱？"
+    },
+    {
+      "term": "作兴",
+      "weight": 2.2,
+      "description": "流行、兴许、可能，语义随语境变化。",
+      "example": "今朝作兴会落雨。"
+    },
+    {
+      "term": "恰",
+      "weight": 2.0,
+      "description": "吃。",
+      "example": "一道去恰饭。"
+    },
+    {
+      "term": "搞么子",
+      "weight": 2.8,
+      "description": "做什么。",
+      "example": "你在搞么子？"
+    }
+  ],
+  "grammar_features": [
+    {
+      "name": "“么子”疑问表达",
+      "keywords": [
+        "么子",
+        "搞么子"
+      ],
+      "weight": 1.9,
+      "description": "赣语中“么子”对应普通话“什么”。",
+      "example": "这是么子东西？"
+    },
+    {
+      "name": "“冇/无”否定并存",
+      "keywords": [
+        "冇",
+        "无"
+      ],
+      "weight": 1.3,
+      "description": "赣语口语里否定形式较灵活。",
+      "example": "我冇看见。"
+    }
+  ],
+  "phonological_features": [
+    {
+      "name": "赣语紧凑语流",
+      "markers": [
+        "恰",
+        "噶",
+        "么子"
+      ],
+      "description": "常通过短促词和组合词体现本地方言节奏。",
+      "example": "恰噶未？"
+    }
+  ],
+  "expressions": [
+    {
+      "text": "恰饭",
+      "meaning": "吃饭。"
+    },
+    {
+      "text": "做么子",
+      "meaning": "做什么。"
+    },
+    {
+      "text": "作得",
+      "meaning": "可以、行。"
+    }
+  ]
+}

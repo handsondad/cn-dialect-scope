@@ -1,0 +1,139 @@
+{
+  "slug": "wan",
+  "headword": "玩",
+  "gloss": "游戏、游玩、消遣。",
+  "category": "动作",
+  "aliases": [
+    "玩儿",
+    "白相",
+    "耍"
+  ],
+  "related": [
+    {
+      "concept": "liao-tian",
+      "type": "related"
+    }
+  ],
+  "etymology": [],
+  "expressions": [
+    {
+      "dialect": "beijinghua",
+      "form": "玩儿",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "wánr"
+      },
+      "example": "今儿一块儿去玩儿。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "xinan-guanhua",
+      "form": "耍",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "shuǎ"
+      },
+      "example": "出去耍。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "lanyin-guanhua",
+      "form": "浪",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "làng"
+      },
+      "example": "走，浪一圈。",
+      "example_gloss": "走，出去转一圈。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "指逛、游玩。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "guangzhouhua",
+      "form": "玩",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "waan2"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "fujian-minnan",
+      "form": "𨑨迌",
+      "orthography": "俗字",
+      "romanization": {
+        "scheme": "台罗",
+        "text": "tshit-thô"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "民间也有“七桃”等借音写法。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "shanghaihua",
+      "form": "白相",
+      "orthography": "借音字",
+      "example": "到外头白相去。",
+      "example_gloss": "到外面玩去。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "suzhouhua",
+      "form": "白相",
+      "orthography": "借音字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "hakkahua",
+      "form": "尞",
+      "orthography": "借音字",
+      "example": "有闲来尞。",
+      "example_gloss": "有空来玩。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也有休闲、串门的意思。",
+      "sources": [
+        "editorial"
+      ]
+    }
+  ]
+}

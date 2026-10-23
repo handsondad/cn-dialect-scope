@@ -1,0 +1,116 @@
+{
+  "slug": "piao-liang",
+  "headword": "漂亮",
+  "gloss": "外貌好看。",
+  "category": "形容",
+  "aliases": [
+    "好看",
+    "靓",
+    "媠"
+  ],
+  "related": [],
+  "etymology": [
+    {
+      "character": "媠",
+      "note": "古籍中“媠”有美好义，闽南语保留了这个用法；民间常借音写作“水”。",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    }
+  ],
+  "expressions": [
+    {
+      "dialect": "beijinghua",
+      "form": "漂亮",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "piàoliang"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "dongbeihua",
+      "form": "带劲",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "dàijìn"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "夸人漂亮、有魅力，也可泛指厉害、过瘾。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "xinan-guanhua",
+      "form": "乖",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "guāi"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "西南官话里“乖”常指长得好看，不只是“听话”。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "guangzhouhua",
+      "form": "靓",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "leng3"
+      },
+      "example": "呢件衫好靓。",
+      "example_gloss": "这件衣服很漂亮。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "fujian-minnan",
+      "form": "媠",
+      "orthography": "本字",
+      "etymon": "媠",
+      "romanization": {
+        "scheme": "台罗",
+        "text": "suí"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "俗写作“水”。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "hakkahua",
+      "form": "靓",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    }
+  ]
+}

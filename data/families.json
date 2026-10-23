@@ -1,0 +1,138 @@
+[
+  {
+    "slug": "mandarin",
+    "name": "官话",
+    "english_name": "Mandarin Dialects",
+    "summary": "覆盖中国北方与西南地区，内部差异大，但共享较高互通度。",
+    "regions": [
+      "北京",
+      "东北",
+      "西南",
+      "西北"
+    ],
+    "learning_focus": [
+      "儿化",
+      "语气词",
+      "词汇差异"
+    ],
+    "identification_markers": {
+      "tokens": [
+        "儿"
+      ],
+      "bonus": 0.3
+    }
+  },
+  {
+    "slug": "cantonese",
+    "name": "粤语",
+    "english_name": "Cantonese",
+    "summary": "保留较多古汉语音韵层次，口语词丰富，地区风格鲜明。",
+    "regions": [
+      "广州",
+      "香港"
+    ],
+    "learning_focus": [
+      "句末助词",
+      "口语词",
+      "入声与变调感知"
+    ],
+    "identification_markers": {
+      "tokens": [
+        "冇",
+        "唔",
+        "佢"
+      ],
+      "bonus": 0.4
+    }
+  },
+  {
+    "slug": "minnan",
+    "name": "闽南语",
+    "english_name": "Min Nan",
+    "summary": "词汇与语音系统独特，在福建南部、台湾及潮汕周边影响广。",
+    "regions": [
+      "闽南",
+      "潮汕"
+    ],
+    "learning_focus": [
+      "鼻化韵",
+      "保留古词",
+      "常用寒暄表达"
+    ],
+    "identification_markers": {
+      "tokens": [
+        "袂",
+        "歹势",
+        "呷"
+      ],
+      "bonus": 0.4
+    }
+  },
+  {
+    "slug": "wu",
+    "name": "吴语",
+    "english_name": "Wu",
+    "summary": "分布于长三角，声调与连读变调丰富，语气词细腻。",
+    "regions": [
+      "上海",
+      "苏州"
+    ],
+    "learning_focus": [
+      "软糯语气",
+      "人称与指示词",
+      "连读节奏"
+    ],
+    "identification_markers": {
+      "tokens": [
+        "侬",
+        "阿拉",
+        "弗"
+      ],
+      "bonus": 0.4
+    }
+  },
+  {
+    "slug": "hakka",
+    "name": "客家话",
+    "english_name": "Hakka",
+    "summary": "跨省分布广，保留较多中古汉语痕迹，词汇稳健朴实。",
+    "regions": [
+      "梅州",
+      "赣南",
+      "闽西"
+    ],
+    "learning_focus": [
+      "亲属称谓",
+      "保留古音",
+      "日常动作词"
+    ]
+  },
+  {
+    "slug": "xiang",
+    "name": "湘语",
+    "english_name": "Xiang",
+    "summary": "湖南代表性方言，语气鲜明，常见口语副词很有辨识度。",
+    "regions": [
+      "长沙"
+    ],
+    "learning_focus": [
+      "语气词",
+      "高频副词",
+      "地方口语词"
+    ]
+  },
+  {
+    "slug": "gan",
+    "name": "赣语",
+    "english_name": "Gan",
+    "summary": "江西代表方言，词汇特色强，兼具古汉语遗留与区域创新。",
+    "regions": [
+      "南昌"
+    ],
+    "learning_focus": [
+      "疑问表达",
+      "日常动词",
+      "口语节奏"
+    ]
+  }
+]

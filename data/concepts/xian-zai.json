@@ -1,0 +1,86 @@
+{
+  "slug": "xian-zai",
+  "headword": "现在",
+  "gloss": "说话的这个时候。",
+  "category": "时间",
+  "aliases": [
+    "而家",
+    "这马"
+  ],
+  "related": [],
+  "etymology": [],
+  "expressions": [
+    {
+      "dialect": "beijinghua",
+      "form": "现在",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "xiànzài"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "guangzhouhua",
+      "form": "而家",
+      "orthography": "借音字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "ji4 gaa1"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也写作“宜家”。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "hongkong-cantonese",
+      "form": "而家",
+      "orthography": "借音字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "ji4 gaa1"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "fujian-minnan",
+      "form": "这马",
+      "orthography": "借音字",
+      "romanization": {
+        "scheme": "台罗",
+        "text": "tsit-má"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "hakkahua",
+      "form": "今下",
+      "orthography": "借音字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "slug": "shen-me",
+  "headword": "什么",
+  "gloss": "疑问代词，询问事物。",
+  "category": "疑问",
+  "aliases": [
+    "啥",
+    "咩",
+    "乜",
+    "么子"
+  ],
+  "related": [],
+  "etymology": [],
+  "expressions": [
+    {
+      "dialect": "beijinghua",
+      "form": "什么",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "shénme"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "dongbeihua",
+      "form": "啥",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "shá"
+      },
+      "example": "你瞅啥？",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "xinan-guanhua",
+      "form": "啥子",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "shá zi"
+      },
+      "example": "你说啥子哦？",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "lanyin-guanhua",
+      "form": "啥",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "shá"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "guangzhouhua",
+      "form": "乜嘢",
+      "orthography": "俗字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "mat1 je5"
+      },
+      "example": "你讲乜嘢？",
+      "example_gloss": "你说什么？",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "guangzhouhua",
+      "form": "咩",
+      "orthography": "俗字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "me1"
+      },
+      "example": "你讲咩啊？",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "口语中常把“乜嘢”说成“咩”。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "hongkong-cantonese",
+      "form": "咩",
+      "orthography": "俗字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "me1"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "fujian-minnan",
+      "form": "啥物",
+      "orthography": "借音字",
+      "romanization": {
+        "scheme": "台罗",
+        "text": "siánn-mih"
+      },
+      "example": "你欲讲啥物？",
+      "example_gloss": "你要说什么？",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "chaoshanhua",
+      "form": "乜个",
+      "orthography": "借音字",
+      "example": "你讲乜个？",
+      "example_gloss": "你说什么？",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "shanghaihua",
+      "form": "啥",
+      "orthography": "通用字",
+      "example": "侬做啥？",
+      "example_gloss": "你干什么？",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "suzhouhua",
+      "form": "啥体",
+      "orthography": "借音字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "hakkahua",
+      "form": "么个",
+      "orthography": "借音字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "changshahua",
+      "form": "么子",
+      "orthography": "借音字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "nanchanghua",
+      "form": "么子",
+      "orthography": "借音字",
+      "example": "这是么子东西？",
+      "example_gloss": "这是什么东西？",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    }
+  ]
+}

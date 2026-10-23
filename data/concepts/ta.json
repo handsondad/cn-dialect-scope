@@ -1,0 +1,169 @@
+{
+  "slug": "ta",
+  "headword": "他/她",
+  "gloss": "第三人称单数代词。",
+  "category": "代词",
+  "aliases": [
+    "他",
+    "她",
+    "佢",
+    "伊"
+  ],
+  "related": [
+    {
+      "concept": "ni",
+      "type": "related"
+    },
+    {
+      "concept": "wo",
+      "type": "related"
+    }
+  ],
+  "etymology": [
+    {
+      "character": "渠",
+      "middle_chinese": {
+        "fanqie": "强鱼切",
+        "source": "广韵"
+      },
+      "note": "中古文献中已有“渠”用作第三人称代词。粤语、客家话的“佢”一般认为就是“渠”的俗写；赣语南昌话仍写作“渠”。",
+      "confidence": "medium",
+      "sources": [
+        "guangyun",
+        "editorial"
+      ]
+    }
+  ],
+  "expressions": [
+    {
+      "dialect": "beijinghua",
+      "form": "他/她",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "tā"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "guangzhouhua",
+      "form": "佢",
+      "orthography": "俗字",
+      "etymon": "渠",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "keoi5"
+      },
+      "example": "佢今日唔得闲。",
+      "example_gloss": "他今天没空。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "hongkong-cantonese",
+      "form": "佢",
+      "orthography": "俗字",
+      "etymon": "渠",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "keoi5"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "hakkahua",
+      "form": "佢",
+      "orthography": "俗字",
+      "etymon": "渠",
+      "example": "𠊎同佢一齐去。",
+      "example_gloss": "我和他一起去。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "nanchanghua",
+      "form": "渠",
+      "orthography": "本字",
+      "etymon": "渠",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "fujian-minnan",
+      "form": "伊",
+      "orthography": "本字",
+      "romanization": {
+        "scheme": "台罗",
+        "text": "i"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "chaoshanhua",
+      "form": "伊",
+      "orthography": "本字",
+      "romanization": {
+        "scheme": "潮州话拼音",
+        "text": "i1"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "shanghaihua",
+      "form": "伊",
+      "orthography": "本字",
+      "example": "伊勿来。",
+      "example_gloss": "他不来。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "suzhouhua",
+      "form": "俚",
+      "orthography": "借音字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“俚倷”。",
+      "sources": [
+        "editorial"
+      ]
+    }
+  ]
+}

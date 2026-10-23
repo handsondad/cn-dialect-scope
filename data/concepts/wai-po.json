@@ -1,0 +1,114 @@
+{
+  "slug": "wai-po",
+  "headword": "外婆",
+  "gloss": "母亲的母亲。",
+  "category": "亲属",
+  "aliases": [
+    "姥姥",
+    "外祖母",
+    "家婆"
+  ],
+  "related": [],
+  "etymology": [],
+  "expressions": [
+    {
+      "dialect": "beijinghua",
+      "form": "姥姥",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "lǎolao"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "dongbeihua",
+      "form": "姥姥",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "lǎolao"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "xinan-guanhua",
+      "form": "家婆",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "jiāpó"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“外婆”。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "guangzhouhua",
+      "form": "婆婆",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "po4 po2"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“外婆”；“嫲嫲”指父亲的母亲。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "fujian-minnan",
+      "form": "外妈",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "台罗",
+        "text": "guā-má"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "shanghaihua",
+      "form": "外婆",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "hakkahua",
+      "form": "姐婆",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "unverified",
+      "sources": [
+        "editorial"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "slug": "chi",
+  "headword": "吃",
+  "gloss": "把食物放进嘴里咀嚼咽下。",
+  "category": "动作",
+  "aliases": [
+    "吃饭",
+    "食"
+  ],
+  "related": [
+    {
+      "concept": "he-cha",
+      "type": "related"
+    }
+  ],
+  "etymology": [
+    {
+      "character": "食",
+      "middle_chinese": {
+        "fanqie": "乘力切",
+        "source": "广韵"
+      },
+      "note": "古汉语“食”就是“吃”，如《论语·乡党》“食不语，寝不言”。粤语、闽语、客家话至今以“食”为日常动词。",
+      "confidence": "high",
+      "sources": [
+        "guangyun",
+        "editorial"
+      ]
+    }
+  ],
+  "expressions": [
+    {
+      "dialect": "beijinghua",
+      "form": "吃",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "chī"
+      },
+      "example": "您吃了吗？",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "xinan-guanhua",
+      "form": "吃",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "chī"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "guangzhouhua",
+      "form": "食",
+      "orthography": "本字",
+      "etymon": "食",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "sik6"
+      },
+      "example": "食饭",
+      "example_gloss": "吃饭",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "hongkong-cantonese",
+      "form": "食",
+      "orthography": "本字",
+      "etymon": "食",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "sik6"
+      },
+      "example": "食咗饭未？",
+      "example_gloss": "吃了饭没有？",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "chaoshanhua",
+      "form": "食",
+      "orthography": "本字",
+      "etymon": "食",
+      "romanization": {
+        "scheme": "潮州话拼音",
+        "text": "ziah8"
+      },
+      "example": "食未？",
+      "example_gloss": "吃了没？",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "fujian-minnan",
+      "form": "食",
+      "orthography": "本字",
+      "etymon": "食",
+      "romanization": {
+        "scheme": "台罗",
+        "text": "tsia̍h"
+      },
+      "example": "食饱未？",
+      "example_gloss": "吃饱了没？",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "民间常借音写作“呷”，本字为“食”。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "shanghaihua",
+      "form": "吃",
+      "orthography": "通用字",
+      "example": "吃饭",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "吴语“吃”也用于液体和烟，如“吃茶”“吃老酒”“吃香烟”。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "suzhouhua",
+      "form": "吃",
+      "orthography": "通用字",
+      "example": "一道去吃茶。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "与上海话一样，“吃”也可用于喝茶、喝酒。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "hakkahua",
+      "form": "食",
+      "orthography": "本字",
+      "etymon": "食",
+      "example": "食朝",
+      "example_gloss": "吃早饭",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "changshahua",
+      "form": "恰",
+      "orthography": "借音字",
+      "etymon": "吃",
+      "example": "恰饭",
+      "example_gloss": "吃饭",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "“恰”是记音写法，对应“吃”。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "nanchanghua",
+      "form": "恰",
+      "orthography": "借音字",
+      "etymon": "吃",
+      "example": "一道去恰饭。",
+      "example_gloss": "一起去吃饭。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "“恰”是记音写法，对应“吃”。",
+      "sources": [
+        "editorial"
+      ]
+    }
+  ]
+}

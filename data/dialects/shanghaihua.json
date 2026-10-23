@@ -1,0 +1,108 @@
+{
+  "slug": "shanghaihua",
+  "order": 9,
+  "name": "上海话",
+  "region": "上海",
+  "dialect_family": "吴语",
+  "family_slug": "wu",
+  "overview": "吴语城市代表，口气柔和，常见“侬、阿拉、哪能”等。",
+  "classification": {
+    "path": [
+      "吴语",
+      "太湖片",
+      "苏沪嘉小片"
+    ],
+    "reference": "language-atlas-2012",
+    "confidence": "medium"
+  },
+  "point": {
+    "name": "上海",
+    "province": "上海",
+    "lat": 31.23,
+    "lon": 121.47
+  },
+  "sources": [
+    "editorial"
+  ],
+  "vocabulary": [
+    {
+      "term": "侬",
+      "weight": 3.0,
+      "description": "你。",
+      "example": "侬好。"
+    },
+    {
+      "term": "阿拉",
+      "weight": 3.0,
+      "description": "我们。",
+      "example": "阿拉一道去。"
+    },
+    {
+      "term": "哪能",
+      "weight": 2.8,
+      "description": "怎么、如何。",
+      "example": "侬哪能这样讲？"
+    },
+    {
+      "term": "交关",
+      "weight": 2.4,
+      "description": "很、非常。",
+      "example": "今朝交关热。"
+    },
+    {
+      "term": "小辰光",
+      "weight": 2.6,
+      "description": "小时候。",
+      "example": "小辰光常去弄堂白相。"
+    }
+  ],
+  "grammar_features": [
+    {
+      "name": "人称代词系统独特",
+      "keywords": [
+        "侬",
+        "阿拉",
+        "伊"
+      ],
+      "weight": 2.0,
+      "description": "吴语人称系统与普通话差异明显。",
+      "example": "阿拉帮侬想办法。"
+    },
+    {
+      "name": "“哪能”“做啥”式疑问",
+      "keywords": [
+        "哪能",
+        "做啥"
+      ],
+      "weight": 1.6,
+      "description": "上海话疑问表达口语感强。",
+      "example": "侬做啥去？"
+    }
+  ],
+  "phonological_features": [
+    {
+      "name": "吴语连读柔和",
+      "markers": [
+        "侬",
+        "阿拉",
+        "白相"
+      ],
+      "description": "转写中常能看到轻柔、黏连的口语词。",
+      "example": "到外头白相去。"
+    }
+  ],
+  "expressions": [
+    {
+      "text": "白相",
+      "meaning": "玩、逛。"
+    },
+    {
+      "text": "辰光",
+      "meaning": "时间。"
+    },
+    {
+      "text": "蛮灵光",
+      "meaning": "很聪明、很不错。"
+    }
+  ]
+}

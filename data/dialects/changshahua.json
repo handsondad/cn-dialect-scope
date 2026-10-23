@@ -1,0 +1,104 @@
+{
+  "slug": "changshahua",
+  "order": 12,
+  "name": "长沙话",
+  "region": "长沙",
+  "dialect_family": "湘语",
+  "family_slug": "xiang",
+  "overview": "长沙话口气利落，语气词和高频副词突出，地方色彩强。",
+  "classification": {
+    "path": [
+      "湘语",
+      "长益片"
+    ],
+    "reference": "language-atlas-2012",
+    "confidence": "medium"
+  },
+  "point": {
+    "name": "长沙",
+    "province": "湖南",
+    "lat": 28.23,
+    "lon": 112.94
+  },
+  "sources": [
+    "editorial"
+  ],
+  "vocabulary": [
+    {
+      "term": "嬲塞",
+      "weight": 3.0,
+      "description": "厉害、了不起，也可表示热闹好玩。",
+      "example": "这场演出真嬲塞。"
+    },
+    {
+      "term": "何解",
+      "weight": 2.4,
+      "description": "为什么、怎么会。",
+      "example": "你何解不早讲？"
+    },
+    {
+      "term": "策",
+      "weight": 2.0,
+      "description": "聊天、说。",
+      "example": "莫乱策。"
+    },
+    {
+      "term": "霸蛮",
+      "weight": 2.6,
+      "description": "倔强、逞强，也可指拼劲。",
+      "example": "他做事有股霸蛮劲。"
+    },
+    {
+      "term": "恰得苦",
+      "weight": 2.2,
+      "description": "能吃苦。",
+      "example": "这伢子蛮恰得苦。"
+    }
+  ],
+  "grammar_features": [
+    {
+      "name": "“蛮”作高频程度副词",
+      "keywords": [
+        "蛮"
+      ],
+      "weight": 1.6,
+      "description": "湘语区常用“蛮”表示相当、很。",
+      "example": "今朝蛮热。"
+    },
+    {
+      "name": "“莫”作禁止或否定",
+      "keywords": [
+        "莫"
+      ],
+      "weight": 1.2,
+      "description": "长沙话中“莫”很常见。",
+      "example": "莫急，慢慢来。"
+    }
+  ],
+  "phonological_features": [
+    {
+      "name": "湘语声调起伏鲜明",
+      "markers": [
+        "嬲",
+        "霸蛮",
+        "蛮"
+      ],
+      "description": "书写中常由特色词承载音系印象。",
+      "example": "蛮韵味。"
+    }
+  ],
+  "expressions": [
+    {
+      "text": "恰饭",
+      "meaning": "吃饭。"
+    },
+    {
+      "text": "满哥",
+      "meaning": "大哥、哥哥。"
+    },
+    {
+      "text": "哦豁",
+      "meaning": "惊讶、感叹。"
+    }
+  ]
+}

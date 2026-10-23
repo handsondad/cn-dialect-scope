@@ -1,0 +1,119 @@
+{
+  "slug": "dongbeihua",
+  "order": 2,
+  "name": "东北话",
+  "region": "东北地区",
+  "dialect_family": "官话",
+  "family_slug": "mandarin",
+  "overview": "节奏爽快，语气夸张生动，副词与句末语气很有喜感。",
+  "classification": {
+    "path": [
+      "官话",
+      "东北官话",
+      "哈阜片"
+    ],
+    "reference": "language-atlas-2012",
+    "confidence": "medium"
+  },
+  "point": {
+    "name": "哈尔滨",
+    "province": "黑龙江",
+    "lat": 45.8,
+    "lon": 126.53
+  },
+  "sources": [
+    "editorial"
+  ],
+  "vocabulary": [
+    {
+      "term": "嘎哈",
+      "weight": 3.0,
+      "description": "表示“干什么、做什么”。",
+      "example": "你搁这儿嘎哈呢？"
+    },
+    {
+      "term": "唠嗑",
+      "weight": 2.8,
+      "description": "聊天、闲谈。",
+      "example": "没事儿咱就唠嗑。"
+    },
+    {
+      "term": "埋汰",
+      "weight": 2.4,
+      "description": "脏、寒碜，也可指挖苦人。",
+      "example": "别埋汰人啊。"
+    },
+    {
+      "term": "老鼻子",
+      "weight": 2.6,
+      "description": "表示很多、非常。",
+      "example": "今天人老鼻子多了。"
+    },
+    {
+      "term": "整",
+      "weight": 1.8,
+      "description": "做、弄、安排。",
+      "example": "晚上整点烧烤。"
+    }
+  ],
+  "grammar_features": [
+    {
+      "name": "“搁这儿嘎哈”式场景问句",
+      "keywords": [
+        "嘎哈",
+        "搁这儿"
+      ],
+      "weight": 1.8,
+      "description": "东北话常把“搁+地点”与“嘎哈”连用，形成非常典型的日常问句。",
+      "example": "你搁这儿嘎哈呢？"
+    },
+    {
+      "name": "“你瞅/我寻思”口语链",
+      "keywords": [
+        "瞅",
+        "寻思",
+        "咋整"
+      ],
+      "weight": 1.5,
+      "description": "东北话高频使用动作词转心理、判断表达。",
+      "example": "我寻思这事儿能成。"
+    },
+    {
+      "name": "句末“呗/啊/呀”增强亲切感",
+      "keywords": [
+        "呗",
+        "啊",
+        "呀"
+      ],
+      "weight": 1.0,
+      "description": "语气直接热络，常与夸张副词连用。",
+      "example": "那就这么办呗。"
+    }
+  ],
+  "phonological_features": [
+    {
+      "name": "开口度大、重音明显",
+      "markers": [
+        "嘎",
+        "嗑",
+        "整"
+      ],
+      "description": "书面转写常保留豪爽、抬高语调的节奏感。",
+      "example": "这玩意儿可带劲了。"
+    }
+  ],
+  "expressions": [
+    {
+      "text": "你瞅啥",
+      "meaning": "东北口语标志性表达，既可玩笑也可挑衅。"
+    },
+    {
+      "text": "可劲儿",
+      "meaning": "尽情地、使劲地。"
+    },
+    {
+      "text": "老铁",
+      "meaning": "关系亲近的朋友称呼。"
+    }
+  ]
+}

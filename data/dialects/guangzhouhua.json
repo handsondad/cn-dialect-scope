@@ -1,0 +1,109 @@
+{
+  "slug": "guangzhouhua",
+  "order": 5,
+  "name": "广州话",
+  "region": "广州",
+  "dialect_family": "粤语",
+  "family_slug": "cantonese",
+  "overview": "粤语核心代表，句末助词系统发达，口语词密集。",
+  "classification": {
+    "path": [
+      "粤语",
+      "广府片"
+    ],
+    "reference": "language-atlas-2012",
+    "confidence": "medium"
+  },
+  "point": {
+    "name": "广州",
+    "province": "广东",
+    "lat": 23.13,
+    "lon": 113.26
+  },
+  "sources": [
+    "editorial"
+  ],
+  "vocabulary": [
+    {
+      "term": "咩",
+      "weight": 2.6,
+      "description": "表示“什么”。",
+      "example": "你讲咩啊？"
+    },
+    {
+      "term": "冇",
+      "weight": 3.2,
+      "description": "表示“没有”。",
+      "example": "我冇带钥匙。"
+    },
+    {
+      "term": "佢",
+      "weight": 2.8,
+      "description": "表示“他/她/它”。",
+      "example": "佢今日唔得闲。"
+    },
+    {
+      "term": "食咗饭未",
+      "weight": 3.0,
+      "description": "典型粤语寒暄。",
+      "example": "喂，食咗饭未啊？"
+    },
+    {
+      "term": "靓",
+      "weight": 2.0,
+      "description": "漂亮、好看。",
+      "example": "呢件衫好靓。"
+    }
+  ],
+  "grammar_features": [
+    {
+      "name": "句末助词丰富",
+      "keywords": [
+        "啊",
+        "啦",
+        "喇",
+        "喎",
+        "咯"
+      ],
+      "weight": 1.6,
+      "description": "粤语用助词表达提醒、确认、感叹等细微语气。",
+      "example": "快啲啦！"
+    },
+    {
+      "name": "否定式“唔/冇”",
+      "keywords": [
+        "唔",
+        "冇"
+      ],
+      "weight": 2.0,
+      "description": "粤语中“唔”表一般否定，“冇”表“没有”。",
+      "example": "我唔知。"
+    }
+  ],
+  "phonological_features": [
+    {
+      "name": "保留入声感",
+      "markers": [
+        "食",
+        "急",
+        "得"
+      ],
+      "description": "虽文字难显音高，但粤语短促收尾词丰富。",
+      "example": "食得快。"
+    }
+  ],
+  "expressions": [
+    {
+      "text": "好犀利",
+      "meaning": "很厉害。"
+    },
+    {
+      "text": "冇问题",
+      "meaning": "没问题。"
+    },
+    {
+      "text": "快啲",
+      "meaning": "快一点。"
+    }
+  ]
+}
