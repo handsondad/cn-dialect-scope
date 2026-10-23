@@ -1,0 +1,108 @@
+{
+  "slug": "xinan-guanhua",
+  "order": 3,
+  "name": "西南官话",
+  "region": "四川重庆及西南地区",
+  "dialect_family": "官话",
+  "family_slug": "mandarin",
+  "overview": "覆盖面广，词汇生活化，常见“啥子、安逸、巴适”等特色表达。",
+  "classification": {
+    "path": [
+      "官话",
+      "西南官话",
+      "川黔片",
+      "成渝小片"
+    ],
+    "reference": "language-atlas-2012",
+    "confidence": "medium"
+  },
+  "point": {
+    "name": "成都",
+    "province": "四川",
+    "lat": 30.66,
+    "lon": 104.06
+  },
+  "sources": [
+    "editorial"
+  ],
+  "vocabulary": [
+    {
+      "term": "啥子",
+      "weight": 2.8,
+      "description": "表示“什么”。",
+      "example": "你说啥子哦？"
+    },
+    {
+      "term": "安逸",
+      "weight": 2.6,
+      "description": "舒服、巴适，也可夸赞很不错。",
+      "example": "这个地方住起安逸。"
+    },
+    {
+      "term": "巴适",
+      "weight": 3.0,
+      "description": "表示“好、舒服、到位”。",
+      "example": "这顿火锅巴适得很。"
+    },
+    {
+      "term": "摆龙门阵",
+      "weight": 3.1,
+      "description": "聊天、摆谈。",
+      "example": "坐到起摆龙门阵。"
+    },
+    {
+      "term": "莫得",
+      "weight": 2.4,
+      "description": "表示“没有”。",
+      "example": "我莫得意见。"
+    }
+  ],
+  "grammar_features": [
+    {
+      "name": "“得很/得板”程度补语",
+      "keywords": [
+        "得很",
+        "得板"
+      ],
+      "weight": 1.5,
+      "description": "通过后置结构增强程度表达。",
+      "example": "今天热得很。"
+    },
+    {
+      "name": "“起”字口语化补足",
+      "keywords": [
+        "住起",
+        "坐到起",
+        "看起"
+      ],
+      "weight": 1.6,
+      "description": "西南口语中“起”常参与状态或结果表达。",
+      "example": "你先坐到起。"
+    }
+  ],
+  "phonological_features": [
+    {
+      "name": "n/l、平翘舌弱化较常见",
+      "markers": [
+        "啥子",
+        "莫得"
+      ],
+      "description": "书面输入难完全体现，但特色词往往足以提示西南官话。",
+      "example": "莫得关系。"
+    }
+  ],
+  "expressions": [
+    {
+      "text": "雄起",
+      "meaning": "加油、振作，带鼓劲意味。"
+    },
+    {
+      "text": "耍朋友",
+      "meaning": "谈恋爱。"
+    },
+    {
+      "text": "爪子",
+      "meaning": "怎么了、干嘛。"
+    }
+  ]
+}

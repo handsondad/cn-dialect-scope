@@ -1,0 +1,106 @@
+{
+  "slug": "hakkahua",
+  "order": 11,
+  "name": "客家话",
+  "region": "梅州及客家地区",
+  "dialect_family": "客家话",
+  "family_slug": "hakka",
+  "overview": "客家方言分布广，保留古汉语痕迹较多，称谓与动词很有特色。",
+  "classification": {
+    "path": [
+      "客家话",
+      "粤台片",
+      "嘉应小片"
+    ],
+    "reference": "language-atlas-2012",
+    "confidence": "medium"
+  },
+  "point": {
+    "name": "梅州（梅县）",
+    "province": "广东",
+    "lat": 24.29,
+    "lon": 116.12
+  },
+  "sources": [
+    "editorial"
+  ],
+  "vocabulary": [
+    {
+      "term": "亻厓",
+      "weight": 3.2,
+      "description": "我。常见书写为“厓”。",
+      "example": "厓今日爱出门。"
+    },
+    {
+      "term": "若个",
+      "weight": 2.6,
+      "description": "那个、那个东西。",
+      "example": "若个就系厓个。"
+    },
+    {
+      "term": "食朝",
+      "weight": 2.2,
+      "description": "吃早饭。",
+      "example": "食朝未？"
+    },
+    {
+      "term": "去哪位",
+      "weight": 2.4,
+      "description": "去哪里。",
+      "example": "你去哪位？"
+    },
+    {
+      "term": "恁仔细",
+      "weight": 2.0,
+      "description": "这么认真、这么细致。",
+      "example": "佢做事恁仔细。"
+    }
+  ],
+  "grammar_features": [
+    {
+      "name": "人称“厓/你/佢”体系",
+      "keywords": [
+        "厓",
+        "佢"
+      ],
+      "weight": 2.0,
+      "description": "客家话保留稳定的人称用法。",
+      "example": "厓同佢一道去。"
+    },
+    {
+      "name": "“爱”表示将要/想要",
+      "keywords": [
+        "爱"
+      ],
+      "weight": 1.3,
+      "description": "客家话中“爱”常作意愿或将来标记。",
+      "example": "厓爱转屋下。"
+    }
+  ],
+  "phonological_features": [
+    {
+      "name": "保留入声与塞尾痕迹",
+      "markers": [
+        "食",
+        "屋下",
+        "恁"
+      ],
+      "description": "词形常体现古音保留特点。",
+      "example": "转屋下食饭。"
+    }
+  ],
+  "expressions": [
+    {
+      "text": "屋下",
+      "meaning": "家里。"
+    },
+    {
+      "text": "有闲来尞",
+      "meaning": "有空来玩。"
+    },
+    {
+      "text": "食饱吂",
+      "meaning": "吃饱了吗。"
+    }
+  ]
+}

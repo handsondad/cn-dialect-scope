@@ -1,0 +1,106 @@
+{
+  "slug": "chaoshanhua",
+  "order": 7,
+  "name": "潮汕话",
+  "region": "潮汕地区",
+  "dialect_family": "闽南语",
+  "family_slug": "minnan",
+  "overview": "潮汕方言词汇凝练，亲属称谓与礼貌表达很有地方特色。",
+  "classification": {
+    "path": [
+      "闽语",
+      "闽南区",
+      "潮汕片"
+    ],
+    "reference": "language-atlas-2012",
+    "confidence": "medium"
+  },
+  "point": {
+    "name": "汕头",
+    "province": "广东",
+    "lat": 23.35,
+    "lon": 116.68
+  },
+  "sources": [
+    "editorial"
+  ],
+  "vocabulary": [
+    {
+      "term": "食未",
+      "weight": 2.8,
+      "description": "潮汕式寒暄：吃了吗。",
+      "example": "食未？入来坐。"
+    },
+    {
+      "term": "物件",
+      "weight": 1.8,
+      "description": "东西、物品。",
+      "example": "这件物件是你的。"
+    },
+    {
+      "term": "乜个",
+      "weight": 2.6,
+      "description": "什么。",
+      "example": "你讲乜个？"
+    },
+    {
+      "term": "胶己人",
+      "weight": 3.0,
+      "description": "自己人、同乡人。",
+      "example": "大家都是胶己人。"
+    },
+    {
+      "term": "有闲",
+      "weight": 2.0,
+      "description": "有空。",
+      "example": "你有闲来食茶。"
+    }
+  ],
+  "grammar_features": [
+    {
+      "name": "疑问词“乜个”",
+      "keywords": [
+        "乜个",
+        "乜"
+      ],
+      "weight": 1.9,
+      "description": "潮汕口语用“乜个”表示“什么”。",
+      "example": "这是乜个意思？"
+    },
+    {
+      "name": "“胶己”构词",
+      "keywords": [
+        "胶己"
+      ],
+      "weight": 1.8,
+      "description": "“胶己”表示自己、本地，地方身份感很强。",
+      "example": "胶己人免客气。"
+    }
+  ],
+  "phonological_features": [
+    {
+      "name": "保留古音层次",
+      "markers": [
+        "食",
+        "乜",
+        "胶己"
+      ],
+      "description": "潮汕话常被认为保留较多古汉语成分。",
+      "example": "食茶未。"
+    }
+  ],
+  "expressions": [
+    {
+      "text": "食茶",
+      "meaning": "喝茶，也带社交意味。"
+    },
+    {
+      "text": "免细义",
+      "meaning": "不用客气。"
+    },
+    {
+      "text": "爱拼才会赢",
+      "meaning": "闽南文化圈常见励志表达。"
+    }
+  ]
+}

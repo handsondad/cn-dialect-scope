@@ -1,0 +1,161 @@
+{
+  "slug": "ni",
+  "headword": "你",
+  "gloss": "第二人称单数代词。",
+  "category": "代词",
+  "aliases": [
+    "您",
+    "侬",
+    "汝",
+    "倷"
+  ],
+  "related": [
+    {
+      "concept": "wo",
+      "type": "related"
+    },
+    {
+      "concept": "ta",
+      "type": "related"
+    }
+  ],
+  "etymology": [
+    {
+      "character": "汝",
+      "middle_chinese": {
+        "fanqie": "人渚切",
+        "source": "广韵"
+      },
+      "note": "上古、中古常用的第二人称代词，闽语至今仍用。",
+      "confidence": "medium",
+      "sources": [
+        "guangyun",
+        "editorial"
+      ]
+    },
+    {
+      "character": "侬",
+      "note": "六朝吴地民歌（如《子夜歌》）里“侬”指“我”；今上海话、宁波话里“侬”指“你”；闽东福州话里“侬”则是“人”。同一个字在不同方言里意思发生了转移。",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    }
+  ],
+  "expressions": [
+    {
+      "dialect": "beijinghua",
+      "form": "你",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "nǐ"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "beijinghua",
+      "form": "您",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "nín"
+      },
+      "example": "您吃了吗？",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "敬称，北京话使用频率很高。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "guangzhouhua",
+      "form": "你",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "nei5"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "fujian-minnan",
+      "form": "汝",
+      "orthography": "本字",
+      "etymon": "汝",
+      "romanization": {
+        "scheme": "台罗",
+        "text": "lí"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "日常也常写作“你”。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "chaoshanhua",
+      "form": "汝",
+      "orthography": "本字",
+      "etymon": "汝",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "shanghaihua",
+      "form": "侬",
+      "orthography": "本字",
+      "etymon": "侬",
+      "example": "侬好。",
+      "example_gloss": "你好。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "suzhouhua",
+      "form": "倷",
+      "orthography": "借音字",
+      "example": "倷到哉。",
+      "example_gloss": "你到了。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "hakkahua",
+      "form": "你",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "slug": "lanyin-guanhua",
+  "order": 4,
+  "name": "兰银官话",
+  "region": "甘肃宁夏青海一带",
+  "dialect_family": "官话",
+  "family_slug": "mandarin",
+  "overview": "西北色彩鲜明，常见“哈怂、尕、攒劲”等词，语音硬朗。",
+  "classification": {
+    "path": [
+      "官话",
+      "兰银官话",
+      "金城片"
+    ],
+    "reference": "language-atlas-2012",
+    "confidence": "medium"
+  },
+  "point": {
+    "name": "兰州",
+    "province": "甘肃",
+    "lat": 36.06,
+    "lon": 103.83
+  },
+  "sources": [
+    "editorial"
+  ],
+  "vocabulary": [
+    {
+      "term": "尕",
+      "weight": 3.0,
+      "description": "西北方言中常表示“小”，也用于昵称。",
+      "example": "那个尕娃真机灵。"
+    },
+    {
+      "term": "哈怂",
+      "weight": 2.8,
+      "description": "可作责怪或调侃语。",
+      "example": "你这个哈怂又忘了。"
+    },
+    {
+      "term": "攒劲",
+      "weight": 3.0,
+      "description": "厉害、给力。",
+      "example": "这个手艺真攒劲。"
+    },
+    {
+      "term": "满福",
+      "weight": 2.2,
+      "description": "舒服、满足。",
+      "example": "喝碗热汤满福得很。"
+    },
+    {
+      "term": "咋咧",
+      "weight": 2.0,
+      "description": "怎么了。",
+      "example": "你今儿咋咧？"
+    }
+  ],
+  "grammar_features": [
+    {
+      "name": "名词前缀“尕”高辨识度",
+      "keywords": [
+        "尕娃",
+        "尕妹",
+        "尕"
+      ],
+      "weight": 1.7,
+      "description": "“尕”作为昵称、小称前缀非常有西北地域感。",
+      "example": "尕妹子回来了。"
+    },
+    {
+      "name": "“很/得很”与本地词并用",
+      "keywords": [
+        "攒劲",
+        "满福",
+        "得很"
+      ],
+      "weight": 1.2,
+      "description": "程度表达常和本地方言形容词结合。",
+      "example": "这饭吃着满福。"
+    }
+  ],
+  "phonological_features": [
+    {
+      "name": "西北官话硬朗声气",
+      "markers": [
+        "哈",
+        "尕",
+        "咧"
+      ],
+      "description": "转写中常带粗犷、短促的语感提示。",
+      "example": "哈麻批（部分地区口语，需注意礼貌场景）"
+    }
+  ],
+  "expressions": [
+    {
+      "text": "走，浪一圈",
+      "meaning": "出去转转、逛逛。"
+    },
+    {
+      "text": "美得很",
+      "meaning": "很好、很满意。"
+    },
+    {
+      "text": "咋咧嘛",
+      "meaning": "怎么回事。"
+    }
+  ]
+}

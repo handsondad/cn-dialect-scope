@@ -18,6 +18,7 @@ class DialectEngine:
     def __init__(self) -> None:
         self.dialects = DIALECTS
         self.families = DIALECT_FAMILIES
+        self.family_lookup = {family["slug"]: family for family in self.families}
 
     def identify(self, text: str) -> Dict[str, List[Dict[str, object]]]:
         sample = (text or "").strip()
@@ -84,7 +85,7 @@ class DialectEngine:
         for family in self.families:
             payload.append(
                 {
-                    **family,
+                    **{key: value for key, value in family.items() if key != "identification_markers"},
                     "dialects": family_dialects.get(family["slug"], []),
                 }
             )
@@ -178,14 +179,10 @@ class DialectEngine:
                     )
                     seen.add(key)
 
-        if dialect["dialect_family"] == "官话" and "儿" in text:
-            score += 0.3
-        if dialect["dialect_family"] == "粤语" and any(token in text for token in ["冇", "唔", "佢"]):
-            score += 0.4
-        if dialect["dialect_family"] == "闽南语" and any(token in text for token in ["袂", "歹势", "呷"]):
-            score += 0.4
-        if dialect["dialect_family"] == "吴语" and any(token in text for token in ["侬", "阿拉", "弗"]):
-            score += 0.4
+        family = self.family_lookup.get(dialect["family_slug"], {})
+        markers = family.get("identification_markers")
+        if markers and any(token in text for token in markers["tokens"]):
+            score += markers["bonus"]
 
         return score, features
 

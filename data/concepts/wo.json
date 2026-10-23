@@ -1,0 +1,105 @@
+{
+  "slug": "wo",
+  "headword": "我",
+  "gloss": "第一人称单数代词。",
+  "category": "代词",
+  "aliases": [
+    "𠊎",
+    "厓",
+    "亻厓"
+  ],
+  "related": [
+    {
+      "concept": "women",
+      "type": "related"
+    },
+    {
+      "concept": "ni",
+      "type": "related"
+    }
+  ],
+  "etymology": [],
+  "expressions": [
+    {
+      "dialect": "beijinghua",
+      "form": "我",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "wǒ"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "guangzhouhua",
+      "form": "我",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "ngo5"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "fujian-minnan",
+      "form": "我",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "台罗",
+        "text": "guá"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "chaoshanhua",
+      "form": "我",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "shanghaihua",
+      "form": "我",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "hakkahua",
+      "form": "𠊎",
+      "orthography": "俗字",
+      "example": "𠊎爱转屋下。",
+      "example_gloss": "我要回家。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "常写作“厓”或“亻厓”，本字待考。",
+      "sources": [
+        "editorial"
+      ]
+    }
+  ]
+}

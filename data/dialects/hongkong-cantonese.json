@@ -1,0 +1,110 @@
+{
+  "slug": "hongkong-cantonese",
+  "order": 6,
+  "name": "香港粤语",
+  "region": "香港",
+  "dialect_family": "粤语",
+  "family_slug": "cantonese",
+  "overview": "香港都市口语风格强，常见英文借词与港式表达。",
+  "classification": {
+    "path": [
+      "粤语",
+      "广府片"
+    ],
+    "reference": "language-atlas-2012",
+    "confidence": "medium"
+  },
+  "point": {
+    "name": "香港",
+    "province": "香港",
+    "lat": 22.32,
+    "lon": 114.17
+  },
+  "sources": [
+    "editorial"
+  ],
+  "vocabulary": [
+    {
+      "term": "搞掂",
+      "weight": 2.8,
+      "description": "搞定、处理好。",
+      "example": "件事已经搞掂。"
+    },
+    {
+      "term": "的士",
+      "weight": 2.4,
+      "description": "出租车。",
+      "example": "落楼截架的士。"
+    },
+    {
+      "term": "收工",
+      "weight": 2.0,
+      "description": "下班。",
+      "example": "我收工先返去。"
+    },
+    {
+      "term": "拍拖",
+      "weight": 2.6,
+      "description": "谈恋爱。",
+      "example": "佢哋拍拖好耐。"
+    },
+    {
+      "term": "掂",
+      "weight": 2.2,
+      "description": "行、可以、好。",
+      "example": "咁样都掂。"
+    }
+  ],
+  "grammar_features": [
+    {
+      "name": "港式口语助词频繁",
+      "keywords": [
+        "喎",
+        "啫",
+        "囉",
+        "吖"
+      ],
+      "weight": 1.8,
+      "description": "香港粤语助词更具都市会话节奏。",
+      "example": "唔系咁喎。"
+    },
+    {
+      "name": "英语借词自然嵌入",
+      "keywords": [
+        "的士",
+        "巴士",
+        "call",
+        "file"
+      ],
+      "weight": 1.4,
+      "description": "港式生活词汇常夹杂英语来源借词。",
+      "example": "我send个file畀你。"
+    }
+  ],
+  "phonological_features": [
+    {
+      "name": "快节奏都市口语",
+      "markers": [
+        "喎",
+        "啫",
+        "囉"
+      ],
+      "description": "文字转写中助词密度高，语感更紧凑。",
+      "example": "得啦，走先啦。"
+    }
+  ],
+  "expressions": [
+    {
+      "text": "唔该晒",
+      "meaning": "非常感谢。"
+    },
+    {
+      "text": "迟啲见",
+      "meaning": "晚点见。"
+    },
+    {
+      "text": "冇眼睇",
+      "meaning": "看不下去，多为吐槽。"
+    }
+  ]
+}

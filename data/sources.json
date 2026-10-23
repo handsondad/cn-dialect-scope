@@ -1,0 +1,56 @@
+[
+  {
+    "id": "editorial",
+    "type": "editorial",
+    "title": "项目维护者整理",
+    "note": "根据常见用法整理，尚未逐条与文献或母语者核对。欢迎通过 PR 提供出处和更正。"
+  },
+  {
+    "id": "language-atlas-2012",
+    "type": "literature",
+    "title": "《中国语言地图集（第2版）·汉语方言卷》",
+    "publisher": "商务印书馆",
+    "year": 2012,
+    "note": "方言分区（区／片／小片）参考。"
+  },
+  {
+    "id": "guangyun",
+    "type": "literature",
+    "title": "《广韵》",
+    "note": "中古音反切参考。"
+  },
+  {
+    "id": "fangyan-cihui",
+    "type": "literature",
+    "title": "《汉语方言词汇（第二版）》",
+    "publisher": "语文出版社",
+    "year": 1995,
+    "note": "北京大学中文系语言学教研室编，建议用于核对词条。"
+  },
+  {
+    "id": "cao-atlas",
+    "type": "literature",
+    "title": "《汉语方言地图集》",
+    "publisher": "商务印书馆",
+    "year": 2008,
+    "note": "曹志耘主编，建议用于核对地理分布。"
+  },
+  {
+    "id": "jyutping",
+    "type": "romanization",
+    "title": "香港语言学学会粤语拼音方案（粤拼）",
+    "note": "粤语读音标注方案。"
+  },
+  {
+    "id": "tailo",
+    "type": "romanization",
+    "title": "台湾闽南语罗马字拼音方案（台罗）",
+    "note": "闽南语读音标注方案。"
+  },
+  {
+    "id": "moe-minnan",
+    "type": "dictionary",
+    "title": "《臺灣閩南語常用詞辭典》",
+    "note": "台湾教育部编，建议用于核对闽南语用字与读音。"
+  }
+]

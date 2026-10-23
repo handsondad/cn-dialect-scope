@@ -1,0 +1,106 @@
+{
+  "slug": "suzhouhua",
+  "order": 10,
+  "name": "苏州话",
+  "region": "苏州",
+  "dialect_family": "吴语",
+  "family_slug": "wu",
+  "overview": "吴侬软语代表之一，语感婉转，生活词汇古雅。",
+  "classification": {
+    "path": [
+      "吴语",
+      "太湖片",
+      "苏沪嘉小片"
+    ],
+    "reference": "language-atlas-2012",
+    "confidence": "medium"
+  },
+  "point": {
+    "name": "苏州",
+    "province": "江苏",
+    "lat": 31.3,
+    "lon": 120.62
+  },
+  "sources": [
+    "editorial"
+  ],
+  "vocabulary": [
+    {
+      "term": "倷",
+      "weight": 2.8,
+      "description": "你。",
+      "example": "倷到哉。"
+    },
+    {
+      "term": "俚笃",
+      "weight": 3.0,
+      "description": "你们。",
+      "example": "俚笃先吃茶。"
+    },
+    {
+      "term": "弗",
+      "weight": 2.4,
+      "description": "不。",
+      "example": "我弗晓得。"
+    },
+    {
+      "term": "啥体",
+      "weight": 2.6,
+      "description": "什么。",
+      "example": "这是啥体？"
+    },
+    {
+      "term": "吃茶",
+      "weight": 1.8,
+      "description": "喝茶。",
+      "example": "一道去吃茶。"
+    }
+  ],
+  "grammar_features": [
+    {
+      "name": "否定词“弗”",
+      "keywords": [
+        "弗"
+      ],
+      "weight": 1.8,
+      "description": "吴语区常见否定词，在苏州话中辨识度很高。",
+      "example": "我弗去。"
+    },
+    {
+      "name": "人称“倷/俚笃”",
+      "keywords": [
+        "倷",
+        "俚笃"
+      ],
+      "weight": 2.0,
+      "description": "人称代词不同于普通话。",
+      "example": "倷今朝忙伐？"
+    }
+  ],
+  "phonological_features": [
+    {
+      "name": "软糯舒展的吴语节奏",
+      "markers": [
+        "弗",
+        "倷",
+        "啥体"
+      ],
+      "description": "文字输入常通过特定代词和否定词传达吴语气质。",
+      "example": "倷好伐。"
+    }
+  ],
+  "expressions": [
+    {
+      "text": "今朝",
+      "meaning": "今天。"
+    },
+    {
+      "text": "伐",
+      "meaning": "吗、吧一类疑问或语气成分。"
+    },
+    {
+      "text": "灵格",
+      "meaning": "很好、很灵巧。"
+    }
+  ]
+}

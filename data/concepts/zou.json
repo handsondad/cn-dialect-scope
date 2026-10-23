@@ -1,0 +1,150 @@
+{
+  "slug": "zou",
+  "headword": "走（步行）",
+  "gloss": "用脚一步步移动，即步行。",
+  "category": "动作",
+  "aliases": [
+    "走路",
+    "行",
+    "步行"
+  ],
+  "related": [
+    {
+      "concept": "zhan",
+      "type": "related"
+    }
+  ],
+  "etymology": [
+    {
+      "character": "行",
+      "middle_chinese": {
+        "fanqie": "户庚切",
+        "source": "广韵"
+      },
+      "note": "古汉语“行”是步行，“走”是跑。《释名·释姿容》有“徐行曰步，疾行曰趋，疾趋曰走”。粤语、闽语、客家话保留了“行=走路、走=跑”的古义。",
+      "confidence": "medium",
+      "sources": [
+        "guangyun",
+        "editorial"
+      ]
+    },
+    {
+      "character": "走",
+      "middle_chinese": {
+        "fanqie": "子苟切",
+        "source": "广韵"
+      },
+      "note": "古义为“跑”，今粤语“走”（zau2）、闽南语“走”（tsáu）仍指跑或离开。",
+      "confidence": "medium",
+      "sources": [
+        "guangyun",
+        "editorial"
+      ]
+    }
+  ],
+  "expressions": [
+    {
+      "dialect": "beijinghua",
+      "form": "走",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "zǒu"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "guangzhouhua",
+      "form": "行",
+      "orthography": "本字",
+      "etymon": "行",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "haang4"
+      },
+      "example": "行路",
+      "example_gloss": "走路",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "粤语“走”（zau2）是跑、离开，如“走先”（先走了）。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "hongkong-cantonese",
+      "form": "行",
+      "orthography": "本字",
+      "etymon": "行",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "haang4"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "fujian-minnan",
+      "form": "行",
+      "orthography": "本字",
+      "etymon": "行",
+      "romanization": {
+        "scheme": "台罗",
+        "text": "kiânn"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "闽南语“走”（tsáu）是跑。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "chaoshanhua",
+      "form": "行",
+      "orthography": "本字",
+      "etymon": "行",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "hakkahua",
+      "form": "行",
+      "orthography": "本字",
+      "etymon": "行",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "shanghaihua",
+      "form": "跑",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "上海话“跑”一般指走路，“奔”才是跑。",
+      "sources": [
+        "editorial"
+      ]
+    }
+  ]
+}

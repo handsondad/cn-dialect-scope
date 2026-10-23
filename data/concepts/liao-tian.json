@@ -1,0 +1,137 @@
+{
+  "slug": "liao-tian",
+  "headword": "聊天",
+  "gloss": "随意地交谈、闲谈。",
+  "category": "动作",
+  "aliases": [
+    "唠嗑",
+    "摆龙门阵",
+    "倾偈"
+  ],
+  "related": [
+    {
+      "concept": "wan",
+      "type": "related"
+    }
+  ],
+  "etymology": [],
+  "expressions": [
+    {
+      "dialect": "beijinghua",
+      "form": "侃大山",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "kǎn dàshān"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也说“聊天儿”。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "dongbeihua",
+      "form": "唠嗑",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "làokē"
+      },
+      "example": "没事儿咱就唠嗑。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "xinan-guanhua",
+      "form": "摆龙门阵",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "bǎi lóngménzhèn"
+      },
+      "example": "坐到起摆龙门阵。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "lanyin-guanhua",
+      "form": "谝闲传",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "piǎn xiánchuán"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "guangzhouhua",
+      "form": "倾偈",
+      "orthography": "借音字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "king1 gai2"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "fujian-minnan",
+      "form": "开讲",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "台罗",
+        "text": "khai-káng"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "shanghaihua",
+      "form": "嘎讪胡",
+      "orthography": "借音字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "changshahua",
+      "form": "策",
+      "orthography": "借音字",
+      "example": "莫乱策。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也带“随口乱说”的意味。",
+      "sources": [
+        "editorial"
+      ]
+    }
+  ]
+}

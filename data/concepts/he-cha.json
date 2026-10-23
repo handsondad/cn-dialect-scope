@@ -1,0 +1,132 @@
+{
+  "slug": "he-cha",
+  "headword": "喝茶",
+  "gloss": "饮用茶水；在一些地方也指一种社交活动。",
+  "category": "饮食",
+  "aliases": [
+    "饮茶",
+    "食茶",
+    "吃茶"
+  ],
+  "related": [
+    {
+      "concept": "chi",
+      "type": "related"
+    }
+  ],
+  "etymology": [],
+  "expressions": [
+    {
+      "dialect": "beijinghua",
+      "form": "喝茶",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "hē chá"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "guangzhouhua",
+      "form": "饮茶",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "jam2 caa4"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也指上茶楼吃早茶点心。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "hongkong-cantonese",
+      "form": "饮茶",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "jam2 caa4"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "chaoshanhua",
+      "form": "食茶",
+      "orthography": "本字",
+      "etymon": "食",
+      "example": "你有闲来食茶。",
+      "example_gloss": "你有空来喝茶。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "fujian-minnan",
+      "form": "食茶",
+      "orthography": "本字",
+      "etymon": "食",
+      "romanization": {
+        "scheme": "台罗",
+        "text": "tsia̍h-tê"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "shanghaihua",
+      "form": "吃茶",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "suzhouhua",
+      "form": "吃茶",
+      "orthography": "通用字",
+      "example": "一道去吃茶。",
+      "example_gloss": "一起去喝茶。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "hakkahua",
+      "form": "食茶",
+      "orthography": "本字",
+      "etymon": "食",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "slug": "women",
+  "headword": "我们",
+  "gloss": "第一人称复数代词。不少方言区分“包括听话人”（包括式）和“不包括听话人”（排除式）。",
+  "category": "代词",
+  "aliases": [
+    "咱们",
+    "咱",
+    "阿拉",
+    "阮",
+    "我哋"
+  ],
+  "related": [
+    {
+      "concept": "wo",
+      "type": "broader"
+    }
+  ],
+  "etymology": [],
+  "expressions": [
+    {
+      "dialect": "beijinghua",
+      "form": "我们",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "wǒmen"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "排除式：可以不包括听话人。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "beijinghua",
+      "form": "咱们",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "zánmen"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "包括式：一定包括听话人。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "dongbeihua",
+      "form": "咱",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "zán"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "常单说“咱”表示“我们”。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "guangzhouhua",
+      "form": "我哋",
+      "orthography": "俗字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "ngo5 dei6"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "hongkong-cantonese",
+      "form": "我哋",
+      "orthography": "俗字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "ngo5 dei6"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "fujian-minnan",
+      "form": "阮",
+      "orthography": "借音字",
+      "romanization": {
+        "scheme": "台罗",
+        "text": "guán"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "排除式：不包括听话人。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "fujian-minnan",
+      "form": "咱",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "台罗",
+        "text": "lán"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "包括式：包括听话人。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "chaoshanhua",
+      "form": "阮",
+      "orthography": "借音字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "排除式。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "chaoshanhua",
+      "form": "俺",
+      "orthography": "借音字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "包括式。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "shanghaihua",
+      "form": "阿拉",
+      "orthography": "借音字",
+      "example": "阿拉一道去。",
+      "example_gloss": "我们一起去。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "一般认为来自宁波一带的说法，后成为上海话的主流说法。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "suzhouhua",
+      "form": "伲",
+      "orthography": "借音字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "hakkahua",
+      "form": "𠊎兜",
+      "orthography": "俗字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "unverified",
+      "sources": [
+        "editorial"
+      ]
+    }
+  ]
+}
