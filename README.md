@@ -5,6 +5,9 @@
 **Chinese Dialect Scope（方言识别与学习工具）** 是一个面向方言爱好者与学习者的轻量应用。用户输入一句中文方言文本，系统会基于方言词汇、语法线索与音韵提示，快速推测**可能地区**，并给出**可解释的语言特征**与**学习卡片**，帮助用户在“识别”之外真正理解各地乡音。
 
 ### 它能做什么？
+- **概念对照（一个意思，各地怎么说）**：搜索“没有”“吃”“走”等概念，按方言大区分组列出各方言点的说法、读音、本字／俗字标注、例句与可信度。
+- **方言档案**：每个方言点的分区、地理坐标、高频词、语言特征，以及它在概念对照里的全部说法。
+- **趣味专题**：如“‘走’与‘行’”“‘侬’：从‘我’到‘你’”“本字与俗字”。
 - **文本输入 → 方言地区识别**：输入一句方言样例，返回 Top 3 可能地区与置信度。
 - **语言特征解释**：展示命中的方言词、语法结构、音韵提示，并附示例说明。
 - **学习卡片**：自动生成对应方言的核心词汇、表达套路与语法观察卡片。
@@ -35,15 +38,37 @@
 
 ```text
 .
-├── app.py
-├── dialect_data.py
-├── dialect_engine.py
-├── requirements.txt
+├── app.py                 # Flask API
+├── knowledge_base.py      # loads data/, validates schema, query helpers
+├── dialect_data.py        # compatibility layer for the engine
+├── dialect_engine.py      # rule-based identifier
+├── data/
+│   ├── families.json      # 方言大区（含识别用的标志词）
+│   ├── dialects/*.json    # 一个方言点一个文件：分区、坐标、词汇、特征、表达
+│   ├── concepts/*.json    # 一个概念一个文件：各方言点的说法、词源、关联
+│   ├── topics.json        # 趣味专题
+│   └── sources.json       # 来源
 ├── static/
 │   └── index.html
 └── tests/
-    └── test_dialect_engine.py
 ```
+
+## Knowledge Base Data Model｜知识库数据模型
+
+数据以 **概念 ↔ 表达 ↔ 方言点** 为核心，全部是 `data/` 下的 JSON 文件，便于直接编辑和用 PR 审阅。
+
+- **方言点** (`data/dialects/<slug>.json`)：`classification.path` 记录分区层级（如 `["吴语", "太湖片", "苏沪嘉小片"]`，参考《中国语言地图集》），`point` 记录代表点和经纬度。
+- **概念** (`data/concepts/<slug>.json`)：`headword`、`gloss`、`category`、`aliases`、`related`（`related` / `synonym` / `broader` / `narrower`）、`etymology`（字、《广韵》反切、说明）。
+- **表达**（概念里的 `expressions`）：
+  - `dialect`、`form`、`orthography`（本字 / 俗字 / 训读字 / 借音字 / 通用字 / 待考）、`etymon`（本字）
+  - `romanization`（如粤拼、台罗）、可选 `ipa`
+  - `example` / `example_gloss`、`register`（口语 / 书面 / 俚俗 / 通用）、`status`（常用 / 老派 / 少用 / 濒危）
+  - `confidence`（`high` 共识 / `medium` 需核对 / `unverified` 待考）、`sources`
+- 每条表达、词源和专题都必须带 `confidence` 和 `sources`。
+
+`KnowledgeBase.validate()` 会检查字段、取值范围和引用完整性（方言、概念、来源是否存在）；`tests/test_knowledge_base.py` 会在测试中运行它。
+
+> 目前收录 16 个概念，多数条目来自项目整理（来源 `editorial`），尚未逐条与文献核对，界面上会标出“需核对”或“待考”。欢迎补充出处和更正。
 
 ## How to Run｜运行方式
 
@@ -104,6 +129,18 @@ Returns learning cards for a specific dialect slug, such as:
 /api/learning/hakkahua
 /api/learning/beijinghua
 ```
+
+### Knowledge base endpoints
+
+| Endpoint | Description |
+| --- | --- |
+| `GET /api/concepts?category=` | 概念列表 |
+| `GET /api/concepts/<slug>` | 概念详情：按方言大区分组的说法、词源、相关概念、专题 |
+| `GET /api/search?q=` | 按普通话词、别名、方言写法或拼音搜索概念，也会匹配方言和专题 |
+| `GET /api/dialects/<slug>` | 方言档案 |
+| `GET /api/features?kind=grammar\|phonology` | 各方言的语法 / 语音特征 |
+| `GET /api/topics`, `GET /api/topics/<slug>` | 趣味专题 |
+| `GET /api/sources` | 来源列表 |
 
 ## Example Usage｜示例
 

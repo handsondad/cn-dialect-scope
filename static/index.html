@@ -207,6 +207,123 @@
       color: var(--muted);
     }
 
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .tab {
+      background: var(--card);
+      border: 1px solid var(--line);
+      color: var(--muted);
+    }
+
+    .tab.active {
+      background: var(--brand);
+      border-color: var(--brand);
+      color: #fff;
+    }
+
+    .view[hidden] { display: none; }
+
+    .search-row {
+      display: flex;
+      gap: 12px;
+    }
+
+    .search-row input, select {
+      flex: 1;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      padding: 12px 18px;
+      font-size: 16px;
+      background: #fcfdff;
+    }
+
+    .concept-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 10px;
+    }
+
+    .concept-chip {
+      text-align: left;
+      border: 1px solid var(--line);
+      background: #fafcff;
+      border-radius: 14px;
+      padding: 10px 12px;
+      cursor: pointer;
+    }
+
+    .concept-chip strong { display: block; font-size: 17px; }
+    .concept-chip span { color: var(--muted); font-size: 12px; }
+
+    .topic-card {
+      cursor: pointer;
+      text-align: left;
+      width: 100%;
+    }
+
+    details.family-group {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      margin-bottom: 12px;
+      background: #fafcff;
+    }
+
+    details.family-group > summary {
+      cursor: pointer;
+      padding: 12px 16px;
+      font-weight: 600;
+    }
+
+    .expr-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    .expr-table th, .expr-table td {
+      border-top: 1px solid var(--line);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .expr-table th { color: var(--muted); font-weight: 500; background: #f3f7ff; }
+    .expr-form { font-size: 20px; font-weight: 600; }
+    .roman { color: #2449a8; font-family: "Noto Sans", "Segoe UI", sans-serif; }
+
+    .badge {
+      display: inline-block;
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-size: 12px;
+      margin: 2px 4px 2px 0;
+      background: #eef2f7;
+      color: #475569;
+    }
+
+    .badge.orth-俗字, .badge.orth-借音字, .badge.orth-训读字 { background: #fff4e5; color: #9a5b00; }
+    .badge.orth-本字 { background: #e8f8f1; color: #11734b; }
+    .badge.conf-high { background: #e8f8f1; color: #11734b; }
+    .badge.conf-medium { background: #eef6ff; color: #2553b8; }
+    .badge.conf-unverified { background: #fdecec; color: #b42318; }
+
+    .link {
+      background: none;
+      border: none;
+      padding: 0;
+      color: var(--brand);
+      cursor: pointer;
+      font-size: inherit;
+      text-decoration: underline;
+    }
+
+    .table-wrap { overflow-x: auto; }
+
     @media (max-width: 860px) {
       .grid { grid-template-columns: 1fr; }
       .hero, .card { padding: 18px; }
@@ -216,10 +333,50 @@
 <body>
   <div class="container">
     <section class="hero">
-      <h1>方言识别与学习工具 <span style="font-size:0.48em; color:#4b5563;">Chinese Dialect Scope</span></h1>
-      <p>通过一句方言样例，快速判断可能地区，并用可解释的方式学习各地乡音。输入一句中文方言文本，系统会返回可能地区、语言特征解释，以及可直接上手的学习卡片。</p>
+      <h1>方言知识库 <span style="font-size:0.48em; color:#4b5563;">Chinese Dialect Scope</span></h1>
+      <p>同一个意思，各地怎么说？以“概念”为中心对照各地方言的说法、读音、本字与来历，也可以浏览方言档案，或用一句话识别可能的地区。</p>
     </section>
 
+    <nav class="tabs" id="tabs">
+      <button class="tab" data-view="concepts">概念对照 Concepts</button>
+      <button class="tab" data-view="dialects">方言档案 Dialects</button>
+      <button class="tab" data-view="identify">方言识别 Identify</button>
+    </nav>
+
+    <div class="view" id="view-concepts">
+      <section class="card">
+        <h2>一个意思，各地怎么说？ <span class="muted" style="font-size:0.68em;">Search a concept</span></h2>
+        <form class="search-row" id="searchForm">
+          <input id="searchInput" type="search" placeholder="输入普通话词或方言写法、拼音，例如：没有 / 冇 / 白相 / sik6" />
+          <button class="primary" type="submit">搜索 Search</button>
+        </form>
+        <div id="searchResult" class="muted" style="margin-top:12px;"></div>
+        <div class="section-label">全部概念 All concepts</div>
+        <div class="concept-list" id="conceptList"></div>
+      </section>
+
+      <section class="grid" style="margin-top: 20px;">
+        <div class="card" id="conceptDetail">
+          <p class="muted">选择一个概念，查看各方言的说法、读音和来历。</p>
+        </div>
+        <div class="card">
+          <h2>趣味专题 <span class="muted" style="font-size:0.68em;">Topics</span></h2>
+          <div id="topicList" class="features"></div>
+          <div id="topicDetail" style="margin-top:16px;"></div>
+        </div>
+      </section>
+      <p class="footer-note">可信度标记：<span class="badge conf-high">共识</span>广泛认可；<span class="badge conf-medium">需核对</span>常见说法，细节因地而异；<span class="badge conf-unverified">待考</span>尚待考证。目前多数条目来自项目整理，尚未逐条与文献核对，欢迎通过 PR 补充出处与更正。</p>
+    </div>
+
+    <div class="view" id="view-dialects" hidden>
+      <section class="card">
+        <h2>方言档案 <span class="muted" style="font-size:0.68em;">Dialect profiles</span></h2>
+        <div class="search-row"><select id="dialectSelect"></select></div>
+        <div id="dialectProfile" style="margin-top:16px;"></div>
+      </section>
+    </div>
+
+    <div class="view" id="view-identify" hidden>
     <section class="grid">
       <div class="card">
         <h2>输入方言样例 <span class="muted" style="font-size:0.68em;">Dialect Sample Input</span></h2>
@@ -255,6 +412,7 @@
       <h2>学习卡片 <span class="muted" style="font-size:0.68em;">Learning Cards</span></h2>
       <div id="cardsResult" class="cards muted">识别后可看到对应方言的词汇、表达套路与观察重点。</div>
     </section>
+    </div>
   </div>
 
   <script>
@@ -269,6 +427,256 @@
       "你在搞么子，恰噶冇？"
     ];
 
+    function esc(value) {
+      return String(value ?? '').replace(/[&<>"']/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
+    }
+
+    async function getJson(url) {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error(`${response.status}`);
+      return response.json();
+    }
+
+    // ---------- views & routing ----------
+    const views = ['concepts', 'dialects', 'identify'];
+
+    function showView(name) {
+      views.forEach((view) => {
+        document.getElementById(`view-${view}`).hidden = view !== name;
+      });
+      document.querySelectorAll('.tab').forEach((tab) => tab.classList.toggle('active', tab.dataset.view === name));
+    }
+
+    function route() {
+      const [view, slug] = decodeURIComponent(location.hash.replace(/^#/, '')).split('/');
+      if (view === 'dialect') {
+        showView('dialects');
+        loadDialectProfile(slug);
+      } else if (view === 'identify') {
+        showView('identify');
+      } else {
+        showView('concepts');
+        if (view === 'concept' && slug) loadConcept(slug);
+        if (view === 'topic' && slug) loadTopic(slug);
+      }
+    }
+
+    document.getElementById('tabs').addEventListener('click', (event) => {
+      const tab = event.target.closest('.tab');
+      if (!tab) return;
+      location.hash = tab.dataset.view === 'dialects' ? `dialect/${dialectSelect.value || ''}` : tab.dataset.view;
+    });
+
+    document.addEventListener('click', (event) => {
+      const target = event.target.closest('[data-href]');
+      if (target) location.hash = target.dataset.href;
+    });
+
+    // ---------- concepts ----------
+    const conceptListEl = document.getElementById('conceptList');
+    const conceptDetailEl = document.getElementById('conceptDetail');
+    const searchForm = document.getElementById('searchForm');
+    const searchInput = document.getElementById('searchInput');
+    const searchResultEl = document.getElementById('searchResult');
+    const topicListEl = document.getElementById('topicList');
+    const topicDetailEl = document.getElementById('topicDetail');
+
+    function conceptChip(concept) {
+      return `<button class="concept-chip" data-href="concept/${esc(concept.slug)}">
+        <strong>${esc(concept.headword)}</strong>
+        <span>${esc(concept.category)} · ${concept.dialect_count} 个方言点</span>
+      </button>`;
+    }
+
+    function confidenceBadge(level, label) {
+      return `<span class="badge conf-${esc(level)}">${esc(label)}</span>`;
+    }
+
+    function sourceText(sources) {
+      return (sources || []).map((source) => esc(source.title)).join('；');
+    }
+
+    function renderExpressionRow(expr) {
+      const roman = expr.romanization
+        ? `<div class="roman">${esc(expr.romanization.text)} <span class="muted">(${esc(expr.romanization.scheme)})</span></div>`
+        : '';
+      const etymon = expr.etymon && expr.etymon !== expr.form ? `<div class="muted">本字：${esc(expr.etymon)}</div>` : '';
+      const example = expr.example
+        ? `<div>${esc(expr.example)}${expr.example_gloss ? `<div class="muted">${esc(expr.example_gloss)}</div>` : ''}</div>`
+        : '<span class="muted">—</span>';
+      return `<tr>
+        <td><button class="link" data-href="dialect/${esc(expr.dialect.slug)}">${esc(expr.dialect.name)}</button><div class="muted">${esc(expr.dialect.point)}</div></td>
+        <td><div class="expr-form">${esc(expr.form)}</div>${roman}${etymon}</td>
+        <td>${example}${expr.note ? `<div class="muted" style="margin-top:4px;">${esc(expr.note)}</div>` : ''}</td>
+        <td>
+          <span class="badge orth-${esc(expr.orthography)}">${esc(expr.orthography)}</span>
+          <span class="badge">${esc(expr.register)}</span>
+          <span class="badge">${esc(expr.status)}</span>
+          ${confidenceBadge(expr.confidence, expr.confidence_label)}
+          <div class="muted" style="font-size:12px;">来源：${sourceText(expr.sources)}</div>
+        </td>
+      </tr>`;
+    }
+
+    function renderConcept(concept) {
+      const groups = concept.groups.map((group) => `
+        <details class="family-group" open>
+          <summary>${esc(group.family)} <span class="muted">(${group.expressions.length})</span></summary>
+          <div class="table-wrap"><table class="expr-table">
+            <thead><tr><th>方言点</th><th>说法 / 读音</th><th>例句 / 说明</th><th>标注</th></tr></thead>
+            <tbody>${group.expressions.map(renderExpressionRow).join('')}</tbody>
+          </table></div>
+        </details>`).join('');
+
+      const etymology = concept.etymology.length ? `
+        <h3>词源 Etymology</h3>
+        ${concept.etymology.map((entry) => `
+          <div class="feature-card" style="margin-bottom:10px;">
+            <strong>${esc(entry.character)}</strong>
+            ${entry.middle_chinese ? `<span class="muted">《${esc(entry.middle_chinese.source)}》${esc(entry.middle_chinese.fanqie)}</span>` : ''}
+            ${confidenceBadge(entry.confidence, { high: '共识', medium: '需核对', unverified: '待考' }[entry.confidence])}
+            <p>${esc(entry.note)}</p>
+            <div class="muted" style="font-size:12px;">来源：${sourceText(entry.sources)}</div>
+          </div>`).join('')}` : '';
+
+      const related = concept.related.length
+        ? `<div class="section-label">相关概念 Related</div><div class="concept-list">${concept.related.map(conceptChip).join('')}</div>`
+        : '';
+      const topics = concept.topics.length
+        ? `<div class="section-label">相关专题 Topics</div>${concept.topics.map((topic) => `<button class="link" data-href="topic/${esc(topic.slug)}">${esc(topic.title)}</button>`).join('<br />')}`
+        : '';
+
+      conceptDetailEl.innerHTML = `
+        <h2>${esc(concept.headword)} <span class="family-tag">${esc(concept.category)}</span></h2>
+        <p class="muted">${esc(concept.gloss)}</p>
+        ${groups}
+        ${etymology}
+        ${related}
+        ${topics}`;
+    }
+
+    async function loadConcept(slug) {
+      try {
+        renderConcept(await getJson(`/api/concepts/${encodeURIComponent(slug)}`));
+        conceptDetailEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } catch (error) {
+        conceptDetailEl.innerHTML = '<p class="muted">未找到这个概念。</p>';
+      }
+    }
+
+    async function loadConceptList() {
+      const concepts = await getJson('/api/concepts');
+      conceptListEl.innerHTML = concepts.map(conceptChip).join('');
+    }
+
+    searchForm.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const query = searchInput.value.trim();
+      if (!query) {
+        searchResultEl.textContent = '';
+        return;
+      }
+      const result = await getJson(`/api/search?q=${encodeURIComponent(query)}`);
+      if (result.concepts.length === 1 && !result.dialects.length) {
+        location.hash = `concept/${result.concepts[0].slug}`;
+      }
+      const parts = [];
+      if (result.concepts.length) parts.push(`<div class="concept-list">${result.concepts.map(conceptChip).join('')}</div>`);
+      if (result.dialects.length) {
+        parts.push(`<div class="section-label">方言</div>${result.dialects.map((item) => `<button class="link" data-href="dialect/${esc(item.slug)}">${esc(item.name)}（${esc(item.dialect_family)}）</button>`).join('　')}`);
+      }
+      if (result.topics.length) {
+        parts.push(`<div class="section-label">专题</div>${result.topics.map((item) => `<button class="link" data-href="topic/${esc(item.slug)}">${esc(item.title)}</button>`).join('　')}`);
+      }
+      searchResultEl.innerHTML = parts.length ? parts.join('') : `没有找到与“${esc(query)}”相关的条目。`;
+    });
+
+    async function loadTopics() {
+      const topics = await getJson('/api/topics');
+      topicListEl.innerHTML = topics.map((topic) => `
+        <button class="feature-card topic-card" data-href="topic/${esc(topic.slug)}">
+          <strong>${esc(topic.title)}</strong>
+          <p>${esc(topic.summary)}</p>
+        </button>`).join('');
+    }
+
+    async function loadTopic(slug) {
+      try {
+        const topic = await getJson(`/api/topics/${encodeURIComponent(slug)}`);
+        topicDetailEl.innerHTML = `
+          <div class="flash-card">
+            <strong>${esc(topic.title)}</strong> ${confidenceBadge(topic.confidence, topic.confidence_label)}
+            ${topic.body.map((paragraph) => `<p>${esc(paragraph)}</p>`).join('')}
+            <div class="concept-list">${topic.concepts.map(conceptChip).join('')}</div>
+          </div>`;
+        if (topic.concepts.length) loadConcept(topic.concepts[0].slug);
+      } catch (error) {
+        topicDetailEl.innerHTML = '<p class="muted">未找到这个专题。</p>';
+      }
+    }
+
+    // ---------- dialect profiles ----------
+    const dialectSelect = document.getElementById('dialectSelect');
+    const dialectProfileEl = document.getElementById('dialectProfile');
+
+    async function loadDialectOptions() {
+      const families = await getJson('/api/dialects');
+      dialectSelect.innerHTML = families.map((family) => `
+        <optgroup label="${esc(family.name)}">
+          ${family.dialects.map((dialect) => `<option value="${esc(dialect.slug)}">${esc(dialect.name)}（${esc(dialect.region)}）</option>`).join('')}
+        </optgroup>`).join('');
+    }
+
+    dialectSelect.addEventListener('change', () => {
+      location.hash = `dialect/${dialectSelect.value}`;
+    });
+
+    async function loadDialectProfile(slug) {
+      if (!slug) slug = dialectSelect.value;
+      if (!slug) return;
+      dialectSelect.value = slug;
+      try {
+        const profile = await getJson(`/api/dialects/${encodeURIComponent(slug)}`);
+        const point = profile.point;
+        dialectProfileEl.innerHTML = `
+          <h2>${esc(profile.name)} <span class="family-tag">${esc(profile.family.name)} / ${esc(profile.family.english_name)}</span></h2>
+          <p>${esc(profile.overview)}</p>
+          <div class="muted">
+            代表点：${esc(point.name)}（${esc(point.province)}，${point.lat}°N, ${point.lon}°E）<br />
+            分区：${profile.classification.path.map(esc).join(' › ')}
+            ${confidenceBadge(profile.classification.confidence, { high: '共识', medium: '需核对', unverified: '待考' }[profile.classification.confidence])}
+            <span style="font-size:12px;">参考：${sourceText(profile.classification.sources)}</span>
+          </div>
+          <div class="grid" style="margin-top:16px;">
+            <div>
+              <h3>在概念对照中的说法</h3>
+              ${profile.concept_expressions.length ? `<div class="table-wrap"><table class="expr-table"><tbody>
+                ${profile.concept_expressions.map((expr) => `<tr>
+                  <td><button class="link" data-href="concept/${esc(expr.concept)}">${esc(expr.headword)}</button></td>
+                  <td><span class="expr-form">${esc(expr.form)}</span>${expr.romanization ? ` <span class="roman">${esc(expr.romanization.text)}</span>` : ''}</td>
+                  <td><span class="badge orth-${esc(expr.orthography)}">${esc(expr.orthography)}</span>${confidenceBadge(expr.confidence, expr.confidence_label)}</td>
+                </tr>`).join('')}
+              </tbody></table></div>` : '<p class="muted">暂无收录。</p>'}
+              <h3>高频词</h3>
+              <div class="features">${profile.vocabulary.map((item) => `
+                <div class="feature-card"><strong>${esc(item.term)}</strong><p>${esc(item.description)}</p><div class="muted">${esc(item.example)}</div></div>`).join('')}</div>
+            </div>
+            <div>
+              <h3>语言特征</h3>
+              <div class="features">${profile.features.map((item) => `
+                <div class="feature-card"><strong>${esc(item.name)}</strong> <span class="badge">${item.kind === 'grammar' ? '语法' : '语音'}</span><p>${esc(item.description)}</p><div class="muted">例：${esc(item.example)}</div></div>`).join('')}</div>
+              <h3>常用表达</h3>
+              <div class="features">${profile.expressions.map((item) => `
+                <div class="feature-card"><strong>${esc(item.text)}</strong><p>${esc(item.meaning)}</p></div>`).join('')}</div>
+            </div>
+          </div>
+          <p class="footer-note">来源：${sourceText(profile.sources.map((source) => ({ title: `${source.title}${source.note ? `（${source.note}）` : ''}` })))}</p>`;
+      } catch (error) {
+        dialectProfileEl.innerHTML = '<p class="muted">未找到这个方言。</p>';
+      }
+    }
+
+    // ---------- identify ----------
     const sampleInput = document.getElementById('sampleInput');
     const identifyBtn = document.getElementById('identifyBtn');
     const clearBtn = document.getElementById('clearBtn');
@@ -298,9 +706,9 @@
         const wrapper = document.createElement('div');
         wrapper.className = 'feature-card';
         wrapper.innerHTML = `
-          <strong>${family.name} / ${family.english_name}</strong>
-          <p>${family.summary}</p>
-          <div class="muted">代表方言：${family.dialects.map((item) => item.name).join('、')}</div>
+          <strong>${esc(family.name)} / ${esc(family.english_name)}</strong>
+          <p>${esc(family.summary)}</p>
+          <div class="muted">代表方言：${family.dialects.map((item) => esc(item.name)).join('、')}</div>
         `;
         dialectFamiliesEl.appendChild(wrapper);
       });
@@ -317,8 +725,8 @@
         <div class="result-item">
           <div class="result-header">
             <div>
-              <strong>${item.region}</strong>
-              <div class="family-tag">${item.dialect_family} · ${item.dialect}</div>
+              <strong>${esc(item.region)}</strong>
+              <div class="family-tag">${esc(item.dialect_family)} · ${esc(item.dialect)}</div>
             </div>
             <strong>${Math.round(item.score * 100)}%</strong>
           </div>
@@ -336,9 +744,9 @@
       featuresResultEl.className = 'features';
       featuresResultEl.innerHTML = items.map((item) => `
         <div class="feature-card">
-          <strong>${item.name}</strong>
-          <p>${item.description}</p>
-          <div class="muted">例子 Example: ${item.example}</div>
+          <strong>${esc(item.name)}</strong>
+          <p>${esc(item.description)}</p>
+          <div class="muted">例子 Example: ${esc(item.example)}</div>
         </div>
       `).join('');
     }
@@ -352,9 +760,9 @@
       cardsResultEl.className = 'cards';
       cardsResultEl.innerHTML = items.map((item) => `
         <div class="flash-card">
-          <strong>${item.title}</strong>
-          <p>${item.content}</p>
-          <ul class="inline-list">${item.examples.map((example) => `<li>${example}</li>`).join('')}</ul>
+          <strong>${esc(item.title)}</strong>
+          <p>${esc(item.content)}</p>
+          <ul class="inline-list">${item.examples.map((example) => `<li>${esc(example)}</li>`).join('')}</ul>
         </div>
       `).join('');
     }
@@ -405,6 +813,12 @@
 
     renderExamples();
     loadFamilies();
+    loadConceptList();
+    loadTopics();
+    loadDialectOptions().then(() => {
+      window.addEventListener('hashchange', route);
+      route();
+    });
   </script>
 </body>
 </html>
