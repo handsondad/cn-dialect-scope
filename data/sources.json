@@ -52,5 +52,27 @@
     "type": "dictionary",
     "title": "《臺灣閩南語常用詞辭典》",
     "note": "台湾教育部编，建议用于核对闽南语用字与读音。"
+  },
+  {
+    "id": "wiktionary-dial-syn",
+    "type": "dictionary",
+    "title": "维基词典·汉语方言同义词表（Module:zh/data/dial-syn）",
+    "url": "https://en.wiktionary.org/wiki/Category:Chinese_dialectal_synonyms",
+    "license": "CC BY-SA 4.0",
+    "note": "按地点列出一个意思在各地方言里的说法，主要整理自《汉语方言词汇》《现代汉语方言大词典》等，用 tools/dial-syn.mjs 查询。属二手资料，用作核对。"
+  },
+  {
+    "id": "li-rong-1985",
+    "type": "literature",
+    "title": "李荣《官话方言的分区》",
+    "publisher": "《方言》1985 年第 1 期",
+    "year": 1985,
+    "note": "提出把“山西省及其毗连地区有入声的方言”从官话分出来，叫晋语。"
+  },
+  {
+    "id": "shuyuan-zaji",
+    "type": "literature",
+    "title": "陆容《菽园杂记》卷一",
+    "note": "明代笔记：“民间俗讳，各处有之，而吴中为甚。如舟行讳住、讳翻，以箸为快儿。”"
   }
 ]

@@ -1,0 +1,145 @@
+.film {
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+  border-radius: var(--radius-md, 20px);
+  background: #fff;
+  border: 3px solid #ffe2c4;
+  box-shadow: var(--shadow-md, 0 8px 24px rgba(93, 78, 55, 0.12));
+}
+
+.film-stage {
+  position: relative;
+  container: film-stage / inline-size;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 16px;
+  background: radial-gradient(circle at 50% 40%, #fffdf6 0%, #fbf1dc 70%, #f3e2c1 100%);
+}
+.film-stage[data-view="map"] { background: radial-gradient(circle at 80% 70%, #cfe8f7 0%, #b9dcf2 100%); }
+.film-stage[data-view="tones"] { background: linear-gradient(180deg, #fbf7ff 0%, #f1eafc 100%); }
+.film-stage svg { display: block; width: 100%; height: 100%; }
+.film-glyph { font-weight: 400; }
+
+.film-text {
+  font-family: inherit;
+  font-weight: 800;
+  paint-order: stroke;
+  stroke: #fff;
+  stroke-width: 0.18em;
+  stroke-linejoin: round;
+}
+.film-big { font-weight: 900; }
+
+.film-title {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px 6px 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 2px 8px rgba(93, 78, 55, 0.15);
+  font-weight: 800;
+  font-size: 1rem;
+}
+.film-title b {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #ff9f43;
+  color: #fff;
+  font-size: 0.85rem;
+}
+/* 窄的舞台上标题会压住画面顶上的字；播放器下面的场次按钮已经写着标题，这里只留编号 */
+@container film-stage (max-width: 600px) {
+  .film-title { top: 6px; left: 6px; padding: 3px; }
+  .film-title span { display: none; }
+  .film-title b { width: 22px; height: 22px; font-size: 0.75rem; }
+}
+
+.film-myth {
+  position: absolute;
+  left: 50%;
+  bottom: 14px;
+  display: grid;
+  gap: 4px;
+  width: min(88%, 520px);
+  padding: 10px 16px;
+  transform: translateX(-50%);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 14px rgba(93, 78, 55, 0.18);
+  font-weight: 700;
+  line-height: 1.45;
+}
+.film-myth-wrong { position: relative; color: #9b8b76; justify-self: start; }
+.film-myth-wrong::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 52%;
+  height: 3px;
+  width: calc(var(--strike, 0) * 100%);
+  background: #e5484d;
+  border-radius: 2px;
+}
+.film-myth-right { color: #2f7d32; }
+
+.film-controls { display: grid; grid-template-columns: auto 1fr auto auto; align-items: center; gap: 10px; }
+.film-voice {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ffe2c4;
+  border-radius: 50%;
+  background: #fffaf3;
+  font-size: 1.05rem;
+}
+.film-voice[aria-pressed="true"] { border-color: #ff9f43; background: #fff1de; }
+.film-play.is-waiting { animation: film-nudge 1.2s ease-in-out infinite; }
+@keyframes film-nudge { 50% { transform: scale(1.12); } }
+.film-hint { margin: 0; color: #b4621a; font-weight: 700; font-size: 0.9rem; }
+@media (prefers-reduced-motion: reduce) {
+  .film-play.is-waiting { animation: none; outline: 3px solid #ffc98f; }
+}
+.film-play {
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: #ff9f43;
+  color: #fff;
+  font-size: 1rem;
+  box-shadow: 0 3px 0 #e07f22;
+}
+.film-play:active { transform: translateY(2px); box-shadow: 0 1px 0 #e07f22; }
+.film-controls input[type="range"] { width: 100%; accent-color: #ff9f43; }
+.film-time { font-variant-numeric: tabular-nums; color: var(--text-secondary, #7a6a55); font-size: 0.85rem; }
+
+.film-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
+.film-chips button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px 4px 4px;
+  border: 2px solid #ffe2c4;
+  border-radius: 999px;
+  background: #fffaf3;
+  font-size: 0.82rem;
+}
+.film-chips b {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffe2c4;
+  font-size: 0.72rem;
+}
+.film-chips .is-done b { background: #ffc98f; }
+.film-chips .is-on { border-color: #ff9f43; background: #fff1de; }
+.film-chips .is-on b { background: #ff9f43; color: #fff; }

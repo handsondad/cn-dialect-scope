@@ -29,7 +29,8 @@
       "status": "常用",
       "confidence": "high",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -45,7 +46,8 @@
       "status": "常用",
       "confidence": "high",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -94,7 +96,8 @@
       "confidence": "high",
       "note": "民间也有“七桃”等借音写法。",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -107,7 +110,8 @@
       "status": "常用",
       "confidence": "high",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -116,9 +120,10 @@
       "orthography": "借音字",
       "register": "口语",
       "status": "常用",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -130,9 +135,65 @@
       "register": "口语",
       "status": "常用",
       "confidence": "medium",
-      "note": "也有休闲、串门的意思。",
+      "note": "也写作“嫽”。",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "taiyuanhua",
+      "form": "耍",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "xianhua",
+      "form": "耍",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "jinanhua",
+      "form": "玩儿",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wuhanhua",
+      "form": "玩",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wenzhouhua",
+      "form": "嬉",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
       ]
     }
   ]

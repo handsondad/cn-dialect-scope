@@ -1,0 +1,76 @@
+{
+  "slug": "taiyuanhua",
+  "order": 14,
+  "name": "太原话",
+  "region": "太原",
+  "dialect_family": "晋语",
+  "family_slug": "jin",
+  "overview": "山西太原一带的话，属于晋语。北方话里大多没有入声了，晋语还留着又短又急的入声字。",
+  "classification": {
+    "path": [
+      "晋语",
+      "并州片"
+    ],
+    "reference": "language-atlas-2012",
+    "confidence": "medium"
+  },
+  "point": {
+    "name": "太原",
+    "province": "山西",
+    "lat": 37.87,
+    "lon": 112.55
+  },
+  "sources": [
+    "wiktionary-dial-syn",
+    "li-rong-1985",
+    "language-atlas-2012"
+  ],
+  "vocabulary": [
+    {
+      "term": "阳婆",
+      "weight": 1,
+      "description": "太阳，也说“阳婆爷”。",
+      "example": ""
+    },
+    {
+      "term": "甚",
+      "weight": 1,
+      "description": "什么。",
+      "example": ""
+    },
+    {
+      "term": "月明",
+      "weight": 1,
+      "description": "月亮。",
+      "example": ""
+    },
+    {
+      "term": "耍",
+      "weight": 1,
+      "description": "玩。",
+      "example": ""
+    },
+    {
+      "term": "姥娘",
+      "weight": 1,
+      "description": "外婆。",
+      "example": ""
+    }
+  ],
+  "grammar_features": [],
+  "phonological_features": [],
+  "expressions": [
+    {
+      "text": "阳婆",
+      "meaning": "太阳。"
+    },
+    {
+      "text": "甚",
+      "meaning": "什么。"
+    },
+    {
+      "text": "月明",
+      "meaning": "月亮。"
+    }
+  ]
+}

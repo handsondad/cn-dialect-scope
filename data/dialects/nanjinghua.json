@@ -1,0 +1,76 @@
+{
+  "slug": "nanjinghua",
+  "order": 18,
+  "name": "南京话",
+  "region": "南京",
+  "dialect_family": "官话",
+  "family_slug": "mandarin",
+  "overview": "江苏南京一带的话，属于江淮官话。喝茶说“吃茶”，没有说“没得”。",
+  "classification": {
+    "path": [
+      "官话",
+      "江淮官话",
+      "洪巢片"
+    ],
+    "reference": "language-atlas-2012",
+    "confidence": "medium"
+  },
+  "point": {
+    "name": "南京",
+    "province": "江苏",
+    "lat": 32.06,
+    "lon": 118.8
+  },
+  "sources": [
+    "wiktionary-dial-syn",
+    "language-atlas-2012"
+  ],
+  "vocabulary": [
+    {
+      "term": "没得",
+      "weight": 1,
+      "description": "没有。",
+      "example": ""
+    },
+    {
+      "term": "吃茶",
+      "weight": 1,
+      "description": "喝茶。",
+      "example": ""
+    },
+    {
+      "term": "明儿个",
+      "weight": 1,
+      "description": "明天。",
+      "example": ""
+    },
+    {
+      "term": "娃儿",
+      "weight": 1,
+      "description": "小孩。",
+      "example": ""
+    },
+    {
+      "term": "冰棒",
+      "weight": 1,
+      "description": "冰棍。",
+      "example": ""
+    }
+  ],
+  "grammar_features": [],
+  "phonological_features": [],
+  "expressions": [
+    {
+      "text": "明儿个",
+      "meaning": "明天。"
+    },
+    {
+      "text": "吃茶",
+      "meaning": "喝茶。"
+    },
+    {
+      "text": "娃儿",
+      "meaning": "小孩。"
+    }
+  ]
+}

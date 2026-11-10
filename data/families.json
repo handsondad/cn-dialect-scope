@@ -23,6 +23,23 @@
     }
   },
   {
+    "slug": "jin",
+    "name": "晋语",
+    "english_name": "Jin",
+    "summary": "山西和周边一带的方言，北方话里少见地保留着入声；要不要从官话里单独分出来，学界有不同意见。",
+    "regions": [
+      "山西",
+      "内蒙古中西部",
+      "陕北",
+      "河北西部"
+    ],
+    "learning_focus": [
+      "入声",
+      "日常口语词",
+      "和官话比一比"
+    ]
+  },
+  {
     "slug": "cantonese",
     "name": "粤语",
     "english_name": "Cantonese",

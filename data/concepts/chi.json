@@ -57,7 +57,8 @@
       "status": "常用",
       "confidence": "high",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -75,7 +76,8 @@
       "status": "常用",
       "confidence": "high",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -93,7 +95,8 @@
       "status": "常用",
       "confidence": "high",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -109,9 +112,10 @@
       "example_gloss": "吃了没？",
       "register": "口语",
       "status": "常用",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -130,7 +134,8 @@
       "confidence": "high",
       "note": "民间常借音写作“呷”，本字为“食”。",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -143,7 +148,8 @@
       "confidence": "high",
       "note": "吴语“吃”也用于液体和烟，如“吃茶”“吃老酒”“吃香烟”。",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -153,10 +159,11 @@
       "example": "一道去吃茶。",
       "register": "口语",
       "status": "常用",
-      "confidence": "medium",
+      "confidence": "high",
       "note": "与上海话一样，“吃”也可用于喝茶、喝酒。",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -168,9 +175,10 @@
       "example_gloss": "吃早饭",
       "register": "口语",
       "status": "常用",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -183,9 +191,10 @@
       "register": "口语",
       "status": "常用",
       "confidence": "medium",
-      "note": "“恰”是记音写法，对应“吃”。",
+      "note": "“恰”是照读音写的，就是“吃”字。",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -198,9 +207,76 @@
       "register": "口语",
       "status": "常用",
       "confidence": "medium",
-      "note": "“恰”是记音写法，对应“吃”。",
+      "note": "“恰”是照读音写的，就是“吃”字。",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "taiyuanhua",
+      "form": "吃",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "xianhua",
+      "form": "吃",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "jinanhua",
+      "form": "吃",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wuhanhua",
+      "form": "吃",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "nanjinghua",
+      "form": "吃",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wenzhouhua",
+      "form": "吃",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
       ]
     }
   ]

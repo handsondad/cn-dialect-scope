@@ -87,7 +87,8 @@
       "status": "常用",
       "confidence": "high",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -104,7 +105,8 @@
       "confidence": "high",
       "note": "日常也常写作“你”。",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -114,9 +116,10 @@
       "etymon": "汝",
       "register": "口语",
       "status": "常用",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -130,7 +133,8 @@
       "status": "常用",
       "confidence": "high",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -141,9 +145,10 @@
       "example_gloss": "你到了。",
       "register": "口语",
       "status": "常用",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -152,9 +157,76 @@
       "orthography": "通用字",
       "register": "口语",
       "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial",
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "taiyuanhua",
+      "form": "你",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
       "confidence": "medium",
       "sources": [
-        "editorial"
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "xianhua",
+      "form": "你",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "jinanhua",
+      "form": "你",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wuhanhua",
+      "form": "你",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "nanjinghua",
+      "form": "你",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wenzhouhua",
+      "form": "你",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
       ]
     }
   ]

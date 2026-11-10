@@ -39,7 +39,8 @@
       "status": "常用",
       "confidence": "high",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -54,7 +55,8 @@
       "status": "常用",
       "confidence": "high",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -69,7 +71,8 @@
       "status": "常用",
       "confidence": "high",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -78,10 +81,11 @@
       "orthography": "通用字",
       "register": "口语",
       "status": "常用",
-      "confidence": "medium",
+      "confidence": "high",
       "note": "“困”即“睏”。",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -90,9 +94,10 @@
       "orthography": "通用字",
       "register": "口语",
       "status": "常用",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -101,9 +106,10 @@
       "orthography": "通用字",
       "register": "口语",
       "status": "常用",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -112,9 +118,76 @@
       "orthography": "通用字",
       "register": "口语",
       "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial",
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "taiyuanhua",
+      "form": "睡觉",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
       "confidence": "medium",
       "sources": [
-        "editorial"
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "xianhua",
+      "form": "睡觉",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "jinanhua",
+      "form": "睡觉",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wuhanhua",
+      "form": "睡瞌睡",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "nanjinghua",
+      "form": "睡觉",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wenzhouhua",
+      "form": "睏",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
       ]
     }
   ]

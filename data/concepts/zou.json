@@ -74,7 +74,8 @@
       "confidence": "high",
       "note": "粤语“走”（zau2）是跑、离开，如“走先”（先走了）。",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -90,7 +91,8 @@
       "status": "常用",
       "confidence": "high",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -107,7 +109,8 @@
       "confidence": "high",
       "note": "闽南语“走”（tsáu）是跑。",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -117,9 +120,10 @@
       "etymon": "行",
       "register": "口语",
       "status": "常用",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -129,9 +133,10 @@
       "etymon": "行",
       "register": "口语",
       "status": "常用",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -140,10 +145,78 @@
       "orthography": "通用字",
       "register": "口语",
       "status": "常用",
-      "confidence": "medium",
+      "confidence": "high",
       "note": "上海话“跑”一般指走路，“奔”才是跑。",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "taiyuanhua",
+      "form": "走",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "xianhua",
+      "form": "走",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "jinanhua",
+      "form": "走",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wuhanhua",
+      "form": "走",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "nanjinghua",
+      "form": "走",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wenzhouhua",
+      "form": "走",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“行”。",
+      "sources": [
+        "wiktionary-dial-syn"
       ]
     }
   ]

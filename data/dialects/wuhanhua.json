@@ -1,0 +1,76 @@
+{
+  "slug": "wuhanhua",
+  "order": 17,
+  "name": "武汉话",
+  "region": "武汉",
+  "dialect_family": "官话",
+  "family_slug": "mandarin",
+  "overview": "湖北武汉一带的话，属于西南官话。外婆叫“家家”，小孩叫“小伢”，回家叫“落屋”。",
+  "classification": {
+    "path": [
+      "官话",
+      "西南官话",
+      "湖广片"
+    ],
+    "reference": "language-atlas-2012",
+    "confidence": "medium"
+  },
+  "point": {
+    "name": "武汉",
+    "province": "湖北",
+    "lat": 30.6,
+    "lon": 114.3
+  },
+  "sources": [
+    "wiktionary-dial-syn",
+    "language-atlas-2012"
+  ],
+  "vocabulary": [
+    {
+      "term": "家家",
+      "weight": 1,
+      "description": "外婆，也说“家婆”。",
+      "example": ""
+    },
+    {
+      "term": "小伢",
+      "weight": 1,
+      "description": "小孩。",
+      "example": ""
+    },
+    {
+      "term": "么事",
+      "weight": 1,
+      "description": "什么。",
+      "example": ""
+    },
+    {
+      "term": "落屋",
+      "weight": 1,
+      "description": "回家。",
+      "example": ""
+    },
+    {
+      "term": "冇得",
+      "weight": 1,
+      "description": "没有。",
+      "example": ""
+    }
+  ],
+  "grammar_features": [],
+  "phonological_features": [],
+  "expressions": [
+    {
+      "text": "家家",
+      "meaning": "外婆。"
+    },
+    {
+      "text": "么事",
+      "meaning": "什么。"
+    },
+    {
+      "text": "小伢",
+      "meaning": "小孩。"
+    }
+  ]
+}

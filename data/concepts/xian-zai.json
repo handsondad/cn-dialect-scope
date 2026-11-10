@@ -38,7 +38,8 @@
       "confidence": "high",
       "note": "也写作“宜家”。",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
@@ -53,23 +54,21 @@
       "status": "常用",
       "confidence": "high",
       "sources": [
-        "editorial"
+        "editorial",
+        "wiktionary-dial-syn"
       ]
     },
     {
       "dialect": "fujian-minnan",
-      "form": "这马",
+      "form": "这阵",
       "orthography": "借音字",
-      "romanization": {
-        "scheme": "台罗",
-        "text": "tsit-má"
-      },
       "register": "口语",
       "status": "常用",
       "confidence": "medium",
       "sources": [
-        "editorial"
-      ]
+        "wiktionary-dial-syn"
+      ],
+      "note": "台湾闽南话多说“这马”。"
     },
     {
       "dialect": "hakkahua",
@@ -77,9 +76,54 @@
       "orthography": "借音字",
       "register": "口语",
       "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "editorial",
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "jinanhua",
+      "form": "现在",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
       "confidence": "medium",
       "sources": [
-        "editorial"
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "nanjinghua",
+      "form": "现在",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wuhanhua",
+      "form": "如今",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "shanghaihua",
+      "form": "现在",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
       ]
     }
   ]

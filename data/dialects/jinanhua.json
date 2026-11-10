@@ -1,0 +1,76 @@
+{
+  "slug": "jinanhua",
+  "order": 16,
+  "name": "济南话",
+  "region": "济南",
+  "dialect_family": "官话",
+  "family_slug": "mandarin",
+  "overview": "山东济南一带的话，属于冀鲁官话。太阳叫“老爷爷儿”，外婆叫“姥娘”。",
+  "classification": {
+    "path": [
+      "官话",
+      "冀鲁官话",
+      "石济片"
+    ],
+    "reference": "language-atlas-2012",
+    "confidence": "medium"
+  },
+  "point": {
+    "name": "济南",
+    "province": "山东",
+    "lat": 36.67,
+    "lon": 117
+  },
+  "sources": [
+    "wiktionary-dial-syn",
+    "language-atlas-2012"
+  ],
+  "vocabulary": [
+    {
+      "term": "老爷爷儿",
+      "weight": 1,
+      "description": "太阳。",
+      "example": ""
+    },
+    {
+      "term": "姥娘",
+      "weight": 1,
+      "description": "外婆。",
+      "example": ""
+    },
+    {
+      "term": "俺们",
+      "weight": 1,
+      "description": "我们。",
+      "example": ""
+    },
+    {
+      "term": "俊",
+      "weight": 1,
+      "description": "好看、漂亮。",
+      "example": ""
+    },
+    {
+      "term": "今门儿",
+      "weight": 1,
+      "description": "今天。",
+      "example": ""
+    }
+  ],
+  "grammar_features": [],
+  "phonological_features": [],
+  "expressions": [
+    {
+      "text": "老爷爷儿",
+      "meaning": "太阳。"
+    },
+    {
+      "text": "今门儿",
+      "meaning": "今天。"
+    },
+    {
+      "text": "俊",
+      "meaning": "好看、漂亮。"
+    }
+  ]
+}

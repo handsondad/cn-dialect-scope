@@ -1,0 +1,15 @@
+.dialect-map { display: block; width: 100%; height: auto; border-radius: 20px; background: #c4e2f5; }
+.dialect-map .map-backdrop-labels { pointer-events: none; }
+.map-point { cursor: default; transition: opacity 0.25s; }
+.map-point[role="button"] { cursor: pointer; }
+.map-point[role="button"]:hover .map-pill rect { stroke-width: 6; }
+.map-point:focus { outline: none; }
+.map-point:focus-visible .map-pill rect { stroke: #225dac; stroke-width: 6; }
+.map-point.is-dim { opacity: 0.22; }
+.map-pill { animation: map-pop 0.35s both; transform-box: fill-box; transform-origin: center; }
+.map-ring { animation: map-ring 1.4s ease-out infinite; transform-box: fill-box; transform-origin: center; }
+@keyframes map-pop { from { opacity: 0; transform: scale(0.6); } to { opacity: 1; transform: none; } }
+@keyframes map-ring { from { opacity: 1; transform: scale(0.7); } to { opacity: 0; transform: scale(1.6); } }
+@media (prefers-reduced-motion: reduce) {
+  .map-pill, .map-ring { animation: none; }
+}

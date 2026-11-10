@@ -1,0 +1,81 @@
+{
+  "slug": "wenzhouhua",
+  "order": 19,
+  "name": "温州话",
+  "region": "温州",
+  "dialect_family": "吴语",
+  "family_slug": "wu",
+  "overview": "浙江温州一带的话，属于吴语瓯江片，和上海话、苏州话又很不一样：今天说“该日”，回家说“走归”。",
+  "classification": {
+    "path": [
+      "吴语",
+      "瓯江片"
+    ],
+    "reference": "language-atlas-2012",
+    "confidence": "medium"
+  },
+  "point": {
+    "name": "温州",
+    "province": "浙江",
+    "lat": 28,
+    "lon": 120.7
+  },
+  "sources": [
+    "wiktionary-dial-syn",
+    "language-atlas-2012"
+  ],
+  "vocabulary": [
+    {
+      "term": "该日",
+      "weight": 1,
+      "description": "今天。",
+      "example": ""
+    },
+    {
+      "term": "走归",
+      "weight": 1,
+      "description": "回家。",
+      "example": ""
+    },
+    {
+      "term": "细儿",
+      "weight": 1,
+      "description": "小孩。",
+      "example": ""
+    },
+    {
+      "term": "箸",
+      "weight": 1,
+      "description": "筷子。",
+      "example": ""
+    },
+    {
+      "term": "徛",
+      "weight": 1,
+      "description": "站。",
+      "example": ""
+    },
+    {
+      "term": "渠",
+      "weight": 1,
+      "description": "他、她。",
+      "example": ""
+    }
+  ],
+  "grammar_features": [],
+  "phonological_features": [],
+  "expressions": [
+    {
+      "text": "该日",
+      "meaning": "今天。"
+    },
+    {
+      "text": "走归",
+      "meaning": "回家。"
+    },
+    {
+      "text": "细儿",
+      "meaning": "小孩。"
+    }
+  ]
+}

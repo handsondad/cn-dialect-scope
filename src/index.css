@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Ma+Shan+Zheng&display=swap');
+
+:root {
+  --app-font-family: 'Comic Neue', 'Ma Shan Zheng', cursive;
+  
+  --bg-primary: #fff8f0;
+  --bg-secondary: #fff0e6;
+  --bg-tertiary: #ffe4d0;
+  --bg-card: #ffffff;
+  --bg-card-hover: #fff9f3;
+  --bg-input: #ffffff;
+  
+  --text-primary: #5d4e37;
+  --text-secondary: #8b7a5c;
+  --text-muted: #b8a88a;
+  
+  --accent-red: #ff6b6b;
+  --accent-orange: #ff9f43;
+  --accent-yellow: #ffd93d;
+  --accent-green: #6bcb77;
+  --accent-blue: #4d96ff;
+  --accent-purple: #a66cff;
+  --accent-pink: #ff6bd6;
+  --accent-cyan: #4dd0e1;
+  
+  --border-color: #ffe0cc;
+  --border-light: #ffd4b8;
+  
+  --shadow-sm: 0 2px 6px rgba(255, 111, 107, 0.1);
+  --shadow-md: 0 4px 12px rgba(255, 111, 107, 0.15);
+  --shadow-lg: 0 8px 20px rgba(255, 111, 107, 0.2);
+  --shadow-xl: 0 12px 30px rgba(255, 111, 107, 0.25);
+  
+  --radius-sm: 16px;
+  --radius-md: 24px;
+  --radius-lg: 32px;
+  --radius-xl: 40px;
+  --radius-full: 9999px;
+  
+  --transition-fast: 150ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  --transition-normal: 250ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  --transition-slow: 350ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--app-font-family);
+  background: linear-gradient(180deg, #fff8f0 0%, #f0f8ff 50%, #fff0e6 100%);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(255, 111, 107, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(107, 203, 119, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(77, 150, 255, 0.06) 0%, transparent 40%),
+    radial-gradient(circle at 60% 60%, rgba(255, 217, 61, 0.06) 0%, transparent 40%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, var(--accent-orange), var(--accent-pink));
+  border-radius: var(--radius-full);
+  border: 2px solid var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, var(--accent-red), var(--accent-purple));
+}

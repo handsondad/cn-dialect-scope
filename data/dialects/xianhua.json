@@ -1,0 +1,76 @@
+{
+  "slug": "xianhua",
+  "order": 15,
+  "name": "西安话",
+  "region": "西安",
+  "dialect_family": "官话",
+  "family_slug": "mandarin",
+  "overview": "陕西西安一带的话，属于中原官话关中片。太阳叫“日头”，外婆叫“外奶”。",
+  "classification": {
+    "path": [
+      "官话",
+      "中原官话",
+      "关中片"
+    ],
+    "reference": "language-atlas-2012",
+    "confidence": "medium"
+  },
+  "point": {
+    "name": "西安",
+    "province": "陕西",
+    "lat": 34.34,
+    "lon": 108.94
+  },
+  "sources": [
+    "wiktionary-dial-syn",
+    "language-atlas-2012"
+  ],
+  "vocabulary": [
+    {
+      "term": "碎娃",
+      "weight": 1,
+      "description": "小孩，也说“娃”。",
+      "example": ""
+    },
+    {
+      "term": "外奶",
+      "weight": 1,
+      "description": "外婆。",
+      "example": ""
+    },
+    {
+      "term": "日头",
+      "weight": 1,
+      "description": "太阳，也说“日头爷”。",
+      "example": ""
+    },
+    {
+      "term": "耍",
+      "weight": 1,
+      "description": "玩。",
+      "example": ""
+    },
+    {
+      "term": "啥",
+      "weight": 1,
+      "description": "什么。",
+      "example": ""
+    }
+  ],
+  "grammar_features": [],
+  "phonological_features": [],
+  "expressions": [
+    {
+      "text": "碎娃",
+      "meaning": "小孩。"
+    },
+    {
+      "text": "外奶",
+      "meaning": "外婆。"
+    },
+    {
+      "text": "日头爷",
+      "meaning": "太阳。"
+    }
+  ]
+}

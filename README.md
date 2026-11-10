@@ -1,162 +1,105 @@
-# Chinese Dialect Scope｜方言识别与学习工具
+# 🗣️ 方言奇遇记 · Chinese Dialect Scope
 
-## 中文简介
+给 6–12 岁孩子的汉语方言科普网站，奇遇记系列（[身体奇遇记](https://handsondad.github.io/bodyverse/)、[化学奇遇记](https://handsondad.github.io/chemverse/)、[汉字奇遇记](https://handsondad.github.io/hanverse/)）的一员。
 
-**Chinese Dialect Scope（方言识别与学习工具）** 是一个面向方言爱好者与学习者的轻量应用。用户输入一句中文方言文本，系统会基于方言词汇、语法线索与音韵提示，快速推测**可能地区**，并给出**可解释的语言特征**与**学习卡片**，帮助用户在“识别”之外真正理解各地乡音。
+小念（男孩）听到外婆说「侬饭吃过了伐？」、看到奶茶店写着「冇问题」，就去问爸爸；爸爸回答，小念接着爸爸的话追问，5–8 轮一路讲到道理，最后小念用自己的话总结。每个问题都配一部讲解动画：示意地图上的图钉和对话气泡、五度声调格上画出来的声调曲线、一个字在各地变身的样子，小念和爸爸的配音把整段问答读出来，动画跟着声音走。粤语、东北话、普通话的句子可以点「🔊」听一听。
 
-### 它能做什么？
-- **概念对照（一个意思，各地怎么说）**：搜索“没有”“吃”“走”等概念，按方言大区分组列出各方言点的说法、读音、本字／俗字标注、例句与可信度。
-- **方言档案**：每个方言点的分区、地理坐标、高频词、语言特征，以及它在概念对照里的全部说法。
-- **趣味专题**：如“‘走’与‘行’”“‘侬’：从‘我’到‘你’”“本字与俗字”。
-- **文本输入 → 方言地区识别**：输入一句方言样例，返回 Top 3 可能地区与置信度。
-- **语言特征解释**：展示命中的方言词、语法结构、音韵提示，并附示例说明。
-- **学习卡片**：自动生成对应方言的核心词汇、表达套路与语法观察卡片。
-- **内置示例**：网页中预置多条方言例句，可一键体验。
-- **后续可扩展音频识别**：当前实现文本识别，架构已适合未来加入语音入口。
+仓库里原来的 Python 方言识别工具和方言知识库（`data/`）都还在，网站直接读同一份知识库。
 
-### 当前覆盖的主要方言家族
-- 官话：北京话、东北话、西南官话、兰银官话
-- 粤语：广州话、香港粤语
-- 闽南语：潮汕话、闽南话（福建）
-- 吴语：上海话、苏州话
-- 客家话
-- 湘语：长沙话
-- 赣语：南昌话
+## 网站里有什么
 
-## English Overview
+| 页面 | 路由 | 内容 |
+|---|---|---|
+| 首页 | `#/` | 小念和爸爸的 3D 小星球、5 个主题、方言地图和游戏入口 |
+| 主题 | `#/topic/<主题>` | 问题列表，按入门 / 进阶 / 挑战排 |
+| 问答 | `#/q/<问题>` | 一问一答 + 讲解动画 + 「听一听」 + 这一问里的方言词 + 给大人的补充 |
+| 方言地图 | `#/map[/<概念>]` | 点一个词（没有、吃、外婆……），看 19 个方言点各怎么说；点方言点看它的档案 |
+| 猜猜是哪里话 | `#/game` | 读一句、听一句方言，猜是哪里话，8 题一局 |
 
-**Chinese Dialect Scope** is a lightweight dialect recognition and learning app for dialect enthusiasts and learners. Users enter a short dialect sentence, and the system returns the most likely regions, explains the linguistic clues behind the guess, and provides learning cards for further study.
+5 个主题、25 个问题：
 
-### Features
-- **Text input → region detection** with Top 3 candidates
-- **Explainable matching** based on vocabulary, grammar, and phonological hints
-- **Learning cards** for dialect-specific phrases and study focus
-- **Clickable sample phrases** to try the tool instantly
-- **Responsive single-page UI** for desktop and mobile
+- 🧭 为什么说话不一样：外婆的上海话、福建的山、普通话是怎么来的、方言会不会消失
+- 🌳 方言大家族：七大方言和十个大区、四川话为什么好懂、山西的晋语、唐人街的粤语、土楼里的客家话
+- 🎵 声调的秘密：妈麻马骂、北京话的儿化、粤语九声六调、古诗为什么不押韵（入声）
+- 💬 一个意思各地说：冇和无、外婆和姥姥、太阳叫日头、古书里的「走」是跑、筷子古时叫箸、今朝和听日
+- 🎲 好玩的方言：东北话嘎哈、广州的细路、侬从「我」变成「你」、食饭和吃饭、鸡公和鸡母、的士和巴士
 
-## Project Structure
+问答里的古画和照片来自 Wikimedia Commons（公有领域或 CC 许可），作者和许可写在每张图下面和 `THIRD_PARTY_NOTICES.md` 里。
+
+## 运行
+
+需要 Node.js 22.18+（测试和脚本直接用 Node 跑 `.ts`）。
+
+```bash
+npm install
+npm run dev        # 开发服务器
+npm run typecheck  # 类型检查
+npm test           # 全部测试
+npm run build      # 生产构建到 dist/
+```
+
+推到 `main` 后，`.github/workflows/deploy.yml` 会构建并发布到 GitHub Pages。
+
+配音（只在改了问答文字或新增问题时需要）：
+
+```bash
+python -m pip install edge-tts   # 另外 PATH 里要有 ffmpeg / ffprobe
+npm run voice                    # 只生成新的或改过的句子，可以中断再续
+```
+
+写新问题、新动画的方法见 `AGENTS.md` 和 `skills/dialectverse-explainer/SKILL.md`。
+
+## 目录
 
 ```text
 .
-├── app.py                 # Flask API
-├── knowledge_base.py      # loads data/, validates schema, query helpers
-├── dialect_data.py        # compatibility layer for the engine
-├── dialect_engine.py      # rule-based identifier
-├── data/
-│   ├── families.json      # 方言大区（含识别用的标志词）
-│   ├── dialects/*.json    # 一个方言点一个文件：分区、坐标、词汇、特征、表达
-│   ├── concepts/*.json    # 一个概念一个文件：各方言点的说法、词源、关联
-│   ├── topics.json        # 趣味专题
-│   └── sources.json       # 来源
-├── static/
-│   └── index.html
-└── tests/
+├── src/
+│   ├── data/questions/   # 小念 × 爸爸的问答，一个主题一个文件
+│   ├── data/films/       # 每个问题一部讲解动画
+│   ├── data/atlas.ts     # 在浏览器里读 data/ 下的方言知识库
+│   ├── components/film/  # 动画舞台和播放器
+│   ├── lib/              # 时间线、配音时间线、示意地图投影、出题
+│   └── pages/            # 首页、问题列表、问答、方言地图、游戏
+├── public/voice/         # 配音（npm run voice 生成）
+├── tests/                # node --test：问答规则、动画规则、知识库、配音
+├── tools/voice/          # 配音脚本
+├── data/                 # 方言知识库（JSON，网站和 Python 工具共用）
+├── app.py …              # Python 方言识别工具（见下）
+└── static/index.html     # Python 工具的页面
 ```
 
-## Knowledge Base Data Model｜知识库数据模型
+## 方言知识库（`data/`）
 
-数据以 **概念 ↔ 表达 ↔ 方言点** 为核心，全部是 `data/` 下的 JSON 文件，便于直接编辑和用 PR 审阅。
+数据以 **概念 ↔ 表达 ↔ 方言点** 为核心，全部是 JSON 文件，便于直接编辑和用 PR 审阅。
 
-- **方言点** (`data/dialects/<slug>.json`)：`classification.path` 记录分区层级（如 `["吴语", "太湖片", "苏沪嘉小片"]`，参考《中国语言地图集》），`point` 记录代表点和经纬度。
-- **概念** (`data/concepts/<slug>.json`)：`headword`、`gloss`、`category`、`aliases`、`related`（`related` / `synonym` / `broader` / `narrower`）、`etymology`（字、《广韵》反切、说明）。
-- **表达**（概念里的 `expressions`）：
-  - `dialect`、`form`、`orthography`（本字 / 俗字 / 训读字 / 借音字 / 通用字 / 待考）、`etymon`（本字）
-  - `romanization`（如粤拼、台罗）、可选 `ipa`
-  - `example` / `example_gloss`、`register`（口语 / 书面 / 俚俗 / 通用）、`status`（常用 / 老派 / 少用 / 濒危）
-  - `confidence`（`high` 共识 / `medium` 需核对 / `unverified` 待考）、`sources`
-- 每条表达、词源和专题都必须带 `confidence` 和 `sources`。
+- **方言点** (`data/dialects/<slug>.json`)：`classification.path` 记录分区层级（如 `["吴语", "太湖片", "苏沪嘉小片"]`，参考《中国语言地图集》），`point` 记录代表点和经纬度，另有高频词、语法和语音特征、常用表达。
+- **概念** (`data/concepts/<slug>.json`)：`headword`、`gloss`、`category`、`aliases`、`related`、`etymology`。
+- **表达**（概念里的 `expressions`）：`dialect`、`form`、`orthography`（本字 / 俗字 / 训读字 / 借音字 / 通用字 / 待考）、`etymon`、`romanization`、`example` / `example_gloss`、`register`、`status`、`confidence`（`high` / `medium` / `unverified`）、`sources`。
 
-`KnowledgeBase.validate()` 会检查字段、取值范围和引用完整性（方言、概念、来源是否存在）；`tests/test_knowledge_base.py` 会在测试中运行它。
+目前收录 19 个方言点（8 个大区）、25 个概念。各地说法绝大多数已和维基词典的方言同义词表（[Module:zh/data/dial-syn](https://en.wiktionary.org/wiki/Module:zh/data/dial-syn)，CC BY-SA 4.0）核对，来源记为 `wiktionary-dial-syn`；其余来自项目整理（`editorial`），网站和 Python 工具都会标出“还要再核对”或“待考”。查一个词各地怎么说：`node tools/dial-syn.mjs 太陽`（用繁体字）。欢迎补充出处和更正。改了 `data/` 以后，跑一下 `npm test`（会检查网站用到的字段和动画里的城市坐标）和 `python -m pytest tests/`，如果新词属于粤语或东北话，再跑 `npm run voice` 给它配上「听一听」。
 
-> 目前收录 16 个概念，多数条目来自项目整理（来源 `editorial`），尚未逐条与文献核对，界面上会标出“需核对”或“待考”。欢迎补充出处和更正。
+## Python 方言识别工具
 
-## How to Run｜运行方式
-
-### 1) Install dependencies
+输入一句方言文本，基于方言词汇、语法线索与音韵提示推测可能地区，并给出可解释的特征和学习卡片。
 
 ```bash
-cd /home/runner/work/cn-dialect-scope/cn-dialect-scope
 pip install -r requirements.txt
-```
-
-### 2) Start the Flask app
-
-```bash
-python app.py
-```
-
-Then open:
-
-```text
-http://127.0.0.1:5000/
-```
-
-## API Endpoints
-
-### `POST /api/identify`
-Request:
-
-```json
-{
-  "text": "我冇带钥匙，食咗饭未啊？"
-}
-```
-
-Response example:
-
-```json
-{
-  "possible_regions": [
-    {"region": "广州", "score": 0.78, "dialect_family": "粤语", "dialect": "广州话"},
-    {"region": "香港", "score": 0.22, "dialect_family": "粤语", "dialect": "香港粤语"}
-  ],
-  "features": [
-    {"name": "词汇：冇", "description": "表示‘没有’。", "example": "我冇带钥匙。"}
-  ],
-  "learning_cards": [
-    {"title": "广州话｜核心词汇", "content": "...", "examples": ["咩", "冇", "佢"]}
-  ]
-}
-```
-
-### `GET /api/dialects`
-Returns all supported dialect families and their representative dialects.
-
-### `GET /api/learning/<dialect>`
-Returns learning cards for a specific dialect slug, such as:
-
-```text
-/api/learning/hakkahua
-/api/learning/beijinghua
-```
-
-### Knowledge base endpoints
-
-| Endpoint | Description |
-| --- | --- |
-| `GET /api/concepts?category=` | 概念列表 |
-| `GET /api/concepts/<slug>` | 概念详情：按方言大区分组的说法、词源、相关概念、专题 |
-| `GET /api/search?q=` | 按普通话词、别名、方言写法或拼音搜索概念，也会匹配方言和专题 |
-| `GET /api/dialects/<slug>` | 方言档案 |
-| `GET /api/features?kind=grammar\|phonology` | 各方言的语法 / 语音特征 |
-| `GET /api/topics`, `GET /api/topics/<slug>` | 趣味专题 |
-| `GET /api/sources` | 来源列表 |
-
-## Example Usage｜示例
-
-### Web examples
-- `你搁这儿嘎哈呢？` → likely **东北话**
-- `我冇带钥匙，食咗饭未啊？` → likely **粤语（广州话）**
-- `歹势啦，我袂晓按怎做。` → likely **闽南话（福建）**
-- `侬哪能现在才来？` → likely **上海话**
-
-### Run tests
-
-```bash
+python app.py              # 打开 http://127.0.0.1:5000/
 python -m pytest tests/ -v
 ```
 
-## Notes
-- This version focuses on **rule-based, explainable recognition** instead of machine learning.
-- The dataset is intentionally educational: each dialect includes vocabulary, grammar features, phonological hints, and common expressions.
-- Audio support can later be added by extending the input pipeline and feature extraction layer.
+| 接口 | 说明 |
+| --- | --- |
+| `POST /api/identify` | `{"text": "我冇带钥匙，食咗饭未啊？"}` → Top 3 可能地区、命中的特征、学习卡片 |
+| `GET /api/dialects`、`GET /api/dialects/<slug>` | 方言列表、方言档案 |
+| `GET /api/learning/<dialect>` | 某个方言的学习卡片 |
+| `GET /api/concepts?category=`、`GET /api/concepts/<slug>` | 概念列表、概念详情 |
+| `GET /api/search?q=` | 按普通话词、别名、方言写法或拼音搜索 |
+| `GET /api/features?kind=grammar\|phonology` | 各方言的语法 / 语音特征 |
+| `GET /api/topics`、`GET /api/topics/<slug>`、`GET /api/sources` | 趣味专题、来源 |
+
+示例：`你搁这儿嘎哈呢？` → 东北话；`歹势啦，我袂晓按怎做。` → 闽南话（福建）；`侬哪能现在才来？` → 上海话。
+
+## 许可与致谢
+
+3D 角色、配音、动效思路等第三方素材的来源和许可见 `THIRD_PARTY_NOTICES.md`。配音由微软 Edge 在线语音生成，只按家庭和非商业用途考虑。
