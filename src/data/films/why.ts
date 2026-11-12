@@ -42,7 +42,7 @@ export const films: readonly Film[] = [
           { kind: "pin", at: places.beijing, text: "北京", from: 1.5 },
           { kind: "pin", at: places.chengdu, text: "成都", side: "left", from: 2 },
           { kind: "label", at: [596, 553], text: "大河隔开南北", side: "top", from: 4 },
-          { kind: "sprite", icon: "⛰️", path: [[500, 690]], size: 70, from: 5 },
+          { kind: "sprite", icon: "⛰️", path: [[470, 675]], size: 70, from: 5 },
           { kind: "sprite", icon: "⛰️", path: [[760, 670]], size: 70, from: 5.5 },
           { kind: "text", at: [600, 110], text: "分开住久了，越变越不同", from: 7 }
         ]
@@ -50,12 +50,12 @@ export const films: readonly Film[] = [
       {
         turn: 2, title: "一棵大树", duration: 10,
         cues: [
-          { kind: "sprite", icon: "🌳", path: [[600, 560]], size: 420, from: 0.3 },
-          { kind: "label", at: [480, 440], text: "上海话", side: "left", from: 1.5 },
-          { kind: "label", at: [720, 440], text: "广州话", side: "right", from: 2.2 },
-          { kind: "label", at: [600, 380], text: "四川话", side: "top", from: 2.9 },
-          { kind: "word", text: "饭", at: [170, 200], size: 150, caption: "字一样", from: 4.5 },
-          { kind: "word", text: "吃", at: [1030, 200], size: 150, caption: "读音变了", from: 5.2 },
+          { kind: "sprite", icon: "🌳", path: [[600, 560]], size: 400, from: 0.3 },
+          { kind: "label", at: [470, 480], text: "上海话", side: "left", from: 1.5 },
+          { kind: "label", at: [730, 480], text: "广州话", side: "right", from: 2.2 },
+          { kind: "label", at: [600, 390], text: "四川话", side: "top", from: 2.9 },
+          { kind: "word", text: "饭", at: [170, 175], size: 140, caption: "字一样", from: 4.5 },
+          { kind: "word", text: "吃", at: [1030, 175], size: 140, caption: "读音变了", from: 5.2 },
           { kind: "text", at: [600, 830], text: "写下来都是汉字", from: 6.5 }
         ]
       },
@@ -79,7 +79,7 @@ export const films: readonly Film[] = [
           { kind: "sprite", icon: "🧑‍💼", path: [[100, 800], [400, 600]], size: 110, travel: 2, from: 1 },
           { kind: "sprite", icon: "🧑‍💼", path: [[1100, 800], [800, 600]], size: 110, travel: 2, from: 1.4 },
           { kind: "sprite", icon: "🧑‍💼", path: [[600, 900], [600, 660]], size: 110, travel: 2, from: 1.8 },
-          { kind: "bubble", at: [800, 560], text: "听得懂！", size: "s", from: 4 },
+          { kind: "bubble", at: [930, 560], text: "听得懂！", side: "top", size: "s", from: 4 },
           { kind: "text", at: [600, 110], text: "官员的共同话：官话", from: 6 }
         ]
       }
@@ -95,7 +95,7 @@ export const films: readonly Film[] = [
           { kind: "pin", at: places.fuzhou, text: "福州", from: 2.5 },
           { kind: "pin", at: places.xiamen, text: "厦门", side: "left", from: 3 },
           { kind: "sprite", icon: "⛰️", path: [[745, 640]], size: 34, from: 3.6 },
-          { kind: "sprite", icon: "⛰️", path: [[705, 690]], size: 34, from: 3.9 },
+          { kind: "sprite", icon: "⛰️", path: [[695, 675]], size: 34, from: 3.9 },
           { kind: "sprite", icon: "⛰️", path: [[770, 590]], size: 34, from: 4.2 },
           { kind: "sprite", icon: "⛰️", path: [[690, 625]], size: 34, from: 4.5 },
           { kind: "text", at: [600, 110], text: "八山一水一分田", from: 5.5 }
@@ -119,12 +119,12 @@ export const films: readonly Film[] = [
         camera: [{ t: 0, at: [740, 650], zoom: 1.8 }],
         cues: [
           { kind: "highlight", at: [775, 690], size: [190, 190], color: teal, from: 0.3 },
-          { kind: "pin", at: places.fuzhou, text: "福州", color: teal, from: 1 },
+          { kind: "pin", at: places.fuzhou, text: "福州", side: "left", color: teal, from: 1 },
           { kind: "pin", at: places.xiamen, text: "厦门", side: "left", color: teal, from: 1.5 },
           { kind: "pin", at: places.shantou, text: "汕头", side: "left", color: teal, from: 2 },
           { kind: "text", at: [600, 110], text: "闽 = 福建", color: teal, from: 3 },
           { kind: "label", at: places.fuzhou, text: "闽东话", side: "right", from: 4.5 },
-          { kind: "label", at: places.xiamen, text: "闽南话", side: "bottom", from: 5.5 }
+          { kind: "label", at: places.xiamen, text: "闽南话", pos: [900, 745], from: 5.5 }
         ]
       },
       {
@@ -206,10 +206,10 @@ export const films: readonly Film[] = [
       {
         turn: 4, title: "两把钥匙", duration: 10,
         cues: [
-          { kind: "sprite", icon: "🔑", path: [[380, 400]], size: 200, from: 0.5 },
-          { kind: "sprite", icon: "🗝️", path: [[820, 400]], size: 200, from: 1.5 },
-          { kind: "text", at: [380, 620], text: "普通话：和全国聊天", size: "s", from: 2.5 },
-          { kind: "text", at: [820, 620], text: "方言：和家人更亲", size: "s", from: 3.5 },
+          { kind: "sprite", icon: "🔑", path: [[380, 310]], size: 180, from: 0.5 },
+          { kind: "sprite", icon: "🗝️", path: [[820, 310]], size: 180, from: 1.5 },
+          { kind: "text", at: [380, 510], text: "普通话：和全国聊天", size: "s", from: 2.5 },
+          { kind: "text", at: [820, 510], text: "方言：和家人更亲", size: "s", from: 3.5 },
           { kind: "myth", wrong: "学普通话就要丢掉方言", right: "两种话都能说得好", from: 5.5 }
         ]
       }
@@ -224,7 +224,7 @@ export const films: readonly Film[] = [
           { kind: "sprite", icon: "👴", path: [[260, 540]], size: 200, from: 0.3 },
           { kind: "bubble", at: [280, 430], text: "侬好！", sub: "上海话", from: 1 },
           { kind: "sprite", icon: "🧒", path: [[900, 560]], size: 180, from: 2 },
-          { kind: "sprite", icon: "👂", path: [[760, 420]], size: 90, wobble: true, from: 3.5 },
+          { kind: "sprite", icon: "👂", path: [[640, 470]], size: 90, wobble: true, from: 3.5 },
           { kind: "bubble", at: [900, 450], text: "你好！", sub: "普通话", size: "s", from: 5 },
           { kind: "text", at: [600, 820], text: "听得懂，说不出", from: 6.5 }
         ]

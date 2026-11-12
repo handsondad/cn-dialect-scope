@@ -61,7 +61,7 @@ export type SayLine = { readonly text: string; readonly label: string; readonly 
  * 图片的 credit 显示在图下面：作者、许可、来源，和 THIRD_PARTY_NOTICES.md 里写的一致。
  */
 export type BeatShow =
-  | { kind: "steps"; frames: readonly ShowFrame[] }
+  | { kind: "steps"; frames: readonly ShowFrame[]; arrows?: boolean }
   | { kind: "say"; lines: readonly SayLine[] }
   | { kind: "image"; src: string; alt: string; caption: string; credit: string }
   | { kind: "video"; src: string; alt: string; poster?: string };

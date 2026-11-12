@@ -5,7 +5,7 @@ import { SayButton } from "../components/SayButton";
 import { atlas, conceptBySlug, dialectBySlug, familyBySlug } from "../data/atlas";
 import { questionsAbout } from "../data/questions";
 import { confidenceLabel, familyColor, formsByDialect, type Concept, type Dialect, type Expression } from "../lib/atlas";
-import { fontFamily } from "../lib/fonts";
+import { fontFamily, mixedFamily } from "../lib/fonts";
 import { dialectVoice } from "../lib/samples";
 import "./Questions.css";
 import "./MapPage.css";
@@ -34,7 +34,7 @@ function Form({ item }: { item: Expression }) {
     <div className="map-form">
       <p className="map-form-head">
         <b style={{ fontFamily: fontFamily.kai }}>{item.form}</b>
-        {item.romanization && <small>{item.romanization.text}<i>{item.romanization.scheme}</i></small>}
+        {item.romanization && <small style={{ fontFamily: mixedFamily }}>{item.romanization.text}<i>{item.romanization.scheme}</i></small>}
         <SayButton voice={voice} text={item.form} />
       </p>
       <p className="map-tags">
@@ -63,13 +63,16 @@ function DialectHead({ dialect }: { dialect: Dialect }) {
   );
 }
 
-function ConceptCard({ concept, dialect }: { concept: Concept; dialect?: Dialect }) {
+function ConceptCard({ concept, dialect, onClear }: { concept: Concept; dialect?: Dialect; onClear: () => void }) {
   const forms = formsByDialect(concept);
   if (dialect) {
     const items = forms.get(dialect.slug) ?? [];
     return (
       <div className="map-card">
-        <DialectHead dialect={dialect} />
+        <div className="map-card-top">
+          <DialectHead dialect={dialect} />
+          <button type="button" className="map-card-clear" onClick={onClear}>← 看各地</button>
+        </div>
         <p className="map-card-lead">「{concept.headword}」在{dialect.name}里说：</p>
         {items.length ? items.map((item) => <Form key={item.form} item={item} />) : <p className="map-empty">这个词我们还没收到{dialect.name}的说法。</p>}
       </div>
@@ -98,12 +101,26 @@ function ConceptCard({ concept, dialect }: { concept: Concept; dialect?: Dialect
   );
 }
 
-function DialectCard({ dialect }: { dialect: Dialect }) {
+function DialectCard({ dialect, onConcept, onClear }: { dialect: Dialect; onConcept: (slug: string) => void; onClear: () => void }) {
   const voice = dialectVoice[dialect.slug];
   const family = familyBySlug(dialect.family_slug);
+  const vocabTerms = new Set(dialect.vocabulary.map((item) => item.term));
+  const extraExpressions = dialect.expressions.filter((item) => !vocabTerms.has(item.text));
+  const conceptForms = atlas.concepts.flatMap((concept) => {
+    const items = concept.expressions.filter((item) => item.dialect === dialect.slug);
+    if (!items.length) return [];
+    return [{
+      slug: concept.slug,
+      headword: concept.headword.replace(/（.*）/, ""),
+      forms: [...new Set(items.map((item) => item.form))].join("／")
+    }];
+  });
   return (
     <div className="map-card">
-      <DialectHead dialect={dialect} />
+      <div className="map-card-top">
+        <DialectHead dialect={dialect} />
+        <button type="button" className="map-card-clear" onClick={onClear}>← 全部大区</button>
+      </div>
       <p className="map-card-lead">{dialect.overview}</p>
       {family && <p className="map-family-note">属于<b>{family.name}</b>：{family.summary}</p>}
       <h3>🗝️ 常听到的词</h3>
@@ -116,15 +133,32 @@ function DialectCard({ dialect }: { dialect: Dialect }) {
           </li>
         ))}
       </ul>
-      <h3>💬 常说的话</h3>
-      <ul className="map-words">
-        {dialect.expressions.map((item) => (
-          <li key={item.text}>
-            <b style={{ fontFamily: fontFamily.kai }}>{item.text}</b><SayButton voice={voice} text={item.text} />
-            <span>{item.meaning}</span>
-          </li>
-        ))}
-      </ul>
+      {extraExpressions.length > 0 && (
+        <>
+          <h3>💬 常说的话</h3>
+          <ul className="map-words">
+            {extraExpressions.map((item) => (
+              <li key={item.text}>
+                <b style={{ fontFamily: fontFamily.kai }}>{item.text}</b><SayButton voice={voice} text={item.text} />
+                <span>{item.meaning}</span>
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
+      {conceptForms.length > 0 && (
+        <>
+          <h3>🗺️ 地图上的词在这里怎么说</h3>
+          <div className="map-dialect-concepts">
+            {conceptForms.map((item) => (
+              <button key={item.slug} type="button" onClick={() => onConcept(item.slug)}>
+                <small>{item.headword}</small>
+                <b style={{ fontFamily: fontFamily.kai }}>{item.forms}</b>
+              </button>
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 }
@@ -154,8 +188,8 @@ export function MapPage({ concept: conceptSlug, onConcept, onOpen, onBack, backL
       </header>
 
       <div className="qlist-intro" style={{ "--bubble": "#3d9be9" } as CSSProperties}>
-        <p><Avatar who="nian" /><strong>小念：</strong>同一个意思，各地到底怎么说？</p>
-        <p><Avatar who="dad" /><strong>爸爸：</strong>挑一个词，地图上每个地方都会冒出一个气泡。带 🔊 的可以点着听：粤语和东北话是电脑合成的方言声音。</p>
+        <p><Avatar who="nian" /><span><strong>小念：</strong>同一个意思，各地到底怎么说？</span></p>
+        <p><Avatar who="dad" /><span><strong>爸爸：</strong>挑一个词，地图上每个地方都会冒出一个气泡。带 🔊 的可以点着听：粤语和东北话是电脑合成的方言声音。</span></p>
       </div>
 
       <nav className="map-chips" aria-label="挑一个词">
@@ -185,8 +219,8 @@ export function MapPage({ concept: conceptSlug, onConcept, onOpen, onBack, backL
         </div>
 
         <aside className="map-side" aria-live="polite">
-          {concept ? <ConceptCard concept={concept} dialect={dialect} />
-            : dialect ? <DialectCard dialect={dialect} />
+          {concept ? <ConceptCard concept={concept} dialect={dialect} onClear={() => setSelected(undefined)} />
+            : dialect ? <DialectCard dialect={dialect} onConcept={(slug) => onConcept(slug)} onClear={() => setSelected(undefined)} />
               : (
                 <div className="map-card">
                   <p className="map-card-lead">👆 点地图上的一个地方，看看那里的人怎么说话；或者在上面挑一个词。</p>

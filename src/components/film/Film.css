@@ -65,17 +65,20 @@
 .film-myth {
   position: absolute;
   left: 50%;
-  bottom: 14px;
+  bottom: 12px;
   display: grid;
-  gap: 4px;
-  width: min(88%, 520px);
-  padding: 10px 16px;
+  gap: 3px;
+  width: min(90%, 520px);
+  padding: 9px 14px;
   transform: translateX(-50%);
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.95);
   box-shadow: 0 4px 14px rgba(93, 78, 55, 0.18);
   font-weight: 700;
-  line-height: 1.45;
+  line-height: 1.4;
+}
+@container film-stage (max-width: 440px) {
+  .film-myth { bottom: 8px; padding: 6px 10px; font-size: 0.82rem; border-radius: 12px; }
 }
 .film-myth-wrong { position: relative; color: #9b8b76; justify-self: start; }
 .film-myth-wrong::after {

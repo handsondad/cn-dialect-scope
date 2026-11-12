@@ -82,7 +82,7 @@ export const whyQuestions: readonly DialectQuestion[] = [
       {
         nian: "共同话是谁定下来的？照着什么来定呀？",
         dad: "上世纪五十年代，国家正式定下来：普通话的读音以北京话为标准，词语以北方话为基础，语法照着好的白话文来写。就像做蛋糕，先选一份最多人吃得惯的方子，再把它定下来。",
-        show: { kind: "steps", frames: [{ icon: "📢", label: "读音：北京话" }, { icon: "📚", label: "词语：北方话" }, { icon: "📖", label: "语法：白话文" }] }
+        show: { kind: "steps", arrows: false, frames: [{ icon: "📢", label: "读音：北京话" }, { icon: "📚", label: "词语：北方话" }, { icon: "📖", label: "语法：白话文" }] }
       },
       {
         nian: "为什么选北京话的读音？不选广州话、上海话？",

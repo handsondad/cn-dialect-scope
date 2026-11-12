@@ -8,7 +8,7 @@ import { filmFor } from "../data/films";
 import { difficultyLabel, nextQuestions, topicById, type BeatShow, type DialectQuestion } from "../data/questions";
 import { voiceFor } from "../data/voice";
 import { useInView } from "../hooks/useInView";
-import { fontFamily } from "../lib/fonts";
+import { fontFamily, mixedFamily } from "../lib/fonts";
 import type { Speaker } from "../lib/narration";
 import "./Questions.css";
 
@@ -35,17 +35,20 @@ function Bubble({ who, index, speaking, children }: { who: CharacterId; index: n
 
 function Show({ show }: { show: BeatShow }) {
   switch (show.kind) {
-    case "steps":
+    case "steps": {
+      const ordered = show.arrows !== false;
+      const Tag = ordered ? "ol" : "ul";
       return (
-        <ol className="qa-steps" aria-label="图解">
+        <Tag className={ordered ? "qa-steps has-arrows" : "qa-steps"} aria-label="图解">
           {show.frames.map((frame, index) => (
             <li key={frame.label} style={{ "--i": index } as CSSProperties}>
               <span aria-hidden="true">{frame.icon}</span>
               <small>{frame.label}</small>
             </li>
           ))}
-        </ol>
+        </Tag>
       );
+    }
     case "say":
       return (
         <ul className="qa-say" aria-label="听一听">
@@ -53,7 +56,7 @@ function Show({ show }: { show: BeatShow }) {
             <li key={`${line.label}-${line.text}`} style={{ "--i": index } as CSSProperties}>
               <span className="qa-say-label">{line.label}</span>
               <b style={{ fontFamily: fontFamily.kai }}>{line.text}</b>
-              {line.sub && <small>{line.sub}</small>}
+              {line.sub && <small style={{ fontFamily: mixedFamily }}>{line.sub}</small>}
               <SayButton voice={line.voice} text={line.text} />
             </li>
           ))}
@@ -154,7 +157,8 @@ export function QuestionPage({ question, heard, onHeard, onBack, onOpen, onMap }
             <h3><Avatar who="nian" /> 小念还想问</h3>
             {nextQuestions(question).map((item) => (
               <button key={item.id} type="button" onClick={() => onOpen(item.id)}>
-                {item.title}{heard.includes(item.id) ? " ⭐" : ""}
+                <span>{item.title}{heard.includes(item.id) ? " ⭐" : ""}</span>
+                <small>{difficultyLabel[item.difficulty]} →</small>
               </button>
             ))}
           </div>

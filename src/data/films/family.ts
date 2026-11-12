@@ -121,10 +121,10 @@ export const films: readonly Film[] = [
       {
         turn: 4, title: "摆龙门阵", duration: 10,
         cues: [
-          { kind: "sprite", icon: "🧓", path: [[300, 580]], size: 170, from: 0.3 },
+          { kind: "sprite", icon: "🧓", path: [[260, 590]], size: 170, from: 0.3 },
           { kind: "sprite", icon: "🍵", path: [[600, 660]], size: 100, from: 0.8 },
-          { kind: "sprite", icon: "👴", path: [[900, 580]], size: 170, from: 1.2 },
-          { kind: "bubble", at: [600, 520], text: "摆龙门阵！", sub: "坐下来聊家常", from: 2 },
+          { kind: "sprite", icon: "👴", path: [[940, 590]], size: 170, from: 1.2 },
+          { kind: "bubble", at: [600, 470], text: "摆龙门阵！", sub: "坐下来聊家常", from: 2 },
           { kind: "text", at: [600, 110], text: "老词要靠猜", from: 5 }
         ]
       }
@@ -181,14 +181,14 @@ export const films: readonly Film[] = [
       {
         turn: 3, title: "南洋的华人街", duration: 12,
         cues: [
-          { kind: "sprite", icon: "👨", path: [[180, 640]], size: 140, from: 0.3 },
-          { kind: "bubble", at: [180, 550], text: "食饱未？", sub: "闽南话", size: "s", from: 0.8 },
-          { kind: "sprite", icon: "👩", path: [[450, 640]], size: 140, from: 2.2 },
-          { kind: "bubble", at: [450, 550], text: "食未？", sub: "潮州话", size: "s", from: 2.7 },
-          { kind: "sprite", icon: "🧓", path: [[750, 640]], size: 140, from: 4.1 },
-          { kind: "bubble", at: [750, 550], text: "食咗饭未？", sub: "粤语", size: "s", from: 4.6 },
-          { kind: "sprite", icon: "👵", path: [[1020, 640]], size: 140, from: 6 },
-          { kind: "bubble", at: [1020, 550], text: "食朝未？", sub: "客家话", size: "s", from: 6.5 }
+          { kind: "sprite", icon: "👨", path: [[165, 710]], size: 130, from: 0.3 },
+          { kind: "bubble", at: [165, 625], text: "食饱未？", sub: "闽南话", size: "s", from: 0.8 },
+          { kind: "sprite", icon: "👩", path: [[455, 460]], size: 130, from: 2.2 },
+          { kind: "bubble", at: [455, 375], text: "食未？", sub: "潮州话", size: "s", from: 2.7 },
+          { kind: "sprite", icon: "🧓", path: [[745, 710]], size: 130, from: 4.1 },
+          { kind: "bubble", at: [745, 625], text: "食咗饭未？", sub: "粤语", size: "s", from: 4.6 },
+          { kind: "sprite", icon: "👵", path: [[1035, 460]], size: 130, from: 6 },
+          { kind: "bubble", at: [1035, 375], text: "食朝未？", sub: "客家话", size: "s", from: 6.5 }
         ]
       },
       {
@@ -214,12 +214,12 @@ export const films: readonly Film[] = [
     scenes: [
       {
         turn: 0, title: "山西的晋语", view: "map", duration: 11,
-        camera: [{ t: 0, at: [650, 360], zoom: 1.6 }],
+        camera: [{ t: 0, at: [640, 350], zoom: 1.7 }],
         cues: [
           { kind: "highlight", at: [590, 340], size: [300, 280], color: familyColor.jin, from: 0.3 },
-          { kind: "pin", at: places.taiyuan, text: "太原", side: "top", color: familyColor.jin, from: 1 },
-          { kind: "bubble", at: places.taiyuan, text: "阳婆", sub: "太阳", side: "left", size: "s", from: 2.5 },
-          { kind: "bubble", at: places.taiyuan, text: "甚", sub: "什么", side: "bottom", size: "s", from: 4 },
+          { kind: "pin", at: places.taiyuan, text: "太原", side: "right", color: familyColor.jin, from: 1 },
+          { kind: "bubble", at: [places.taiyuan[0], places.taiyuan[1] - 32], text: "阳婆", sub: "太阳", side: "top", size: "s", from: 2.5 },
+          { kind: "bubble", at: [places.taiyuan[0] - 18, places.taiyuan[1] + 12], text: "甚", sub: "什么", side: "bottom", size: "s", from: 4 },
           { kind: "pin", at: places.beijing, text: "北京", side: "right", color: familyColor.mandarin, from: 5.5 },
           { kind: "text", at: [600, 840], text: "晋语：北京话的邻居", from: 7 }
         ]
@@ -311,10 +311,10 @@ export const films: readonly Film[] = [
       },
       {
         turn: 3, title: "转屋下", view: "map", duration: 11,
-        camera: [{ t: 0, at: [600, 450], zoom: 1 }, { t: 2, at: [700, 730], zoom: 1.8 }],
+        camera: [{ t: 0, at: [600, 450], zoom: 1 }, { t: 2, at: [705, 735], zoom: 2.1 }],
         cues: [
           { kind: "bubble", at: places.meizhou, text: "转屋下", sub: "客家话：回家", side: "top", size: "s", from: 2.2 },
-          { kind: "bubble", at: places.xiamen, text: "转厝", sub: "闽南话：回家", side: "right", size: "s", from: 4.2 },
+          { kind: "bubble", at: places.xiamen, text: "转厝", sub: "闽南话：回家", side: "bottom", size: "s", from: 4.2 },
           { kind: "bubble", at: places.guangzhou, text: "返屋企", sub: "广州话：回家", side: "left", size: "s", from: 6.2 },
           { kind: "text", at: [600, 110], text: "回家，各说各的", from: 7.5 }
         ]

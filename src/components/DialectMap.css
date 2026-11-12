@@ -1,5 +1,5 @@
 .dialect-map { display: block; width: 100%; height: auto; border-radius: 20px; background: #c4e2f5; }
-.dialect-map .map-backdrop-labels { pointer-events: none; }
+.dialect-map .map-backdrop, .dialect-map .map-backdrop-labels { pointer-events: none; }
 .map-point { cursor: default; transition: opacity 0.25s; }
 .map-point[role="button"] { cursor: pointer; }
 .map-point[role="button"]:hover .map-pill rect { stroke-width: 6; }

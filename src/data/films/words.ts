@@ -21,9 +21,9 @@ export const films: readonly Film[] = [
       {
         turn: 1, title: "冇和无", view: "map", duration: 10,
         cues: [
-          { kind: "pin", at: places.guangzhou, text: "广州", side: "left", from: 0.3 },
-          { kind: "bubble", at: places.guangzhou, text: "冇", sub: "mou5", size: "s", from: 1 },
-          { kind: "pin", at: places.xiamen, text: "厦门", side: "bottom", from: 3 },
+          { kind: "pin", at: places.guangzhou, text: "广州", side: "bottom", from: 0.3 },
+          { kind: "bubble", at: places.guangzhou, text: "冇", sub: "mou5", side: "left", size: "s", from: 1 },
+          { kind: "pin", at: places.xiamen, text: "厦门", side: "left", from: 3 },
           { kind: "bubble", at: places.xiamen, text: "无", sub: "bô", side: "right", size: "s", from: 3.7 },
           { kind: "text", at: [600, 110], text: "都是「没有」", from: 6 }
         ]
@@ -31,13 +31,13 @@ export const films: readonly Film[] = [
       {
         turn: 2, title: "各地的没有", view: "map", duration: 12,
         cues: [
-          { kind: "bubble", at: places.beijing, text: "没有", size: "s", from: 0.5 },
+          { kind: "bubble", at: places.beijing, text: "没有", side: "left", size: "s", from: 0.5 },
           { kind: "bubble", at: places.shanghai, text: "呒没", side: "right", size: "s", from: 1.5 },
           { kind: "bubble", at: places.chengdu, text: "没得", size: "s", from: 2.5 },
           { kind: "bubble", at: places.changsha, text: "冇得", size: "s", from: 3.5 },
           { kind: "bubble", at: places.guangzhou, text: "冇", side: "left", size: "s", from: 4.5 },
           { kind: "bubble", at: places.xiamen, text: "无", side: "right", size: "s", from: 5.5 },
-          { kind: "text", at: [600, 840], text: "同一个意思，六种说法", from: 7 }
+          { kind: "text", at: [600, 855], text: "同一个意思，六种说法", from: 7 }
         ]
       },
       {
@@ -84,18 +84,18 @@ export const films: readonly Film[] = [
           { kind: "bubble", at: places.shanghai, text: "外婆", side: "right", size: "s", from: 1.5 },
           { kind: "bubble", at: places.chengdu, text: "家婆", size: "s", from: 2.5 },
           { kind: "bubble", at: places.guangzhou, text: "婆婆", side: "left", size: "s", from: 3.5 },
-          { kind: "bubble", at: places.meizhou, text: "姐婆", side: "bottom", size: "s", from: 4.5 },
-          { kind: "bubble", at: places.xiamen, text: "外妈", side: "right", size: "s", from: 5.5 },
+          { kind: "bubble", at: places.meizhou, text: "姐婆", side: "top", size: "s", from: 4.5 },
+          { kind: "bubble", at: places.xiamen, text: "外妈", side: "bottom", size: "s", from: 5.5 },
           { kind: "text", at: [600, 110], text: "都是妈妈的妈妈", from: 7 }
         ]
       },
       {
         turn: 2, title: "外家", duration: 11,
         cues: [
-          { kind: "sprite", icon: "🏠", path: [[260, 400]], size: 200, from: 0.3 },
-          { kind: "label", at: [260, 400], text: "外家", side: "top", color: red, from: 1 },
-          { kind: "sprite", icon: "🏡", path: [[940, 400]], size: 200, from: 1.5 },
-          { kind: "sprite", icon: "👩", path: [[360, 470], [840, 470]], size: 100, travel: 3, from: 2.5 },
+          { kind: "sprite", icon: "🏠", path: [[260, 440]], size: 180, from: 0.3 },
+          { kind: "label", at: [260, 345], pos: [260, 210], text: "外家", color: red, from: 1 },
+          { kind: "sprite", icon: "🏡", path: [[940, 440]], size: 180, from: 1.5 },
+          { kind: "sprite", icon: "👩", path: [[390, 490], [810, 490]], size: 100, travel: 3, from: 2.5 },
           { kind: "word", text: "外婆", at: [300, 720], size: 100, from: 6 },
           { kind: "word", text: "外公", at: [600, 720], size: 100, from: 6.6 },
           { kind: "word", text: "外孙", at: [900, 720], size: 100, from: 7.2 }
@@ -162,20 +162,20 @@ export const films: readonly Film[] = [
         cues: [
           { kind: "bubble", at: places.beijing, text: "走路", sub: "普通话", side: "left", size: "s", from: 0.5 },
           { kind: "bubble", at: places.guangzhou, text: "行路", sub: "广州话", side: "left", size: "s", from: 2 },
-          { kind: "bubble", at: places.meizhou, text: "行", sub: "客家话", side: "bottom", size: "s", from: 3.5 },
-          { kind: "bubble", at: places.xiamen, text: "行", sub: "闽南话", side: "right", size: "s", from: 5 },
+          { kind: "bubble", at: places.meizhou, text: "行", sub: "客家话", side: "top", size: "s", from: 3.5 },
+          { kind: "bubble", at: places.xiamen, text: "行", sub: "闽南话", side: "bottom", size: "s", from: 5 },
           { kind: "text", at: [600, 110], text: "南方：行 = 走路", from: 7 }
         ]
       },
       {
         turn: 3, title: "会说话的活化石", duration: 10,
         cues: [
-          { kind: "sprite", icon: "📜", path: [[300, 430]], size: 200, from: 0.3 },
-          { kind: "label", at: [300, 430], text: "走 = 跑", side: "top", from: 1 },
-          { kind: "arrow", path: [[440, 430], [760, 430]], draw: 1, from: 2 },
-          { kind: "sprite", icon: "🗣️", path: [[900, 430]], size: 200, from: 3 },
-          { kind: "label", at: [900, 430], text: "走先 = 先走了", side: "top", from: 3.7 },
-          { kind: "text", at: [600, 800], text: "古书的意思活在方言里", from: 5.5 }
+          { kind: "sprite", icon: "📜", path: [[300, 465]], size: 180, from: 0.3 },
+          { kind: "label", at: [300, 365], pos: [300, 225], text: "走 = 跑", from: 1 },
+          { kind: "arrow", path: [[440, 465], [760, 465]], draw: 1, from: 2 },
+          { kind: "sprite", icon: "🗣️", path: [[900, 465]], size: 180, from: 3 },
+          { kind: "label", at: [900, 365], pos: [900, 225], text: "走先 = 先走了", from: 3.7 },
+          { kind: "text", at: [600, 810], text: "古书的意思活在方言里", from: 5.5 }
         ]
       },
       {
@@ -261,7 +261,7 @@ export const films: readonly Film[] = [
       },
       {
         turn: 0, title: "还叫箸的地方", view: "map", duration: 11,
-        camera: [{ t: 0, at: [600, 450], zoom: 1 }, { t: 2, at: [780, 670], zoom: 1.8 }],
+        camera: [{ t: 0, at: [600, 450], zoom: 1 }, { t: 2, at: [775, 680], zoom: 2 }],
         cues: [
           { kind: "bubble", at: places.xiamen, text: "箸", sub: "闽南话", side: "right", size: "s", from: 2.2 },
           { kind: "bubble", at: places.shantou, text: "箸", sub: "潮汕话", side: "bottom", size: "s", from: 3.4 },
@@ -343,7 +343,7 @@ export const films: readonly Film[] = [
         cues: [
           { kind: "bubble", at: places.guangzhou, text: "今日", side: "left", size: "s", from: 0.5 },
           { kind: "bubble", at: places.nanchang, text: "今日", side: "top", size: "s", from: 2 },
-          { kind: "bubble", at: places.changsha, text: "今朝", side: "bottom", size: "s", from: 3.5 },
+          { kind: "bubble", at: places.changsha, text: "今朝", side: "left", size: "s", from: 3.5 },
           { kind: "bubble", at: places.shanghai, text: "今朝", side: "right", size: "s", from: 5 },
           { kind: "text", at: [600, 110], text: "今日、今朝都还在", from: 6.5 }
         ]
@@ -352,8 +352,8 @@ export const films: readonly Film[] = [
         turn: 3, title: "明天怎么说", view: "map", duration: 12,
         cues: [
           { kind: "bubble", at: places.guangzhou, text: "听日", side: "left", size: "s", from: 0.5 },
-          { kind: "bubble", at: places.meizhou, text: "天光日", side: "bottom", size: "s", from: 2.5 },
-          { kind: "bubble", at: places.xiamen, text: "明仔载", side: "right", size: "s", from: 4.5 },
+          { kind: "bubble", at: places.meizhou, text: "天光日", side: "top", size: "s", from: 2.5 },
+          { kind: "bubble", at: places.xiamen, text: "明仔载", side: "bottom", size: "s", from: 4.5 },
           { kind: "bubble", at: places.beijing, text: "明儿", side: "left", size: "s", from: 6 },
           { kind: "bubble", at: places.shanghai, text: "明朝", side: "right", size: "s", from: 7.2 },
           { kind: "text", at: [600, 110], text: "一个明天，五种说法", from: 8.5 }

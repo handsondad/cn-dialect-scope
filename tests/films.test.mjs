@@ -48,7 +48,13 @@ test("声调格：5 在最上，1 在最下；第三声 214 先降后升", () =>
 });
 
 test("动画里的城市和知识库里方言点的位置一致", () => {
-  const same = { guangzhou: "guangzhouhua", hongkong: "hongkong-cantonese", shanghai: "shanghaihua", suzhou: "suzhouhua", chengdu: "xinan-guanhua", changsha: "changshahua", nanchang: "nanchanghua", shantou: "chaoshanhua", meizhou: "hakkahua", xiamen: "fujian-minnan", lanzhou: "lanyin-guanhua", beijing: "beijinghua", harbin: "dongbeihua" };
+  const same = {
+    guangzhou: "guangzhouhua", hongkong: "hongkong-cantonese", shanghai: "shanghaihua", suzhou: "suzhouhua",
+    chengdu: "xinan-guanhua", changsha: "changshahua", nanchang: "nanchanghua", shantou: "chaoshanhua",
+    meizhou: "hakkahua", xiamen: "fujian-minnan", lanzhou: "lanyin-guanhua", beijing: "beijinghua",
+    harbin: "dongbeihua", taiyuan: "taiyuanhua", xian: "xianhua", jinan: "jinanhua",
+    wuhan: "wuhanhua", nanjing: "nanjinghua", wenzhou: "wenzhouhua"
+  };
   const { dialects } = readAtlas();
   for (const [place, slug] of Object.entries(same)) {
     const dialect = dialects.find((item) => item.slug === slug);

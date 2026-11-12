@@ -22,6 +22,12 @@
 .map-side { position: sticky; top: 12px; }
 .map-card { display: grid; gap: 10px; padding: 16px 18px; border-radius: var(--radius-md); background: #fff; border: 3px solid #ffe2c4; box-shadow: var(--shadow-sm); }
 .map-card h3 { margin: 6px 0 0; font-size: 1rem; }
+.map-card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
+.map-card-clear {
+  flex: none; padding: 4px 10px; border-radius: 999px; border: 2px solid var(--border-color);
+  background: #fffaf3; font-size: 0.8rem; font-weight: 700; color: var(--text-secondary);
+}
+.map-card-clear:hover { background: #ffe9d1; color: var(--text-primary); }
 .map-card-head { display: grid; gap: 2px; padding-left: 14px; border-left: 6px solid var(--dot, #3d9be9); }
 .map-card-head strong { font-size: 1.4rem; }
 .map-card-head.is-concept strong { font-size: 2rem; font-weight: 400; }
@@ -58,6 +64,15 @@
 .map-words span { color: var(--text-secondary); font-size: 0.92rem; }
 .map-words small { flex-basis: 100%; font-size: 1.05rem; color: #6b5a48; }
 
+.map-dialect-concepts { display: flex; flex-wrap: wrap; gap: 6px; }
+.map-dialect-concepts button {
+  display: inline-flex; align-items: baseline; gap: 5px; padding: 3px 10px; border-radius: 999px;
+  border: 2px solid #d6ebfa; background: #f6fbff; transition: transform var(--transition-fast), background 0.15s;
+}
+.map-dialect-concepts button:hover { transform: translateY(-1px); background: #e8f4fe; border-color: #8fc8f2; }
+.map-dialect-concepts small { font-size: 0.78rem; color: var(--text-secondary); }
+.map-dialect-concepts b { font-size: 1.15rem; font-weight: 400; color: #4a3b2a; }
+
 .map-stories { margin-top: 22px; display: grid; gap: 12px; }
 .map-stories h2 { margin: 0; font-size: 1.2rem; }
 .map-stories article { padding: 14px 18px; border-radius: var(--radius-md); background: #fff; border: 2px dashed #b8dcf5; }
@@ -69,4 +84,9 @@
 @media (max-width: 900px) {
   .map-layout { grid-template-columns: 1fr; }
   .map-side { position: static; }
+}
+@media (max-width: 520px) {
+  .map-chips { gap: 6px; margin: 10px 0; }
+  .map-chips button { padding: 3px 11px; font-size: 1.02rem; }
+  .map-chips button:first-child { font-size: 0.88rem; }
 }

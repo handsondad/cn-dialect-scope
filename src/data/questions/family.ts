@@ -15,7 +15,7 @@ export const familyQuestions: readonly DialectQuestion[] = [
       {
         nian: "七大方言是哪七片呀？",
         dad: "北方的一大片叫官话；上海、苏州一带是吴语；湖南是湘语；江西是赣语；广东有粤语和客家话；福建有闽语。七片里，官话这一片最大。",
-        show: { kind: "steps", frames: [{ icon: "🏯", label: "官话" }, { icon: "🌊", label: "吴语" }, { icon: "🌶️", label: "湘语" }, { icon: "🏞️", label: "赣语" }, { icon: "🏮", label: "粤语" }, { icon: "🏡", label: "客家话" }, { icon: "⛰️", label: "闽语" }] }
+        show: { kind: "steps", arrows: false, frames: [{ icon: "🏯", label: "官话" }, { icon: "🌊", label: "吴语" }, { icon: "🌶️", label: "湘语" }, { icon: "🏞️", label: "赣语" }, { icon: "🏮", label: "粤语" }, { icon: "🏡", label: "客家话" }, { icon: "⛰️", label: "闽语" }] }
       },
       {
         nian: "官话这一片最大？有多大呀？",

@@ -30,7 +30,7 @@ export const coast: readonly Point[] = project([
 ]);
 
 /** 陆地：海岸线和画面左边、上边、右上角围起来的一块 */
-export const land: readonly Point[] = [[0, 0], [1200, 0], ...coast, [geo(108, 21)[0], 900], [0, 900]];
+export const land: readonly Point[] = [[0, 0], [1200, 0], ...coast, [geo(108, 21)[0], 950], [0, 950]];
 
 export const islands: readonly (readonly Point[])[] = [
   // 台湾岛

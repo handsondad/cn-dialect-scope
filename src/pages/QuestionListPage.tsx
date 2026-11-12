@@ -53,8 +53,8 @@ export function QuestionListPage({ topic: topicId, heard, onBack, onOpen, onTopi
       </header>
 
       <div className="qlist-intro" style={{ "--bubble": topic.color } as CSSProperties}>
-        <p><Avatar who="nian" /><strong>小念：</strong>{topic.kidHook}</p>
-        <p><Avatar who="dad" /><strong>爸爸：</strong>这一类其实都在讲{topic.dadLens}。挑一个问题，我们从头聊到底。</p>
+        <p><Avatar who="nian" /><span><strong>小念：</strong>{topic.kidHook}</span></p>
+        <p><Avatar who="dad" /><span><strong>爸爸：</strong>这一类其实都在讲{topic.dadLens}。挑一个问题，我们从头聊到底。</span></p>
       </div>
 
       {difficulties.map((level) => {

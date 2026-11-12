@@ -7,25 +7,25 @@ import "./DialectMap.css";
 
 /** 气泡相对方言点挪多远，避开东南沿海挤在一起的几个点 */
 const pillOffset: Readonly<Record<string, Point>> = {
-  beijinghua: [0, -110],
-  dongbeihua: [-170, 34],
-  taiyuanhua: [-100, -100],
-  jinanhua: [130, -50],
-  xianhua: [0, -80],
-  "lanyin-guanhua": [0, -80],
-  "xinan-guanhua": [-30, 84],
-  wuhanhua: [-100, -60],
-  nanjinghua: [-110, -40],
-  changshahua: [-150, 0],
-  nanchanghua: [30, 70],
-  suzhouhua: [110, -80],
-  shanghaihua: [140, 0],
-  wenzhouhua: [120, -10],
-  guangzhouhua: [-180, 10],
-  "hongkong-cantonese": [-40, 72],
-  chaoshanhua: [120, 70],
-  hakkahua: [-150, -20],
-  "fujian-minnan": [135, -12]
+  beijinghua: [-10, -108],
+  dongbeihua: [-110, 40],
+  taiyuanhua: [-105, -88],
+  jinanhua: [135, -45],
+  xianhua: [-15, -72],
+  "lanyin-guanhua": [-20, -82],
+  "xinan-guanhua": [-40, 84],
+  wuhanhua: [-85, -50],
+  nanjinghua: [-58, -74],
+  changshahua: [-125, -18],
+  nanchanghua: [36, 52],
+  suzhouhua: [115, -82],
+  shanghaihua: [145, 8],
+  wenzhouhua: [125, 0],
+  guangzhouhua: [-165, 16],
+  "hongkong-cantonese": [-10, 78],
+  chaoshanhua: [125, 68],
+  hakkahua: [-135, -42],
+  "fujian-minnan": [145, -10]
 };
 
 export type MapMark = "right" | "wrong" | "option";
@@ -44,7 +44,13 @@ type Props = {
 };
 
 export function DialectMap({ dialects, pillText, selected, family, marks, onSelect, label }: Props) {
-  const shown = marks ? dialects.filter((dialect) => marks[dialect.slug]) : dialects;
+  const rank = (dialect: Dialect) => {
+    if (selected === dialect.slug || marks?.[dialect.slug] === "right") return 2;
+    if (marks?.[dialect.slug] === "wrong") return 1;
+    if (family !== undefined && dialect.family_slug !== family) return -1;
+    return 0;
+  };
+  const shown = [...(marks ? dialects.filter((dialect) => marks[dialect.slug]) : dialects)].sort((a, b) => rank(a) - rank(b));
   const press = (slug: string) => (event: KeyboardEvent) => {
     if (event.key === "Enter" || event.key === " ") {
       event.preventDefault();
@@ -52,8 +58,8 @@ export function DialectMap({ dialects, pillText, selected, family, marks, onSele
     }
   };
   return (
-    <svg className="dialect-map" viewBox="220 20 920 870" role="group" aria-label={label}>
-      <rect x={0} y={0} width={1200} height={900} fill="#c4e2f5" />
+    <svg className="dialect-map" viewBox="205 15 950 905" role="group" aria-label={label}>
+      <rect x={0} y={0} width={1200} height={950} fill="#c4e2f5" pointerEvents="none" />
       <MapBackdrop labels={!marks} />
       {shown.map((dialect) => {
         const [x, y] = geo(dialect.point.lon, dialect.point.lat);
@@ -78,6 +84,7 @@ export function DialectMap({ dialects, pillText, selected, family, marks, onSele
             onClick={onSelect ? () => onSelect(dialect.slug) : undefined} onKeyDown={onSelect ? press(dialect.slug) : undefined}>
             {text && (
               <>
+                <line x1={x} y1={y} x2={px} y2={py} stroke="transparent" strokeWidth={24} />
                 <line x1={x} y1={y} x2={px} y2={py} stroke={color} strokeWidth={3} strokeDasharray="6 5" />
                 <g className="map-pill">
                   <rect x={px - width / 2} y={py - height / 2} width={width} height={height} rx={Math.min(height / 2, 24)} fill="#fff" stroke={color} strokeWidth={on ? 6 : 3.5} />

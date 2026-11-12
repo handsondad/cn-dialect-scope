@@ -80,10 +80,10 @@ export const films: readonly Film[] = [
       {
         turn: 0, title: "表姐的粤语歌", duration: 9,
         cues: [
-          { kind: "sprite", icon: "👧", path: [[320, 560]], size: 220, from: 0.3 },
-          { kind: "sprite", icon: "🎤", path: [[450, 520]], size: 90, from: 0.8 },
-          { kind: "flow", path: [[500, 480], [1100, 300]], icon: "🎵", count: 5, speed: 160, size: 14, from: 1.5 },
-          { kind: "bubble", at: [880, 620], text: "九声六调！", side: "top", from: 3.5 },
+          { kind: "sprite", icon: "👧", path: [[300, 560]], size: 220, from: 0.3 },
+          { kind: "sprite", icon: "🎤", path: [[470, 540]], size: 90, from: 0.8 },
+          { kind: "flow", path: [[530, 470], [1080, 260]], icon: "🎵", count: 5, speed: 160, size: 14, from: 1.5 },
+          { kind: "bubble", at: [880, 640], text: "九声六调！", side: "top", from: 3.5 },
           { kind: "text", at: [600, 840], text: "粤语的声调特别多", from: 5.5 }
         ]
       },

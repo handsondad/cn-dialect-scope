@@ -78,6 +78,7 @@ export function HomePage({ heard, onTopic, onMap, onGame }: Props) {
           ) : flat}
           <button type="button" className="home-bubble is-nian" onClick={talk}><b>小念</b>{nianLine}</button>
           <button type="button" className="home-bubble is-dad" onClick={talk}><b>爸爸</b>{dadLine}</button>
+          <button type="button" className="home-chat-next" onClick={talk} aria-label="换一句对话">💬 换一句 ({chat + 1}/{chats.length})</button>
         </div>
       </section>
 

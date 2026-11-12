@@ -78,8 +78,8 @@ export const films: readonly Film[] = [
         cues: [
           { kind: "sprite", icon: "👵", path: [[260, 600]], size: 200, from: 0.3 },
           { kind: "bubble", at: [260, 490], text: "侬好！", sub: "上海话：你好", from: 1 },
-          { kind: "sprite", icon: "📖", path: [[920, 600]], size: 200, from: 2.5 },
-          { kind: "label", at: [920, 560], text: "葬花吟：侬 = 我", side: "top", color: red, from: 3.2 },
+          { kind: "sprite", icon: "📖", path: [[920, 610]], size: 180, from: 2.5 },
+          { kind: "label", at: [920, 515], pos: [920, 370], text: "葬花吟：侬 = 我", color: red, from: 3.2 },
           { kind: "text", at: [600, 840], text: "同一个字，两个意思", from: 5.5 }
         ]
       },
@@ -163,12 +163,12 @@ export const films: readonly Film[] = [
         turn: 1, title: "孔子的论语", duration: 11,
         cues: [
           { kind: "text", at: [600, 110], text: "食不语，寝不言", from: 0.3 },
-          { kind: "sprite", icon: "📜", path: [[600, 330]], size: 190, from: 0.8 },
-          { kind: "sprite", icon: "🍚", path: [[320, 600]], size: 130, from: 2.5 },
-          { kind: "label", at: [320, 600], text: "吃饭不说话", side: "bottom", from: 3 },
-          { kind: "sprite", icon: "🛏️", path: [[880, 600]], size: 130, from: 4.5 },
-          { kind: "label", at: [880, 600], text: "睡觉不聊天", side: "bottom", from: 5 },
-          { kind: "text", at: [600, 840], text: "两千多年前：食 = 吃", from: 7 }
+          { kind: "sprite", icon: "📜", path: [[600, 290]], size: 170, from: 0.8 },
+          { kind: "sprite", icon: "🍚", path: [[320, 505]], size: 125, from: 2.5 },
+          { kind: "label", at: [320, 575], pos: [320, 690], text: "吃饭不说话", from: 3 },
+          { kind: "sprite", icon: "🛏️", path: [[880, 505]], size: 125, from: 4.5 },
+          { kind: "label", at: [880, 575], pos: [880, 690], text: "睡觉不聊天", from: 5 },
+          { kind: "text", at: [600, 845], text: "两千多年前：食 = 吃", from: 7 }
         ]
       },
       {
@@ -220,6 +220,7 @@ export const films: readonly Film[] = [
       },
       {
         turn: 1, title: "爱用细的地方", view: "map", duration: 11,
+        camera: [{ t: 0, at: [720, 650], zoom: 1.5 }],
         cues: [
           { kind: "bubble", at: places.guangzhou, text: "细路", side: "left", size: "s", from: 0.5 },
           { kind: "bubble", at: places.changsha, text: "细伢子", side: "left", size: "s", from: 1.8 },
@@ -300,11 +301,11 @@ export const films: readonly Film[] = [
       {
         turn: 3, title: "两种都对", duration: 10,
         cues: [
-          { kind: "sprite", icon: "👟", path: [[380, 380]], size: 160, from: 0.5 },
-          { kind: "label", at: [380, 380], text: "先穿左脚", side: "top", from: 1 },
-          { kind: "sprite", icon: "👟", path: [[820, 380]], size: 160, from: 2 },
-          { kind: "label", at: [820, 380], text: "先穿右脚", side: "top", from: 2.5 },
-          { kind: "text", at: [600, 760], text: "两种都对", from: 4 }
+          { kind: "sprite", icon: "👟", path: [[380, 455]], size: 150, from: 0.5 },
+          { kind: "label", at: [380, 370], pos: [380, 230], text: "先穿左脚", from: 1 },
+          { kind: "sprite", icon: "👟", path: [[820, 455]], size: 150, from: 2 },
+          { kind: "label", at: [820, 370], pos: [820, 230], text: "先穿右脚", from: 2.5 },
+          { kind: "text", at: [600, 780], text: "两种都对", from: 4 }
         ]
       },
       {
@@ -363,11 +364,11 @@ export const films: readonly Film[] = [
       {
         turn: 4, title: "新东西要名字", duration: 10,
         cues: [
-          { kind: "sprite", icon: "🍇", path: [[300, 380]], size: 180, from: 0.5 },
-          { kind: "label", at: [300, 380], text: "葡萄：两千多年前", side: "top", from: 1.2 },
-          { kind: "sprite", icon: "🚕", path: [[900, 380]], size: 180, from: 3 },
-          { kind: "label", at: [900, 380], text: "的士：近代借来", side: "top", from: 3.7 },
-          { kind: "text", at: [600, 780], text: "借来的词用久了", from: 5.5 }
+          { kind: "sprite", icon: "🍇", path: [[300, 465]], size: 165, from: 0.5 },
+          { kind: "label", at: [300, 370], pos: [300, 230], text: "葡萄：两千多年前", from: 1.2 },
+          { kind: "sprite", icon: "🚕", path: [[900, 465]], size: 165, from: 3 },
+          { kind: "label", at: [900, 370], pos: [900, 230], text: "的士：近代借来", from: 3.7 },
+          { kind: "text", at: [600, 810], text: "借来的词用久了", from: 5.5 }
         ]
       }
     ]
