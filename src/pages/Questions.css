@@ -31,11 +31,20 @@
 .home-planet {
   position: relative; height: 380px; border-radius: var(--radius-lg); overflow: hidden;
   background: radial-gradient(circle at 50% 35%, #fffaf0 0%, #fbe6cf 60%, #d9ecf8 100%);
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-md); cursor: pointer;
 }
+.home-planet.is-3d { cursor: default; }
+.home-duo-poster {
+  position: absolute; top: 0; left: 50%; height: 100%; width: auto; max-width: none;
+  transform: translateX(-50%); pointer-events: none; user-select: none;
+  transition: opacity 0.28s ease 0.12s;
+}
+.home-planet .run-lab-canvas { opacity: 0; pointer-events: none; transition: opacity 0.3s ease; }
+.home-planet.is-3d .run-lab-canvas { opacity: 1; pointer-events: auto; }
+.home-planet.is-3d .home-duo-poster { opacity: 0; }
 .home-planet-flat { display: grid; place-items: center; height: 100%; font-size: 6rem; }
 .home-bubble {
-  position: absolute; max-width: min(380px, 42%); padding: 10px 16px; text-align: left; font-size: 0.92rem; line-height: 1.45;
+  position: absolute; z-index: 2; max-width: min(380px, 42%); padding: 10px 16px; text-align: left; font-size: 0.92rem; line-height: 1.45;
   background: #fff; border: 2px solid var(--border-color); box-shadow: var(--shadow-sm);
   animation: bubble-float 3s ease-in-out infinite;
 }
@@ -43,7 +52,7 @@
 .home-bubble.is-nian { right: 14px; top: 14px; border-radius: 20px 20px 4px 20px; background: #fff7e6; }
 .home-bubble.is-dad { left: 14px; top: 72px; border-radius: 20px 20px 20px 4px; animation-delay: 1.4s; }
 .home-chat-next {
-  position: absolute; right: 14px; bottom: 12px; padding: 4px 12px; border-radius: 999px;
+  position: absolute; z-index: 2; right: 14px; bottom: 12px; padding: 4px 12px; border-radius: 999px;
   border: 2px solid var(--border-color); background: rgba(255, 255, 255, 0.9); box-shadow: var(--shadow-sm);
   font-size: 0.8rem; font-weight: 700; color: var(--text-secondary); transition: transform var(--transition-fast), background 0.15s;
 }

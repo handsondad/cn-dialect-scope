@@ -1,4 +1,4 @@
-import { Suspense, useEffect, useMemo, useRef, type MutableRefObject } from "react";
+import { Suspense, useEffect, useLayoutEffect, useMemo, useRef, type MutableRefObject } from "react";
 import { Canvas, useFrame, useLoader, useThree, type ThreeEvent } from "@react-three/fiber";
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
@@ -43,16 +43,33 @@ function playOnce(rig: Rig, clip: string) {
 
 type CharacterProps = Omit<RunLab3DProps, "active" | "label" | "partner"> & { x: number; facing: number; tracksLens: boolean };
 
-function Character({ character, bodyRef, lensRef, cueRef, reducedMotion, onCharacterTap, onReady, x, facing, tracksLens }: CharacterProps) {
+function Character({ character, bodyRef, lensRef, cueRef, reducedMotion, onCharacterTap, x, facing, tracksLens }: Omit<CharacterProps, "onReady">) {
   const gltf = useLoader(GLTFLoader, modelUrl);
   const rig = useMemo(() => getRig(gltf, character), [gltf, character]);
   const camera = useThree((state) => state.camera);
   const size = useThree((state) => state.size);
   const scratch = useMemo(() => ({ v: new THREE.Vector3(), c: new THREE.Color() }), []);
 
-  useEffect(() => {
-    onReady();
-  }, [rig, onReady]);
+  useLayoutEffect(() => {
+    const rest = bodyRef.current.effort <= 0.12;
+    const initRot = rest ? facing : runFacing;
+    rig.root.rotation.y = initRot;
+    const gx = rest ? THREE.MathUtils.clamp(0.1 - initRot, -0.75, 0.75) : 0;
+    const gy = rest ? 0.12 : 0;
+    rig.gaze.set(gx, gy);
+    rig.head.quaternion.copy(rig.headPose);
+    rig.neck.quaternion.copy(rig.neckPose);
+    rig.mixer.update(0);
+    rig.head.scale.setScalar(rig.headScale);
+    rig.headPose.copy(rig.head.quaternion);
+    rig.neckPose.copy(rig.neck.quaternion);
+    rig.neck.rotateY(gx * 0.35);
+    rig.head.rotateY(gx * 0.65);
+    rig.head.rotateX(-gy);
+    rig.torso.scale.set(1, 1, 1);
+    rig.neck.scale.set(1, 1, 1);
+    rig.faceMat?.color.copy(rig.faceBase);
+  }, [rig, facing, bodyRef]);
 
   useEffect(() => {
     const onFinished = (event: { action: THREE.AnimationAction }) => {
@@ -163,15 +180,38 @@ function Character({ character, bodyRef, lensRef, cueRef, reducedMotion, onChara
 /** `lift` raises the framing so the characters sit lower, leaving room for speech bubbles above their heads. */
 function CameraRig({ reducedMotion, lift }: { reducedMotion: boolean; lift: number }) {
   const target = useMemo(() => lookTarget.clone().setY(lookTarget.y + lift), [lift]);
+  const camera = useThree((state) => state.camera);
+  const size = useThree((state) => state.size);
+
+  useLayoutEffect(() => {
+    const portrait = size.width < size.height * 0.85;
+    camera.position.set(0.6, 1.5 + lift + (portrait ? 0.25 : 0), portrait ? 7.3 : 6.2);
+    camera.lookAt(target);
+  }, [camera, size.width, size.height, lift, target]);
+
   useFrame((state, rawDelta) => {
     const dt = Math.min(rawDelta, 0.1);
-    const portrait = state.size.width < state.size.height * 0.95;
+    const portrait = state.size.width < state.size.height * 0.85;
     const distance = portrait ? 7.3 : 6.2;
     const x = 0.6 + (reducedMotion ? 0 : state.pointer.x * 0.3);
     const y = 1.5 + lift + (reducedMotion ? 0 : state.pointer.y * 0.15) + (portrait ? 0.25 : 0);
     state.camera.position.set(damp(state.camera.position.x, x, 3, dt), damp(state.camera.position.y, y, 3, dt), distance);
     state.camera.lookAt(target);
   });
+  return null;
+}
+
+function ReadySignal({ onReady }: { onReady: () => void }) {
+  const fired = useRef(false);
+  const invalidate = useThree((state) => state.invalidate);
+  useEffect(() => {
+    invalidate();
+  }, [invalidate]);
+  useFrame(() => {
+    if (fired.current) return;
+    fired.current = true;
+    onReady();
+  }, 2);
   return null;
 }
 
@@ -223,15 +263,16 @@ function Lights() {
 const restingBody = { current: createBodyState() };
 const idleLens = { current: { on: false, follow: false, x: 0, y: 0, r: 0 } };
 
-export default function RunLab3D({ active, label, partner, ...props }: RunLab3DProps) {
+export default function RunLab3D({ active, label, partner, onReady, ...props }: RunLab3DProps) {
   const ref = useRef<HTMLDivElement>(null);
+  const lift = partner ? 0.35 : 0;
   return (
     <div ref={ref} className="run-lab-canvas" role="img" aria-label={label}>
       <Canvas flat dpr={[1, 2]} frameloop={active ? "always" : "never"} resize={{ offsetSize: true }}
         gl={{ antialias: true, alpha: true, stencil: true }}
-        camera={{ fov: 30, near: 0.1, far: 60, position: [0.6, 1.5, 6.2] }}>
+        camera={{ fov: 30, near: 0.1, far: 60, position: [0.6, 1.5 + lift, 6.2] }}>
         <Lights />
-        <CameraRig reducedMotion={props.reducedMotion} lift={partner ? 0.35 : 0} />
+        <CameraRig reducedMotion={props.reducedMotion} lift={lift} />
         <World bodyRef={props.bodyRef} reducedMotion={props.reducedMotion} />
         <Suspense fallback={null}>
           <Character {...props} x={partner ? 0.5 : 0} facing={partner ? -0.25 : idleFacing} tracksLens />
@@ -239,6 +280,7 @@ export default function RunLab3D({ active, label, partner, ...props }: RunLab3DP
             <Character {...props} character={partner} bodyRef={restingBody} lensRef={idleLens}
               x={-0.6} facing={0.55} tracksLens={false} />
           )}
+          <ReadySignal onReady={onReady} />
         </Suspense>
         <XrayCompositor lensRef={props.lensRef} />
       </Canvas>
