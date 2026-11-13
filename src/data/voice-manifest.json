@@ -154,6 +154,54 @@
    "hash": "0a2b5408ba6e",
    "seconds": 11.06
   },
+  "chong-liang/0-dad": {
+   "hash": "bb87846dc685",
+   "seconds": 15.98
+  },
+  "chong-liang/0-nian": {
+   "hash": "bb6ea21a3514",
+   "seconds": 6
+  },
+  "chong-liang/1-dad": {
+   "hash": "3646e96094dd",
+   "seconds": 16.13
+  },
+  "chong-liang/1-nian": {
+   "hash": "ae412e248d34",
+   "seconds": 6.5
+  },
+  "chong-liang/2-dad": {
+   "hash": "8cc58b07ef6a",
+   "seconds": 14.69
+  },
+  "chong-liang/2-nian": {
+   "hash": "dbb6ff50e7a9",
+   "seconds": 5.95
+  },
+  "chong-liang/3-dad": {
+   "hash": "44314d95978b",
+   "seconds": 16.75
+  },
+  "chong-liang/3-nian": {
+   "hash": "f37777a273fb",
+   "seconds": 4.97
+  },
+  "chong-liang/4-dad": {
+   "hash": "1a6e4e329d57",
+   "seconds": 19.37
+  },
+  "chong-liang/4-nian": {
+   "hash": "403eea85138f",
+   "seconds": 7.46
+  },
+  "chong-liang/5-dad": {
+   "hash": "a5f655b45092",
+   "seconds": 9.65
+  },
+  "chong-liang/5-nian": {
+   "hash": "5dc468c02622",
+   "seconds": 13.94
+  },
   "da-di/0-dad": {
    "hash": "34add1e23075",
    "seconds": 16.15
@@ -441,6 +489,54 @@
   "guanhua/5-nian": {
    "hash": "48f38fc934c0",
    "seconds": 11.74
+  },
+  "guo-zao/0-dad": {
+   "hash": "1b0dd3abf9bb",
+   "seconds": 19.85
+  },
+  "guo-zao/0-nian": {
+   "hash": "934757ecaa45",
+   "seconds": 7.85
+  },
+  "guo-zao/1-dad": {
+   "hash": "3baedbcfc62e",
+   "seconds": 18.07
+  },
+  "guo-zao/1-nian": {
+   "hash": "70ae09554181",
+   "seconds": 6.5
+  },
+  "guo-zao/2-dad": {
+   "hash": "8f453aeed42e",
+   "seconds": 16.94
+  },
+  "guo-zao/2-nian": {
+   "hash": "f375d1a83f95",
+   "seconds": 5.3
+  },
+  "guo-zao/3-dad": {
+   "hash": "79fad1fadb43",
+   "seconds": 17.98
+  },
+  "guo-zao/3-nian": {
+   "hash": "1674ed8f2c92",
+   "seconds": 7.3
+  },
+  "guo-zao/4-dad": {
+   "hash": "98a253ab6ca1",
+   "seconds": 15.26
+  },
+  "guo-zao/4-nian": {
+   "hash": "7e3b1f12587b",
+   "seconds": 8.11
+  },
+  "guo-zao/5-dad": {
+   "hash": "fc9bf2d33545",
+   "seconds": 9.14
+  },
+  "guo-zao/5-nian": {
+   "hash": "5be7c3848413",
+   "seconds": 12.48
   },
   "hakka/0-dad": {
    "hash": "6d1b5b204437",
@@ -730,6 +826,102 @@
    "hash": "f25fb9423d54",
    "seconds": 11.59
   },
+  "luo-yu/0-dad": {
+   "hash": "d9adc53c753a",
+   "seconds": 23.06
+  },
+  "luo-yu/0-nian": {
+   "hash": "58bacc960409",
+   "seconds": 7.32
+  },
+  "luo-yu/1-dad": {
+   "hash": "d4e3f24730e1",
+   "seconds": 19.03
+  },
+  "luo-yu/1-nian": {
+   "hash": "36bb05bf65e9",
+   "seconds": 6.05
+  },
+  "luo-yu/2-dad": {
+   "hash": "757cf894074b",
+   "seconds": 18.05
+  },
+  "luo-yu/2-nian": {
+   "hash": "892f5dbe6faa",
+   "seconds": 7.2
+  },
+  "luo-yu/3-dad": {
+   "hash": "bbe0a888de89",
+   "seconds": 14.04
+  },
+  "luo-yu/3-nian": {
+   "hash": "320c62a6b781",
+   "seconds": 4.13
+  },
+  "luo-yu/4-dad": {
+   "hash": "66a8453d32c6",
+   "seconds": 18.43
+  },
+  "luo-yu/4-nian": {
+   "hash": "01786fcb8c03",
+   "seconds": 6.98
+  },
+  "luo-yu/5-dad": {
+   "hash": "51d2026e3222",
+   "seconds": 10.27
+  },
+  "luo-yu/5-nian": {
+   "hash": "296a5bec2ff9",
+   "seconds": 14.42
+  },
+  "m-goi/0-dad": {
+   "hash": "4f635c723a63",
+   "seconds": 20.57
+  },
+  "m-goi/0-nian": {
+   "hash": "db15035d72fd",
+   "seconds": 9.53
+  },
+  "m-goi/1-dad": {
+   "hash": "a1a10eb7dff7",
+   "seconds": 17.93
+  },
+  "m-goi/1-nian": {
+   "hash": "c95256ed8dc5",
+   "seconds": 6.31
+  },
+  "m-goi/2-dad": {
+   "hash": "1f7e7d7396f7",
+   "seconds": 17.04
+  },
+  "m-goi/2-nian": {
+   "hash": "1343150c6575",
+   "seconds": 4.25
+  },
+  "m-goi/3-dad": {
+   "hash": "fb421518ced8",
+   "seconds": 20.23
+  },
+  "m-goi/3-nian": {
+   "hash": "16e71d19dc22",
+   "seconds": 6.26
+  },
+  "m-goi/4-dad": {
+   "hash": "7c5dbcfa37b2",
+   "seconds": 16.18
+  },
+  "m-goi/4-nian": {
+   "hash": "275b648ea1b5",
+   "seconds": 6.86
+  },
+  "m-goi/5-dad": {
+   "hash": "263d0e85fac7",
+   "seconds": 8.98
+  },
+  "m-goi/5-nian": {
+   "hash": "6ecd2290f792",
+   "seconds": 12.82
+  },
   "mei-you/0-dad": {
    "hash": "a9a579587995",
    "seconds": 16.2
@@ -778,6 +970,54 @@
    "hash": "7b2907ccbf66",
    "seconds": 12.82
   },
+  "mian-shan/0-dad": {
+   "hash": "21b92848ea33",
+   "seconds": 19.99
+  },
+  "mian-shan/0-nian": {
+   "hash": "d8489831f8f1",
+   "seconds": 7.1
+  },
+  "mian-shan/1-dad": {
+   "hash": "33fd3e4e8127",
+   "seconds": 21.84
+  },
+  "mian-shan/1-nian": {
+   "hash": "99e8da49c6f3",
+   "seconds": 6.84
+  },
+  "mian-shan/2-dad": {
+   "hash": "cb57d3d06547",
+   "seconds": 19.1
+  },
+  "mian-shan/2-nian": {
+   "hash": "471316b306b8",
+   "seconds": 6.43
+  },
+  "mian-shan/3-dad": {
+   "hash": "8a16e8efcdd1",
+   "seconds": 22.78
+  },
+  "mian-shan/3-nian": {
+   "hash": "779317e25807",
+   "seconds": 6.53
+  },
+  "mian-shan/4-dad": {
+   "hash": "1fc600b6521a",
+   "seconds": 21.36
+  },
+  "mian-shan/4-nian": {
+   "hash": "c936e780cd14",
+   "seconds": 7.49
+  },
+  "mian-shan/5-dad": {
+   "hash": "4ff4cb7b18fe",
+   "seconds": 9.34
+  },
+  "mian-shan/5-nian": {
+   "hash": "e3fabab9a134",
+   "seconds": 13.51
+  },
   "mountains/0-dad": {
    "hash": "08b73b54ece8",
    "seconds": 17.62
@@ -825,6 +1065,102 @@
   "mountains/5-nian": {
    "hash": "388ce642045a",
    "seconds": 9.24
+  },
+  "nanjing-hua/0-dad": {
+   "hash": "ae9c9c2a361f",
+   "seconds": 18.36
+  },
+  "nanjing-hua/0-nian": {
+   "hash": "4054f191069f",
+   "seconds": 8.23
+  },
+  "nanjing-hua/1-dad": {
+   "hash": "fe673e936ea4",
+   "seconds": 20.09
+  },
+  "nanjing-hua/1-nian": {
+   "hash": "eef9cd97dc4d",
+   "seconds": 8.33
+  },
+  "nanjing-hua/2-dad": {
+   "hash": "db71b82fd2fd",
+   "seconds": 22.8
+  },
+  "nanjing-hua/2-nian": {
+   "hash": "dc62aa68a03f",
+   "seconds": 6.7
+  },
+  "nanjing-hua/3-dad": {
+   "hash": "255638fef607",
+   "seconds": 19.49
+  },
+  "nanjing-hua/3-nian": {
+   "hash": "3856c9e6c44a",
+   "seconds": 7.68
+  },
+  "nanjing-hua/4-dad": {
+   "hash": "a7b03c9dde50",
+   "seconds": 18
+  },
+  "nanjing-hua/4-nian": {
+   "hash": "b9914808110f",
+   "seconds": 7.06
+  },
+  "nanjing-hua/5-dad": {
+   "hash": "0b4ccbc22b6f",
+   "seconds": 10.25
+  },
+  "nanjing-hua/5-nian": {
+   "hash": "3d1046e4ab33",
+   "seconds": 13.63
+  },
+  "nl-fh/0-dad": {
+   "hash": "8d358114c556",
+   "seconds": 28.37
+  },
+  "nl-fh/0-nian": {
+   "hash": "541b3f6c1021",
+   "seconds": 6.86
+  },
+  "nl-fh/1-dad": {
+   "hash": "a7645a3a4f78",
+   "seconds": 20.71
+  },
+  "nl-fh/1-nian": {
+   "hash": "c359e1d5d8b5",
+   "seconds": 7.06
+  },
+  "nl-fh/2-dad": {
+   "hash": "ffee64f6d864",
+   "seconds": 22.68
+  },
+  "nl-fh/2-nian": {
+   "hash": "350ce14912b3",
+   "seconds": 8.78
+  },
+  "nl-fh/3-dad": {
+   "hash": "e7945d9cc3b2",
+   "seconds": 20.71
+  },
+  "nl-fh/3-nian": {
+   "hash": "1d3fdf0ac9d6",
+   "seconds": 7.85
+  },
+  "nl-fh/4-dad": {
+   "hash": "0b74b76ce570",
+   "seconds": 24.84
+  },
+  "nl-fh/4-nian": {
+   "hash": "b66f00911b56",
+   "seconds": 7.1
+  },
+  "nl-fh/5-dad": {
+   "hash": "410553be75f0",
+   "seconds": 8.83
+  },
+  "nl-fh/5-nian": {
+   "hash": "9e95ff7749df",
+   "seconds": 13.42
   },
   "nong/0-dad": {
    "hash": "699f3ec62736",
@@ -921,6 +1257,54 @@
   "putonghua/5-nian": {
    "hash": "e40eada4b80d",
    "seconds": 10.75
+  },
+  "qing-sheng/0-dad": {
+   "hash": "bc7bd51cdbcb",
+   "seconds": 18.02
+  },
+  "qing-sheng/0-nian": {
+   "hash": "b868e20512af",
+   "seconds": 7.13
+  },
+  "qing-sheng/1-dad": {
+   "hash": "c9ca92f60e41",
+   "seconds": 21.34
+  },
+  "qing-sheng/1-nian": {
+   "hash": "9bdbc5babac3",
+   "seconds": 6.29
+  },
+  "qing-sheng/2-dad": {
+   "hash": "e00040a29e62",
+   "seconds": 21.34
+  },
+  "qing-sheng/2-nian": {
+   "hash": "f741eea5b80d",
+   "seconds": 6.65
+  },
+  "qing-sheng/3-dad": {
+   "hash": "959264ea9ac3",
+   "seconds": 17.93
+  },
+  "qing-sheng/3-nian": {
+   "hash": "928f1e3527c8",
+   "seconds": 6.6
+  },
+  "qing-sheng/4-dad": {
+   "hash": "05eb578b60ae",
+   "seconds": 20.98
+  },
+  "qing-sheng/4-nian": {
+   "hash": "bdd7ee3ccb51",
+   "seconds": 6.34
+  },
+  "qing-sheng/5-dad": {
+   "hash": "e36976d9065a",
+   "seconds": 8.14
+  },
+  "qing-sheng/5-nian": {
+   "hash": "b6c83b2b8a57",
+   "seconds": 15.02
   },
   "shi-fan/0-dad": {
    "hash": "a20fe8bf2827",
@@ -1066,6 +1450,102 @@
    "hash": "208f486b70a8",
    "seconds": 12.82
   },
+  "wen-bai/0-dad": {
+   "hash": "35c6df37a0e0",
+   "seconds": 18.22
+  },
+  "wen-bai/0-nian": {
+   "hash": "552d196df9e5",
+   "seconds": 8.42
+  },
+  "wen-bai/1-dad": {
+   "hash": "dc333c25a73e",
+   "seconds": 20.4
+  },
+  "wen-bai/1-nian": {
+   "hash": "b99923b9e9f6",
+   "seconds": 6.1
+  },
+  "wen-bai/2-dad": {
+   "hash": "6521e61eba72",
+   "seconds": 21.77
+  },
+  "wen-bai/2-nian": {
+   "hash": "12b3ed21bbb9",
+   "seconds": 6.02
+  },
+  "wen-bai/3-dad": {
+   "hash": "c087730276a0",
+   "seconds": 19.97
+  },
+  "wen-bai/3-nian": {
+   "hash": "b4ebc3102585",
+   "seconds": 7.3
+  },
+  "wen-bai/4-dad": {
+   "hash": "2cf766890c0b",
+   "seconds": 21.89
+  },
+  "wen-bai/4-nian": {
+   "hash": "d53b93e3f535",
+   "seconds": 6.36
+  },
+  "wen-bai/5-dad": {
+   "hash": "ecff7caee802",
+   "seconds": 9.84
+  },
+  "wen-bai/5-nian": {
+   "hash": "33a08195d9aa",
+   "seconds": 13.97
+  },
+  "wenzhou-hua/0-dad": {
+   "hash": "9ab0f2d7d2d7",
+   "seconds": 18.14
+  },
+  "wenzhou-hua/0-nian": {
+   "hash": "531f1cb02b14",
+   "seconds": 8.33
+  },
+  "wenzhou-hua/1-dad": {
+   "hash": "a1e97f67b7d1",
+   "seconds": 16.46
+  },
+  "wenzhou-hua/1-nian": {
+   "hash": "2ae8c2b1bc19",
+   "seconds": 6.31
+  },
+  "wenzhou-hua/2-dad": {
+   "hash": "4c5f4a8453cf",
+   "seconds": 22.3
+  },
+  "wenzhou-hua/2-nian": {
+   "hash": "e08bdad28d59",
+   "seconds": 7.27
+  },
+  "wenzhou-hua/3-dad": {
+   "hash": "49d2f08cbb5e",
+   "seconds": 19.06
+  },
+  "wenzhou-hua/3-nian": {
+   "hash": "5e756833a4cf",
+   "seconds": 7.66
+  },
+  "wenzhou-hua/4-dad": {
+   "hash": "eb974d1d0982",
+   "seconds": 16.56
+  },
+  "wenzhou-hua/4-nian": {
+   "hash": "bda666ba74b6",
+   "seconds": 6.84
+  },
+  "wenzhou-hua/5-dad": {
+   "hash": "88528e9ed855",
+   "seconds": 9.05
+  },
+  "wenzhou-hua/5-nian": {
+   "hash": "df7565584c64",
+   "seconds": 13.39
+  },
   "why-different/0-dad": {
    "hash": "ae8772457037",
    "seconds": 15.91
@@ -1162,6 +1642,102 @@
    "hash": "72c871a81aab",
    "seconds": 14.09
   },
+  "yi-bu/0-dad": {
+   "hash": "f29fe0512ed5",
+   "seconds": 22.49
+  },
+  "yi-bu/0-nian": {
+   "hash": "36efa42c213a",
+   "seconds": 7.94
+  },
+  "yi-bu/1-dad": {
+   "hash": "6cc533a22df2",
+   "seconds": 17.66
+  },
+  "yi-bu/1-nian": {
+   "hash": "0c43e2336d40",
+   "seconds": 6.38
+  },
+  "yi-bu/2-dad": {
+   "hash": "96e2b9d8ac52",
+   "seconds": 20.38
+  },
+  "yi-bu/2-nian": {
+   "hash": "15955a374c04",
+   "seconds": 6.7
+  },
+  "yi-bu/3-dad": {
+   "hash": "ff3e071337eb",
+   "seconds": 19.2
+  },
+  "yi-bu/3-nian": {
+   "hash": "073367bfe150",
+   "seconds": 6.7
+  },
+  "yi-bu/4-dad": {
+   "hash": "401017f814f6",
+   "seconds": 15.94
+  },
+  "yi-bu/4-nian": {
+   "hash": "df21251f4cc4",
+   "seconds": 6.41
+  },
+  "yi-bu/5-dad": {
+   "hash": "75039a030a64",
+   "seconds": 10.1
+  },
+  "yi-bu/5-nian": {
+   "hash": "55d0c3cce34a",
+   "seconds": 13.46
+  },
+  "zan-ruan/0-dad": {
+   "hash": "d31127acff13",
+   "seconds": 20.09
+  },
+  "zan-ruan/0-nian": {
+   "hash": "7d7d6e13f79a",
+   "seconds": 8.18
+  },
+  "zan-ruan/1-dad": {
+   "hash": "3a211c69e17d",
+   "seconds": 17.26
+  },
+  "zan-ruan/1-nian": {
+   "hash": "e7fc243b2e99",
+   "seconds": 7.03
+  },
+  "zan-ruan/2-dad": {
+   "hash": "95d26efa6c6e",
+   "seconds": 18.14
+  },
+  "zan-ruan/2-nian": {
+   "hash": "1783628fa972",
+   "seconds": 7.01
+  },
+  "zan-ruan/3-dad": {
+   "hash": "d33e738c1d80",
+   "seconds": 16.13
+  },
+  "zan-ruan/3-nian": {
+   "hash": "655fe8c6d258",
+   "seconds": 6.43
+  },
+  "zan-ruan/4-dad": {
+   "hash": "19383fb8f1d0",
+   "seconds": 20.83
+  },
+  "zan-ruan/4-nian": {
+   "hash": "202ef46a6c23",
+   "seconds": 7.99
+  },
+  "zan-ruan/5-dad": {
+   "hash": "86c7780b1229",
+   "seconds": 9.24
+  },
+  "zan-ruan/5-nian": {
+   "hash": "ff38fd702b6f",
+   "seconds": 14.21
+  },
   "zou-pao/0-dad": {
    "hash": "e3c446dfb9ea",
    "seconds": 13.03
@@ -1212,8 +1788,16 @@
   }
  },
  "samples": {
+  "dongbei-0bb477f7": {
+   "text": "你瞅啥呢？",
+   "seconds": 2.02
+  },
   "dongbei-0dd10baf": {
    "text": "小孩儿",
+   "seconds": 1.87
+  },
+  "dongbei-0e96fa0c": {
+   "text": "他",
    "seconds": 1.87
   },
   "dongbei-0e9a6eaa": {
@@ -1224,13 +1808,45 @@
    "text": "今天人老鼻子多了。",
    "seconds": 2.71
   },
+  "dongbei-139d4701": {
+   "text": "这事儿咋整？",
+   "seconds": 1.87
+  },
   "dongbei-151abd73": {
    "text": "今天",
+   "seconds": 1.87
+  },
+  "dongbei-15a9e911": {
+   "text": "站",
+   "seconds": 1.87
+  },
+  "dongbei-21079331": {
+   "text": "喝茶",
    "seconds": 1.87
   },
   "dongbei-352b32c4": {
    "text": "晚上整点烧烤。",
    "seconds": 2.3
+  },
+  "dongbei-3b53b413": {
+   "text": "下黑儿",
+   "seconds": 1.87
+  },
+  "dongbei-3d9fa6b0": {
+   "text": "衣裳",
+   "seconds": 1.87
+  },
+  "dongbei-4494c16e": {
+   "text": "奶奶",
+   "seconds": 1.87
+  },
+  "dongbei-4dd00939": {
+   "text": "我",
+   "seconds": 1.87
+  },
+  "dongbei-4ee69fea": {
+   "text": "现在",
+   "seconds": 1.87
   },
   "dongbei-578aee80": {
    "text": "没事儿咱就唠嗑。",
@@ -1238,6 +1854,18 @@
   },
   "dongbei-5b0e3c71": {
    "text": "埋汰",
+   "seconds": 1.87
+  },
+  "dongbei-5b8e0143": {
+   "text": "吃",
+   "seconds": 1.87
+  },
+  "dongbei-62dc3339": {
+   "text": "稀罕",
+   "seconds": 1.87
+  },
+  "dongbei-6c2226af": {
+   "text": "东西",
    "seconds": 1.87
   },
   "dongbei-6e9cfc78": {
@@ -1248,12 +1876,32 @@
    "text": "你瞅啥",
    "seconds": 1.87
   },
+  "dongbei-743ab99e": {
+   "text": "脸",
+   "seconds": 1.87
+  },
   "dongbei-7ac5a640": {
    "text": "月亮",
    "seconds": 1.87
   },
+  "dongbei-80d94672": {
+   "text": "知道",
+   "seconds": 1.87
+  },
   "dongbei-8d918b56": {
    "text": "回家",
+   "seconds": 1.87
+  },
+  "dongbei-920737eb": {
+   "text": "昨儿个",
+   "seconds": 1.87
+  },
+  "dongbei-94f37a9d": {
+   "text": "大伙儿都稀罕这孩子。",
+   "seconds": 2.71
+  },
+  "dongbei-95d540b6": {
+   "text": "谢谢",
    "seconds": 1.87
   },
   "dongbei-a01d6887": {
@@ -1268,12 +1916,20 @@
    "text": "别埋汰人啊。",
    "seconds": 2.09
   },
+  "dongbei-ac34c5c6": {
+   "text": "走",
+   "seconds": 1.87
+  },
   "dongbei-b0d88412": {
    "text": "整",
    "seconds": 1.27
   },
   "dongbei-b62932fd": {
    "text": "筷子",
+   "seconds": 1.87
+  },
+  "dongbei-bc9678f6": {
+   "text": "你",
    "seconds": 1.87
   },
   "dongbei-c18d0ed5": {
@@ -1288,9 +1944,29 @@
    "text": "嘎哈",
    "seconds": 1.87
   },
+  "dongbei-cee57e7f": {
+   "text": "洗澡儿",
+   "seconds": 1.87
+  },
+  "dongbei-d577f6fe": {
+   "text": "哪疙瘩",
+   "seconds": 1.87
+  },
   "dongbei-dbd6d618": {
    "text": "你搁这儿嘎哈呢？",
    "seconds": 2.42
+  },
+  "dongbei-e1bae835": {
+   "text": "瞅",
+   "seconds": 1.87
+  },
+  "dongbei-e38d445b": {
+   "text": "咋",
+   "seconds": 1.87
+  },
+  "dongbei-e7175d06": {
+   "text": "发毛",
+   "seconds": 1.87
   },
   "dongbei-e8100230": {
    "text": "可劲儿",
@@ -1302,6 +1978,10 @@
   },
   "dongbei-ed8d5419": {
    "text": "咱",
+   "seconds": 1.87
+  },
+  "dongbei-f033f5c0": {
+   "text": "睡觉",
    "seconds": 1.87
   },
   "dongbei-f7991a81": {
@@ -1316,6 +1996,10 @@
    "text": "唠嗑",
    "seconds": 1.87
   },
+  "dongbei-fb241b49": {
+   "text": "下雨",
+   "seconds": 1.87
+  },
   "dongbei-fdcc6549": {
    "text": "没",
    "seconds": 1.87
@@ -1328,8 +2012,16 @@
    "text": "麻",
    "seconds": 1.87
   },
+  "putonghua-01eda74a": {
+   "text": "第一",
+   "seconds": 1.87
+  },
   "putonghua-178c746d": {
    "text": "盖儿",
+   "seconds": 1.87
+  },
+  "putonghua-19045c2d": {
+   "text": "你好",
    "seconds": 1.87
   },
   "putonghua-20065fb8": {
@@ -1340,13 +2032,65 @@
    "text": "很好",
    "seconds": 1.87
   },
+  "putonghua-48f1dc6d": {
+   "text": "说得真地道",
+   "seconds": 1.97
+  },
+  "putonghua-4eefd5ce": {
+   "text": "不去",
+   "seconds": 1.87
+  },
+  "putonghua-4f4f0bf0": {
+   "text": "花朵",
+   "seconds": 1.87
+  },
+  "putonghua-6defd2a8": {
+   "text": "一定",
+   "seconds": 1.87
+  },
+  "putonghua-7676f078": {
+   "text": "买点东西",
+   "seconds": 1.87
+  },
+  "putonghua-8313115e": {
+   "text": "挖一条地道",
+   "seconds": 1.87
+  },
+  "putonghua-8ce39f68": {
+   "text": "不对",
+   "seconds": 1.87
+  },
   "putonghua-8f50b156": {
    "text": "玩儿",
+   "seconds": 1.87
+  },
+  "putonghua-99e95d41": {
+   "text": "东西南北",
+   "seconds": 1.87
+  },
+  "putonghua-beacc5d4": {
+   "text": "衣裳",
+   "seconds": 1.87
+  },
+  "putonghua-c0eb9c51": {
+   "text": "一天",
+   "seconds": 1.87
+  },
+  "putonghua-c1353c6b": {
+   "text": "流血了。",
    "seconds": 1.87
   },
   "putonghua-cd6eb18e": {
    "text": "马",
    "seconds": 1.87
+  },
+  "putonghua-d2a9176c": {
+   "text": "咱们一块儿走！",
+   "seconds": 1.87
+  },
+  "putonghua-e58d36f0": {
+   "text": "血液",
+   "seconds": 1.49
   },
   "putonghua-e76d477c": {
    "text": "骂",
@@ -1372,9 +2116,21 @@
    "text": "外婆",
    "seconds": 1.87
   },
+  "yue-0203345a": {
+   "text": "着多件衫。",
+   "seconds": 2.33
+  },
   "yue-03cb37fe": {
    "text": "靓",
    "seconds": 1.87
+  },
+  "yue-05437989": {
+   "text": "起身去洗面啦。",
+   "seconds": 2.62
+  },
+  "yue-09d518f1": {
+   "text": "天冻要着多件衫。",
+   "seconds": 3.07
   },
   "yue-0d525cbe": {
    "text": "月光",
@@ -1392,9 +2148,17 @@
    "text": "我冇带锁匙。",
    "seconds": 2.4
   },
+  "yue-0f8155a9": {
+   "text": "中意",
+   "seconds": 1.87
+  },
   "yue-181a7dc1": {
    "text": "你讲咩啊？",
    "seconds": 2.04
+  },
+  "yue-1862777a": {
+   "text": "睇",
+   "seconds": 1.87
   },
   "yue-196488d6": {
    "text": "细路仔",
@@ -1410,6 +2174,14 @@
   },
   "yue-1f248078": {
    "text": "热头",
+   "seconds": 1.87
+  },
+  "yue-1f602c8e": {
+   "text": "你去边度呀？",
+   "seconds": 2.38
+  },
+  "yue-2b9dcff6": {
+   "text": "衫",
    "seconds": 1.87
   },
   "yue-2c26c4f6": {
@@ -1436,6 +2208,10 @@
    "text": "人客",
    "seconds": 1.87
   },
+  "yue-34cb8521": {
+   "text": "面",
+   "seconds": 1.87
+  },
   "yue-350a7d21": {
    "text": "佢",
    "seconds": 1.87
@@ -1455,6 +2231,10 @@
   "yue-4a366305": {
    "text": "搞掂",
    "seconds": 1.87
+  },
+  "yue-4b64474b": {
+   "text": "冲热水凉",
+   "seconds": 2.38
   },
   "yue-4c0aa156": {
    "text": "事",
@@ -1528,9 +2308,29 @@
    "text": "冇眼睇",
    "seconds": 2.06
   },
+  "yue-71b0df39": {
+   "text": "嫲嫲",
+   "seconds": 1.87
+  },
   "yue-75986ff0": {
    "text": "企喺度",
    "seconds": 1.99
+  },
+  "yue-786a919a": {
+   "text": "一日",
+   "seconds": 1.87
+  },
+  "yue-7b99d053": {
+   "text": "一定",
+   "seconds": 1.87
+  },
+  "yue-7c56c2db": {
+   "text": "我唔知啊。",
+   "seconds": 2.14
+  },
+  "yue-7d714371": {
+   "text": "对唔住。",
+   "seconds": 1.94
   },
   "yue-7fb5f132": {
    "text": "食",
@@ -1548,8 +2348,16 @@
    "text": "你讲乜嘢？",
    "seconds": 2.14
   },
+  "yue-8d408da9": {
+   "text": "惊",
+   "seconds": 1.87
+  },
   "yue-8deae3bb": {
    "text": "而家",
+   "seconds": 1.87
+  },
+  "yue-8f043ab7": {
+   "text": "花朵",
    "seconds": 1.87
   },
   "yue-8f17e086": {
@@ -1558,6 +2366,10 @@
   },
   "yue-8fa5e1be": {
    "text": "听日",
+   "seconds": 1.87
+  },
+  "yue-912367f5": {
+   "text": "点样",
    "seconds": 1.87
   },
   "yue-91753a59": {
@@ -1576,6 +2388,14 @@
    "text": "食咗饭未？",
    "seconds": 2.28
   },
+  "yue-9cf4255c": {
+   "text": "去睇戏啦。",
+   "seconds": 2.16
+  },
+  "yue-9dcdaa56": {
+   "text": "唔该",
+   "seconds": 1.87
+  },
   "yue-a171f8e0": {
    "text": "行路",
    "seconds": 1.87
@@ -1592,13 +2412,29 @@
    "text": "史",
    "seconds": 1.87
   },
+  "yue-a88a8c3d": {
+   "text": "第一",
+   "seconds": 1.87
+  },
   "yue-a94572bd": {
    "text": "时",
    "seconds": 1.87
   },
+  "yue-b1ad22d1": {
+   "text": "多谢你嘅礼物。",
+   "seconds": 2.5
+  },
+  "yue-b296eae8": {
+   "text": "冲凉",
+   "seconds": 1.9
+  },
   "yue-b3f2fea4": {
    "text": "我收工先返去。",
    "seconds": 2.69
+  },
+  "yue-b661dd34": {
+   "text": "知",
+   "seconds": 1.87
   },
   "yue-bcc67707": {
    "text": "乜嘢",
@@ -1607,6 +2443,10 @@
   "yue-bf2d3f5c": {
    "text": "咁样都掂。",
    "seconds": 2.26
+  },
+  "yue-c124b18c": {
+   "text": "落雨",
+   "seconds": 1.87
   },
   "yue-c2440718": {
    "text": "我",
@@ -1623,6 +2463,10 @@
   "yue-c629390d": {
    "text": "落楼截架的士。",
    "seconds": 2.64
+  },
+  "yue-cad82081": {
+   "text": "多谢",
+   "seconds": 1.87
   },
   "yue-d0792d48": {
    "text": "收工",
@@ -1644,6 +2488,14 @@
    "text": "婆婆",
    "seconds": 1.87
   },
+  "yue-d98fef3c": {
+   "text": "出面落雨啦。",
+   "seconds": 2.33
+  },
+  "yue-dac6acdf": {
+   "text": "夜晚",
+   "seconds": 1.87
+  },
   "yue-dc0709ac": {
    "text": "冇问题",
    "seconds": 1.97
@@ -1660,6 +2512,26 @@
    "text": "拍拖",
    "seconds": 1.87
   },
+  "yue-e00ba472": {
+   "text": "我好中意食点心。",
+   "seconds": 2.83
+  },
+  "yue-e03f2144": {
+   "text": "唔使惊，爸爸喺度。",
+   "seconds": 3.19
+  },
+  "yue-e38885b2": {
+   "text": "边度",
+   "seconds": 1.87
+  },
+  "yue-e3cb61f8": {
+   "text": "晚黑",
+   "seconds": 1.87
+  },
+  "yue-e5b11f4a": {
+   "text": "呢个点样整呀？",
+   "seconds": 2.57
+  },
   "yue-e6cf52d7": {
    "text": "好犀利",
    "seconds": 2.02
@@ -1668,13 +2540,41 @@
    "text": "件事已经搞掂。",
    "seconds": 2.83
   },
+  "yue-ef5fd3e0": {
+   "text": "阿嫲",
+   "seconds": 1.87
+  },
+  "yue-ef9e0e36": {
+   "text": "琴日",
+   "seconds": 1.87
+  },
+  "yue-f14247eb": {
+   "text": "去冲凉啦。",
+   "seconds": 2.21
+  },
   "yue-f4c354e9": {
    "text": "万径人踪灭",
    "seconds": 2.3
   },
+  "yue-f5317361": {
+   "text": "嘢",
+   "seconds": 1.87
+  },
+  "yue-f8641243": {
+   "text": "食完饭去冲凉。",
+   "seconds": 2.76
+  },
+  "yue-fab4e94a": {
+   "text": "买啲嘢食。",
+   "seconds": 2.02
+  },
   "yue-fe4f864c": {
    "text": "快啲",
    "seconds": 1.87
+  },
+  "yue-feb7c837": {
+   "text": "唔该晒！",
+   "seconds": 1.9
   }
  }
 }

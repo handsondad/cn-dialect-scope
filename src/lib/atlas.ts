@@ -79,7 +79,8 @@ export const familyColor: Readonly<Record<string, string>> = {
   gan: "#8e6ae8",
   hakka: "#2fae6a",
   cantonese: "#e5483b",
-  minnan: "#13a99a"
+  minnan: "#13a99a",
+  mindong: "#0e86b8"
 };
 
 export const confidenceLabel: Record<Confidence, string> = { high: "大家都这么说", medium: "还要再核对", unverified: "还不确定" };

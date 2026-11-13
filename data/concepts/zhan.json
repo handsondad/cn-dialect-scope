@@ -187,6 +187,104 @@
       "sources": [
         "wiktionary-dial-syn"
       ]
+    },
+    {
+      "dialect": "dongbeihua",
+      "form": "站",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "xinan-guanhua",
+      "form": "站",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "lanyin-guanhua",
+      "form": "站",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "hongkong-cantonese",
+      "form": "企",
+      "orthography": "俗字",
+      "etymon": "徛",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "kei5"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "suzhouhua",
+      "form": "立",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "changshahua",
+      "form": "站",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "nanchanghua",
+      "form": "站",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "fuzhouhua",
+      "form": "徛",
+      "orthography": "本字",
+      "etymon": "徛",
+      "romanization": {
+        "scheme": "平话字",
+        "text": "kiê"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
     }
   ]
 }

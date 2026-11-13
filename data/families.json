@@ -86,6 +86,21 @@
     }
   },
   {
+    "slug": "mindong",
+    "name": "闽东语",
+    "english_name": "Eastern Min",
+    "summary": "以福州话为代表，本地常称“平话”；声调与连读变调丰富，和闽南话同属闽语却很难互通。",
+    "regions": [
+      "福州",
+      "宁德"
+    ],
+    "learning_focus": [
+      "连读变音",
+      "保留古词",
+      "和闽南话比一比"
+    ]
+  },
+  {
     "slug": "wu",
     "name": "吴语",
     "english_name": "Wu",

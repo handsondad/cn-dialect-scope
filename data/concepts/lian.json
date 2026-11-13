@@ -1,0 +1,286 @@
+{
+  "slug": "lian",
+  "headword": "脸",
+  "gloss": "头的前部，从额头到下巴。",
+  "category": "生活",
+  "aliases": [
+    "面",
+    "面孔",
+    "脸蛋儿"
+  ],
+  "related": [
+    {
+      "concept": "xi-zao",
+      "type": "related"
+    }
+  ],
+  "etymology": [
+    {
+      "character": "面",
+      "note": "先秦两汉管整张脸叫“面”（如《左传》“人心之不同，如其面焉”）；“脸”出现较晚，起初专指眼睛下方、两颊那一小块，唐宋以后才在北方扩大为整张脸。粤语、客家话、闽语至今把脸叫“面”、洗脸叫“洗面”，吴语上海、苏州叫“面孔”。",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn",
+        "editorial"
+      ]
+    }
+  ],
+  "expressions": [
+    {
+      "dialect": "beijinghua",
+      "form": "脸",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "liǎn"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "dongbeihua",
+      "form": "脸",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "liǎn"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "xinan-guanhua",
+      "form": "脸",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "lanyin-guanhua",
+      "form": "脸",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“面”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "taiyuanhua",
+      "form": "脸",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "xianhua",
+      "form": "脸",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "jinanhua",
+      "form": "脸",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wuhanhua",
+      "form": "脸",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“面孔”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "nanjinghua",
+      "form": "脸",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "guangzhouhua",
+      "form": "面",
+      "orthography": "本字",
+      "etymon": "面",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "min6"
+      },
+      "example": "起身去洗面啦。",
+      "example_gloss": "起床去洗脸啦。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "hongkong-cantonese",
+      "form": "面",
+      "orthography": "本字",
+      "etymon": "面",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "min6"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "chaoshanhua",
+      "form": "面",
+      "orthography": "本字",
+      "etymon": "面",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "fujian-minnan",
+      "form": "面",
+      "orthography": "本字",
+      "etymon": "面",
+      "romanization": {
+        "scheme": "台罗",
+        "text": "bīn"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "fuzhouhua",
+      "form": "面",
+      "orthography": "本字",
+      "etymon": "面",
+      "romanization": {
+        "scheme": "平话字",
+        "text": "méng"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "shanghaihua",
+      "form": "面孔",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "洗脸说“揩面”或“汏面”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "suzhouhua",
+      "form": "面孔",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wenzhouhua",
+      "form": "面",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“面股”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "hakkahua",
+      "form": "面",
+      "orthography": "本字",
+      "etymon": "面",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "changshahua",
+      "form": "脸",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "nanchanghua",
+      "form": "脸",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    }
+  ]
+}

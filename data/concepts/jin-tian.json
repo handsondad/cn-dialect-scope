@@ -254,6 +254,22 @@
       "sources": [
         "wiktionary-dial-syn"
       ]
+    },
+    {
+      "dialect": "fuzhouhua",
+      "form": "今旦",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "平话字",
+        "text": "gĭng-dáng"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“今旦日”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
     }
   ]
 }

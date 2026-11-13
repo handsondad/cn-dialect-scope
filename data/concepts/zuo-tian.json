@@ -1,0 +1,296 @@
+{
+  "slug": "zuo-tian",
+  "headword": "昨天",
+  "gloss": "今天的前一天。",
+  "category": "时间",
+  "aliases": [
+    "昨日",
+    "昨儿",
+    "琴日",
+    "寻日",
+    "昨昏",
+    "夜来"
+  ],
+  "related": [
+    {
+      "concept": "jin-tian",
+      "type": "related"
+    },
+    {
+      "concept": "ming-tian",
+      "type": "related"
+    }
+  ],
+  "etymology": [
+    {
+      "character": "昨",
+      "note": "古书多说“昨日”，今吴语、湘语、赣语、潮汕话仍常用。粤语“寻日／琴日”一般认为与“昨暝日”合音或受“今日”类推有关，学界尚有讨论。",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn",
+        "editorial"
+      ]
+    }
+  ],
+  "expressions": [
+    {
+      "dialect": "beijinghua",
+      "form": "昨儿",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "zuór"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也说“昨天”“昨儿个”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "dongbeihua",
+      "form": "昨儿个",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "zuórge"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“昨天”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "xinan-guanhua",
+      "form": "昨天",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "lanyin-guanhua",
+      "form": "昨天",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“昨个”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "taiyuanhua",
+      "form": "夜来",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“夜天”“昨天”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "xianhua",
+      "form": "夜儿个",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“昨天”“昨儿”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "jinanhua",
+      "form": "夜来",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“昨天”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wuhanhua",
+      "form": "昨日",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“昨天”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "nanjinghua",
+      "form": "昨儿个",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“昨天”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "guangzhouhua",
+      "form": "琴日",
+      "orthography": "借音字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "kam4 jat6"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也说“寻日”（cam4 jat6）。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "hongkong-cantonese",
+      "form": "琴日",
+      "orthography": "借音字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "kam4 jat6"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也说“寻日”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "chaoshanhua",
+      "form": "昨日",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "fujian-minnan",
+      "form": "昨昏",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "台罗",
+        "text": "tsa-hng"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“昨日”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "fuzhouhua",
+      "form": "昨暝",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "平话字",
+        "text": "cŏ̤-màng"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "shanghaihua",
+      "form": "昨日",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“昨日子”“昨天”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "suzhouhua",
+      "form": "昨日",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“昨日子”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wenzhouhua",
+      "form": "昨夜",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "hakkahua",
+      "form": "昨晡日",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "梅县也说“秋晡日”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "changshahua",
+      "form": "昨日",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“昨日子”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "nanchanghua",
+      "form": "昨日",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    }
+  ]
+}

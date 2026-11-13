@@ -217,6 +217,59 @@
       "sources": [
         "wiktionary-dial-syn"
       ]
+    },
+    {
+      "dialect": "fuzhouhua",
+      "form": "外妈",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "平话字",
+        "text": "ngié-mā"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "lanyin-guanhua",
+      "form": "外奶奶",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也叫“奶奶”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "hongkong-cantonese",
+      "form": "婆婆",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "po4 po4-2"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "chaoshanhua",
+      "form": "外妈",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
     }
   ]
 }

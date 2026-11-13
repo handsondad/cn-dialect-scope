@@ -1,0 +1,282 @@
+{
+  "slug": "xi-zao",
+  "headword": "洗澡",
+  "gloss": "用水把身体洗干净。",
+  "category": "生活",
+  "aliases": [
+    "冲凉",
+    "汏浴",
+    "淴浴",
+    "洗浴",
+    "洗身躯",
+    "洗汤"
+  ],
+  "related": [],
+  "etymology": [
+    {
+      "character": "浴",
+      "note": "东汉《说文解字》分得很细：“沐，濯发也；浴，洒身也；洗，洒足也；澡，洒手也。”古汉语洗身叫“浴”，吴语“汏浴／淴浴”、闽语“洗浴”至今保留“浴”字；岭南天热，粤语、客家话把洗澡叫“冲凉”。",
+      "confidence": "high",
+      "sources": [
+        "shuowen",
+        "wiktionary-dial-syn"
+      ]
+    }
+  ],
+  "expressions": [
+    {
+      "dialect": "beijinghua",
+      "form": "洗澡",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "xǐzǎo"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "dongbeihua",
+      "form": "洗澡儿",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "xǐzǎor"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "xinan-guanhua",
+      "form": "洗澡",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "lanyin-guanhua",
+      "form": "洗澡",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "taiyuanhua",
+      "form": "洗澡",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "xianhua",
+      "form": "洗澡",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "jinanhua",
+      "form": "洗澡",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wuhanhua",
+      "form": "洗澡",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "nanjinghua",
+      "form": "洗澡",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "guangzhouhua",
+      "form": "冲凉",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "cung1 loeng4"
+      },
+      "example": "食完饭去冲凉。",
+      "example_gloss": "吃完饭去洗澡。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "冬天洗热水澡也叫“冲凉”（冲热水凉）。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "hongkong-cantonese",
+      "form": "冲凉",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "cung1 loeng4"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "chaoshanhua",
+      "form": "洗浴",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "fujian-minnan",
+      "form": "洗身躯",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "台罗",
+        "text": "sóe-sin-khu"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“洗浴”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "fuzhouhua",
+      "form": "洗汤",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "平话字",
+        "text": "sā̤-tŏng"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "“汤”在古汉语里指热水；也说“洗身”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "shanghaihua",
+      "form": "汏浴",
+      "orthography": "本字",
+      "etymon": "浴",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "“汏”是洗的意思；老派也说“淴浴”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "suzhouhua",
+      "form": "淴浴",
+      "orthography": "本字",
+      "etymon": "浴",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wenzhouhua",
+      "form": "洗浴",
+      "orthography": "本字",
+      "etymon": "浴",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "hakkahua",
+      "form": "冲凉",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“洗身”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "changshahua",
+      "form": "洗澡",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "nanchanghua",
+      "form": "洗澡",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    }
+  ]
+}

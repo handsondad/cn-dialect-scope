@@ -222,6 +222,43 @@
       "sources": [
         "wiktionary-dial-syn"
       ]
+    },
+    {
+      "dialect": "fuzhouhua",
+      "form": "食茶",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "平话字",
+        "text": "siăh-dà"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "dongbeihua",
+      "form": "喝茶",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "lanyin-guanhua",
+      "form": "喝茶",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
     }
   ]
 }

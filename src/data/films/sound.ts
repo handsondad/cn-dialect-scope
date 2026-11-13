@@ -262,5 +262,167 @@ export const films: readonly Film[] = [
         ]
       }
     ]
+  },
+  {
+    question: "yi-bu",
+    scenes: [
+      {
+        turn: 0, title: "会变魔术的一", view: "tones", duration: 12,
+        cues: [
+          { kind: "tone", levels: [5, 5], span: [250, 460], text: "第一 yī", color: red, from: 0.5 },
+          { kind: "tone", levels: [5, 1], span: [550, 760], text: "一天 yì", color: blue, from: 3 },
+          { kind: "tone", levels: [3, 5], span: [850, 1060], text: "一定 yí", color: orange, from: 5.5 },
+          { kind: "text", at: [600, 870], text: "同一个「一」，三种声调", from: 8 }
+        ]
+      },
+      {
+        turn: 1, title: "一升一降更顺嘴", view: "tones", duration: 10,
+        cues: [
+          { kind: "tone", levels: [3, 5], span: [320, 580], text: "一 yí", color: orange, from: 0.8 },
+          { kind: "tone", levels: [5, 1], span: [660, 920], text: "定 dìng", color: blue, from: 2.6 },
+          { kind: "text", at: [600, 870], text: "先升再降，顺嘴又省力", from: 5.2 }
+        ]
+      },
+      {
+        turn: 2, title: "不对和你好", duration: 11,
+        cues: [
+          { kind: "word", text: "不去", at: [250, 290], size: 125, caption: "bù qù", from: 0.5 },
+          { kind: "word", text: "不对", at: [600, 290], size: 125, caption: "变 bú duì", color: red, from: 2 },
+          { kind: "word", text: "你好", at: [950, 290], size: 125, caption: "变 ní hǎo", color: purple, from: 3.8 },
+          { kind: "text", at: [600, 620], text: "两个三声挨着，前一个扬起来", size: "s", from: 5.5 },
+          { kind: "text", at: [600, 820], text: "嘴里天天都在变", from: 7 }
+        ]
+      },
+      {
+        turn: 3, title: "整串跟着变", view: "map", duration: 10,
+        camera: [{ t: 0, at: [800, 620], zoom: 1.8 }],
+        cues: [
+          { kind: "bubble", at: places.shanghai, text: "整串排队变", sub: "上海话", side: "right", size: "s", color: blue, from: 0.5 },
+          { kind: "bubble", at: places.fuzhou, text: "老好也变音", sub: "福州话", side: "right", size: "s", color: green, from: 2.5 },
+          { kind: "bubble", at: places.xiamen, text: "词中间换调", sub: "闽南话", side: "bottom", size: "s", color: green, from: 4.5 },
+          { kind: "text", at: [600, 110], text: "吴语、闽语变调更热闹", from: 6.5 }
+        ]
+      },
+      {
+        turn: 4, title: "粤语的一很稳", view: "tones", duration: 10,
+        cues: [
+          { kind: "tone", levels: [5, 5], span: [280, 360], text: "第一", color: red, draw: 0.4, from: 0.8 },
+          { kind: "tone", levels: [5, 5], span: [560, 640], text: "一日", color: red, draw: 0.4, from: 2.5 },
+          { kind: "tone", levels: [5, 5], span: [840, 920], text: "一定", color: red, draw: 0.4, from: 4.2 },
+          { kind: "text", at: [600, 870], text: "粤语都读 jat1，稳稳不变", from: 6 }
+        ]
+      }
+    ]
+  },
+  {
+    question: "nl-fh",
+    scenes: [
+      {
+        turn: 0, title: "鼻子哼和舌边溜", duration: 11,
+        cues: [
+          { kind: "sprite", icon: "👃", path: [[300, 260]], size: 130, from: 0.3 },
+          { kind: "word", text: "奶", at: [300, 520], size: 160, caption: "n 走鼻子", color: orange, from: 1 },
+          { kind: "sprite", icon: "👅", path: [[900, 260]], size: 130, from: 2.5 },
+          { kind: "word", text: "来", at: [900, 520], size: 160, caption: "l 走舌边", color: blue, from: 3.2 },
+          { kind: "text", at: [600, 820], text: "不少方言里 n、l 是一家", from: 5.5 }
+        ]
+      },
+      {
+        turn: 1, title: "南京和蓝鲸", view: "map", duration: 11,
+        cues: [
+          { kind: "pin", at: places.wuhan, text: "武汉", side: "left", color: orange, from: 0.5 },
+          { kind: "pin", at: places.chengdu, text: "成都", side: "left", color: orange, from: 1.2 },
+          { kind: "pin", at: places.changsha, text: "长沙", side: "left", color: purple, from: 1.9 },
+          { kind: "pin", at: places.nanjing, text: "南京", side: "top", color: orange, from: 2.6 },
+          { kind: "bubble", at: places.nanjing, text: "南京 ≈ 蓝鲸", side: "right", size: "s", from: 3.6 },
+          { kind: "text", at: [600, 110], text: "家乡话里听整句，不会错", from: 6 }
+        ]
+      },
+      {
+        turn: 2, title: "没有咬唇的 f", view: "map", duration: 10,
+        camera: [{ t: 0, at: [775, 695], zoom: 2 }],
+        cues: [
+          { kind: "bubble", at: places.fuzhou, text: "福 hók", sub: "福州话", side: "top", size: "s", color: green, from: 0.6 },
+          { kind: "bubble", at: places.xiamen, text: "福 hok", sub: "闽南话", side: "right", size: "s", color: green, from: 2.4 },
+          { kind: "bubble", at: places.xiamen, text: "飞 pe", sub: "口语读双唇音", side: "bottom", size: "s", color: blue, from: 4.2 },
+          { kind: "text", at: [600, 110], text: "闽语口语里本来没有 f", from: 6 }
+        ]
+      },
+      {
+        turn: 3, title: "用力过猛串了门", duration: 11,
+        cues: [
+          { kind: "word", text: "福", at: [250, 320], size: 155, caption: "记住读 fú", color: green, from: 0.5 },
+          { kind: "arrow", path: [[430, 320], [730, 320]], text: "矫枉过正", color: red, draw: 0.9, from: 2.2 },
+          { kind: "word", text: "灰", at: [930, 320], size: 155, caption: "误读成 fēi", color: red, from: 3.4 },
+          { kind: "sprite", icon: "🐺", path: [[600, 610]], size: 130, wobble: true, from: 5 },
+          { kind: "text", at: [600, 820], text: "大灰狼 → 大飞狼", from: 6.2 }
+        ]
+      },
+      {
+        turn: 4, title: "两套话在切换", duration: 10,
+        cues: [
+          { kind: "word", text: "花", at: [320, 290], size: 150, caption: "普通话 huā", from: 0.5 },
+          { kind: "word", text: "花", at: [880, 290], size: 150, caption: "粤·客·湘 fa", color: red, from: 2 },
+          { kind: "myth", wrong: "带口音就是说话笨、读错了", right: "装了两套话的钥匙，正在切换", from: 4.2 }
+        ]
+      }
+    ]
+  },
+  {
+    question: "qing-sheng",
+    scenes: [
+      {
+        turn: 0, title: "两个东西", duration: 10,
+        cues: [
+          { kind: "word", text: "东西", at: [300, 330], size: 150, caption: "dōngxī 方向", from: 0.5 },
+          { kind: "sprite", icon: "🧭", path: [[300, 610]], size: 130, from: 1.5 },
+          { kind: "word", text: "东西", at: [900, 330], size: 150, caption: "dōngxi 物品", color: red, from: 3 },
+          { kind: "sprite", icon: "🛍️", path: [[900, 610]], size: 130, from: 4 },
+          { kind: "text", at: [600, 830], text: "后字放轻放短：轻声", from: 5.8 }
+        ]
+      },
+      {
+        turn: 1, title: "轻一下就变意思", duration: 11,
+        cues: [
+          { kind: "word", text: "地道", at: [300, 300], size: 135, caption: "dìdào 通道", from: 0.5 },
+          { kind: "word", text: "地道", at: [900, 300], size: 135, caption: "dìdao 正宗", color: red, from: 2 },
+          { kind: "word", text: "大意", at: [300, 600], size: 135, caption: "dàyì 主旨", from: 3.8 },
+          { kind: "word", text: "大意", at: [900, 600], size: 135, caption: "dàyi 粗心", color: purple, from: 5.2 },
+          { kind: "text", at: [600, 110], text: "轻不轻，意思差远啦", from: 6.8 }
+        ]
+      },
+      {
+        turn: 2, title: "轻巧与字字读满", duration: 10,
+        cues: [
+          { kind: "shape", shape: "pill", at: [310, 380], size: [220, 100], color: "#ffe2c4", text: "桌", from: 0.5 },
+          { kind: "shape", shape: "circle", at: [500, 380], size: [90, 90], color: "#fff1de", text: "子", from: 1.2 },
+          { kind: "text", at: [390, 530], text: "北方：后字轻巧", size: "s", from: 2 },
+          { kind: "shape", shape: "pill", at: [780, 380], size: [180, 100], color: "#ffd9d4", text: "欢", from: 3.4 },
+          { kind: "shape", shape: "pill", at: [990, 380], size: [180, 100], color: "#ffd9d4", text: "喜", from: 4 },
+          { kind: "text", at: [885, 530], text: "粤·闽：字字读满", size: "s", from: 4.8 },
+          { kind: "text", at: [600, 810], text: "节奏各有各的味道", from: 6.2 }
+        ]
+      },
+      {
+        turn: 3, title: "各地怎么叫东西", view: "map", duration: 11,
+        cues: [
+          { kind: "bubble", at: places.beijing, text: "东西", side: "left", size: "s", from: 0.5 },
+          { kind: "bubble", at: places.shanghai, text: "物事", side: "right", size: "s", color: blue, from: 1.8 },
+          { kind: "bubble", at: places.fuzhou, text: "乇", sub: "nó̤h", side: "right", size: "s", color: green, from: 3.1 },
+          { kind: "bubble", at: places.xiamen, text: "物件", side: "bottom", size: "s", color: green, from: 4.4 },
+          { kind: "bubble", at: places.guangzhou, text: "嘢", sub: "je5", side: "left", size: "s", color: red, from: 5.7 },
+          { kind: "text", at: [600, 110], text: "江南闽南留着古「物」字", from: 7.2 }
+        ]
+      },
+      {
+        turn: 4, title: "从四面八方到物品", duration: 10,
+        cues: [
+          { kind: "word", text: "东西", at: [250, 380], size: 145, caption: "四面八方", from: 0.5 },
+          { kind: "arrow", path: [[430, 380], [740, 380]], text: "唐宋引申", color: orange, draw: 1, from: 2 },
+          { kind: "word", text: "东西", at: [930, 380], size: 145, caption: "各种物品", color: red, from: 3.4 },
+          { kind: "text", at: [600, 790], text: "到处的事物 → 具体的物品", from: 5.5 }
+        ]
+      }
+    ]
   }
 ];

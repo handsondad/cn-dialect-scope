@@ -5,7 +5,7 @@
   "region": "西安",
   "dialect_family": "官话",
   "family_slug": "mandarin",
-  "overview": "陕西西安一带的话，属于中原官话关中片。太阳叫“日头”，外婆叫“外奶”。",
+  "overview": "陕西西安一带的话，属于中原官话关中片。声调厚重爽朗，太阳叫“日头”，小孩叫“碎娃”。",
   "classification": {
     "path": [
       "官话",
@@ -28,49 +28,72 @@
   "vocabulary": [
     {
       "term": "碎娃",
-      "weight": 1,
-      "description": "小孩，也说“娃”。",
-      "example": ""
+      "weight": 2.8,
+      "description": "小孩，也单说“娃”。",
+      "example": "这碎娃真机灵。"
     },
     {
       "term": "外奶",
-      "weight": 1,
-      "description": "外婆。",
-      "example": ""
+      "weight": 2.4,
+      "description": "外婆，也说“舅家奶”。",
+      "example": "星期天去外奶家。"
     },
     {
-      "term": "日头",
-      "weight": 1,
-      "description": "太阳，也说“日头爷”。",
-      "example": ""
+      "term": "这搭儿",
+      "weight": 2.6,
+      "description": "这里、这儿。",
+      "example": "你坐这搭儿歇一会儿。"
     },
     {
-      "term": "耍",
-      "weight": 1,
-      "description": "玩。",
-      "example": ""
+      "term": "哪搭儿",
+      "weight": 2.6,
+      "description": "哪里、哪儿。",
+      "example": "你去哪搭儿耍？"
     },
     {
-      "term": "啥",
-      "weight": 1,
-      "description": "什么。",
-      "example": ""
+      "term": "黑咧",
+      "weight": 2.2,
+      "description": "晚上、天黑了。",
+      "example": "黑咧早点回家。"
     }
   ],
-  "grammar_features": [],
-  "phonological_features": [],
+  "grammar_features": [
+    {
+      "name": "处所词“这搭儿／哪搭儿”",
+      "keywords": [
+        "这搭儿",
+        "哪搭儿",
+        "那搭儿"
+      ],
+      "weight": 1.8,
+      "description": "关中话常用“搭（儿）”表示地方，相当“这儿、哪儿”。",
+      "example": "把书放这搭儿。"
+    }
+  ],
+  "phonological_features": [
+    {
+      "name": "关中口语语感爽脆",
+      "markers": [
+        "碎娃",
+        "日头爷",
+        "黑咧"
+      ],
+      "description": "阴平调偏低，句末常带爽利的语气词“咧”。",
+      "example": "日头爷出来咧。"
+    }
+  ],
   "expressions": [
-    {
-      "text": "碎娃",
-      "meaning": "小孩。"
-    },
-    {
-      "text": "外奶",
-      "meaning": "外婆。"
-    },
     {
       "text": "日头爷",
       "meaning": "太阳。"
+    },
+    {
+      "text": "拉闲话",
+      "meaning": "聊天、闲谈。"
+    },
+    {
+      "text": "灵醒",
+      "meaning": "聪明、头脑清醒。"
     }
   ]
 }

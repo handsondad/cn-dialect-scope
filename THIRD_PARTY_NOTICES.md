@@ -34,8 +34,13 @@
 | `chinatown-sf.jpg` | Street in Chinatown, San Francisco, California（美国国会图书馆藏，[LCCN 2015650750](https://lccn.loc.gov/2015650750)） | Arnold Genthe | 公有领域 | [Commons](https://commons.wikimedia.org/wiki/File:Street_in_Chinatown,_San_Francisco,_California_LCCN2015650750.jpg) |
 | `chengqi-lou.jpg` | Chengqi Lou（福建永定承启楼） | Motohiro Sunouchi | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | [Commons](https://commons.wikimedia.org/wiki/File:Chengqi_Lou_DSC5172_(16196344182).jpg) |
 | `hongkong-taxi.jpg` | Hong Kong Urban Red Taxi | T1NH0（Commons 用户 Sdee） | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | [Commons](https://commons.wikimedia.org/wiki/File:Hong_Kong_Urban_Red_Taxi_5980.JPG) |
+| `sanfang-qixiang.jpg` | Fuzhou Three Lanes and Seven Alleys Mainstreet（福州三坊七巷） | Lennartbj | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Commons](https://commons.wikimedia.org/wiki/File:Fuzhou_Three_Lanes_and_Seven_Alleys_Mainstreet.jpg) |
+| `wenzhou-jiangxin.jpg` | Jiangxin Temple（温州江心寺） | 猫猫的日记本 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Commons](https://commons.wikimedia.org/wiki/File:Jiangxin_Temple_07_2018-10.jpg) |
+| `wuhan-guozao.jpg` | Hot dry noodles, doupi and soy milk provided by Cailinji（武汉过早：热干面、豆皮、豆浆） | Shwangtianyuan | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Commons](https://commons.wikimedia.org/wiki/File:Hot_dry_noodles,_doupi_and_soy_milk_provided_by_Cailinji.jpg) |
+| `nanjing-wall.jpg` | Nanjing City Wall（南京明城墙） | Gary Todd | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) | [Commons](https://commons.wikimedia.org/wiki/File:Nanjing_City_Wall_(10150679504).jpg) |
+| `cantonese-dimsum.jpg` | A Cantonese Dim Sum at Hoi Lin Tea House（广式早茶点心） | Peachyeung316 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Commons](https://commons.wikimedia.org/wiki/File:A_Cantonese_Dim_Sum_at_Hoi_Lin_Tea_House.jpg) |
 
-`hongkong-taxi.jpg` 是 CC BY-SA 3.0：缩小后的这张图仍按 CC BY-SA 3.0 提供。
+`hongkong-taxi.jpg` 是 CC BY-SA 3.0，`sanfang-qixiang.jpg`、`wenzhou-jiangxin.jpg`、`wuhan-guozao.jpg`、`cantonese-dimsum.jpg` 是 CC BY-SA 4.0：缩小后的这几张图仍按各自的 CC BY-SA 许可提供。
 
 ## 方言知识库
 

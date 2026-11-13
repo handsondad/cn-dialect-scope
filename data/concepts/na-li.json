@@ -1,0 +1,296 @@
+{
+  "slug": "na-li",
+  "headword": "哪里",
+  "gloss": "问什么地方、哪个位置。",
+  "category": "疑问",
+  "aliases": [
+    "哪儿",
+    "哪块",
+    "哪搭儿",
+    "阿里",
+    "边度",
+    "佗位",
+    "底所"
+  ],
+  "related": [
+    {
+      "concept": "shen-me",
+      "type": "related"
+    }
+  ],
+  "etymology": [
+    {
+      "character": "边",
+      "note": "各地问“哪里”挑的后缀五花八门：北方多儿化说“哪儿”，关中说“哪搭儿”，江淮说“哪块”，上海说“阿里（搭）”，粤语说“边度”，闽南话说“佗位”，福州话说“底所”。",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn",
+        "editorial"
+      ]
+    }
+  ],
+  "expressions": [
+    {
+      "dialect": "beijinghua",
+      "form": "哪儿",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "nǎr"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "dongbeihua",
+      "form": "哪疙瘩",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "nǎgēda"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也说“哪儿”“哪块儿”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "xinan-guanhua",
+      "form": "哪儿",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“啥子地方”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "lanyin-guanhua",
+      "form": "哪达",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“哪达儿”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "taiyuanhua",
+      "form": "哪里",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“哪儿家”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "xianhua",
+      "form": "哪搭儿",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也说“哪搭”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "jinanhua",
+      "form": "哪里",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也单说“哪”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wuhanhua",
+      "form": "哪块",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“哪里”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "nanjinghua",
+      "form": "哪块",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也说“哪里”“哪儿”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "guangzhouhua",
+      "form": "边度",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "bin1 dou6"
+      },
+      "example": "你去边度呀？",
+      "example_gloss": "你去哪里呀？",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也说“边处”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "hongkong-cantonese",
+      "form": "边度",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "bin1 dou6"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "chaoshanhua",
+      "form": "底块",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“底搭”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "fujian-minnan",
+      "form": "佗位",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "台罗",
+        "text": "tó-uī"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "厦门也常说“佗落”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "fuzhouhua",
+      "form": "底所",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "平话字",
+        "text": "dī-sū"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“底块”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "shanghaihua",
+      "form": "阿里",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也说“阿里搭”“啥地方”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "suzhouhua",
+      "form": "啥场化",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“哪搭”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wenzhouhua",
+      "form": "狃宕",
+      "orthography": "借音字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "hakkahua",
+      "form": "哪仔",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“哪滴”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "changshahua",
+      "form": "哪里",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“哪当”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "nanchanghua",
+      "form": "哪里",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    }
+  ]
+}

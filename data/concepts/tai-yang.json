@@ -266,6 +266,21 @@
       "sources": [
         "wiktionary-dial-syn"
       ]
+    },
+    {
+      "dialect": "fuzhouhua",
+      "form": "日头",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "平话字",
+        "text": "nĭk-tâu"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
     }
   ]
 }

@@ -28,49 +28,71 @@
   "vocabulary": [
     {
       "term": "阳婆",
-      "weight": 1,
+      "weight": 2.8,
       "description": "太阳，也说“阳婆爷”。",
-      "example": ""
+      "example": "今儿阳婆真暖和。"
     },
     {
       "term": "甚",
-      "weight": 1,
+      "weight": 2.6,
       "description": "什么。",
-      "example": ""
+      "example": "你吃甚哩？"
     },
     {
       "term": "月明",
-      "weight": 1,
+      "weight": 2.6,
       "description": "月亮。",
-      "example": ""
+      "example": "黑夜天上的月明真圆。"
     },
     {
-      "term": "耍",
-      "weight": 1,
-      "description": "玩。",
-      "example": ""
+      "term": "待见",
+      "weight": 2.4,
+      "description": "喜欢、疼爱。",
+      "example": "奶奶可待见这娃娃了。"
     },
     {
-      "term": "姥娘",
-      "weight": 1,
-      "description": "外婆。",
-      "example": ""
+      "term": "夜来",
+      "weight": 2.4,
+      "description": "昨天，也说“夜天”。",
+      "example": "夜来下了一场雨。"
     }
   ],
-  "grammar_features": [],
-  "phonological_features": [],
+  "grammar_features": [
+    {
+      "name": "疑问词“甚”与“咋”",
+      "keywords": [
+        "甚",
+        "咋底"
+      ],
+      "weight": 1.8,
+      "description": "太原话问“什么”常单说一个“甚”字，问“怎么”说“咋”或“咋底”。",
+      "example": "你做甚去哩？"
+    }
+  ],
+  "phonological_features": [
+    {
+      "name": "北方少见的入声保留",
+      "markers": [
+        "阳婆",
+        "月明",
+        "倒楔"
+      ],
+      "description": "太原话保留着短促一收的入声调，是晋语最醒目的声音特点。",
+      "example": "坐下倒楔一会儿。"
+    }
+  ],
   "expressions": [
     {
-      "text": "阳婆",
-      "meaning": "太阳。"
+      "text": "倒楔",
+      "meaning": "聊天、拉家常。"
     },
     {
-      "text": "甚",
-      "meaning": "什么。"
+      "text": "打早饭",
+      "meaning": "吃早饭，也说“早清饭”。"
     },
     {
-      "text": "月明",
-      "meaning": "月亮。"
+      "text": "机灵",
+      "meaning": "聪明、反应快。"
     }
   ]
 }

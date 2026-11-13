@@ -1,0 +1,295 @@
+{
+  "slug": "nai-nai",
+  "headword": "奶奶",
+  "gloss": "爸爸的妈妈（祖母）。",
+  "category": "亲属",
+  "aliases": [
+    "祖母",
+    "婆婆",
+    "阿嫲",
+    "嫲嫲",
+    "阿妈",
+    "娭毑",
+    "好婆",
+    "依妈"
+  ],
+  "related": [
+    {
+      "concept": "wai-po",
+      "type": "related"
+    }
+  ],
+  "etymology": [
+    {
+      "character": "婆",
+      "note": "“婆婆”在成都、南昌可称奶奶，在广州、香港、南京却常称外婆；广州话用“阿嫲／嫲嫲”称奶奶，和“婆婆”分工清楚。",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn",
+        "editorial"
+      ]
+    }
+  ],
+  "expressions": [
+    {
+      "dialect": "beijinghua",
+      "form": "奶奶",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "nǎinai"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "dongbeihua",
+      "form": "奶奶",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "nǎinai"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "xinan-guanhua",
+      "form": "婆婆",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "成都、重庆常叫奶奶“婆婆”，也叫“奶奶”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "lanyin-guanhua",
+      "form": "奶奶",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "taiyuanhua",
+      "form": "奶奶",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "xianhua",
+      "form": "奶奶",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也单叫“奶”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "jinanhua",
+      "form": "奶奶",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wuhanhua",
+      "form": "奶奶",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "老派也叫“太”或“婆婆”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "nanjinghua",
+      "form": "奶奶",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也叫“婆婆”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "guangzhouhua",
+      "form": "阿嫲",
+      "orthography": "俗字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "aa3 maa4"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也叫“嫲嫲”；广州话“婆婆”是外婆。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "hongkong-cantonese",
+      "form": "嫲嫲",
+      "orthography": "俗字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "maa4 maa4"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也叫“阿嫲”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "chaoshanhua",
+      "form": "阿妈",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "fujian-minnan",
+      "form": "阿妈",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "台罗",
+        "text": "a-má"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "闽南话里奶奶和外婆口头上都常叫“阿妈”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "fuzhouhua",
+      "form": "依妈",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "平话字",
+        "text": "ĭ-mā"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "shanghaihua",
+      "form": "阿奶",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "年轻一代也常叫“奶奶”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "suzhouhua",
+      "form": "好婆",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也叫“亲婆”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wenzhouhua",
+      "form": "娘娘",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也叫“阿娘”“祖婆”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "hakkahua",
+      "form": "阿婆",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "changshahua",
+      "form": "娭毑",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "āijiě"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "长沙话也用“娭毑”尊称年长的奶奶。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "nanchanghua",
+      "form": "婆婆",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也叫“奶奶”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    }
+  ]
+}

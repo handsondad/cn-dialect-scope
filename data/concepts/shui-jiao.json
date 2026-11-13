@@ -189,6 +189,55 @@
       "sources": [
         "wiktionary-dial-syn"
       ]
+    },
+    {
+      "dialect": "fuzhouhua",
+      "form": "困",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "平话字",
+        "text": "kó̤ng"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“困眠”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "dongbeihua",
+      "form": "睡觉",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "lanyin-guanhua",
+      "form": "睡觉",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "chaoshanhua",
+      "form": "夗",
+      "orthography": "本字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
     }
   ]
 }

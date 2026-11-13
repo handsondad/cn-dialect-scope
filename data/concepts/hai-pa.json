@@ -1,0 +1,296 @@
+{
+  "slug": "hai-pa",
+  "headword": "害怕",
+  "gloss": "遇到危险或陌生事物时心里慌张、畏惧。",
+  "category": "形容",
+  "aliases": [
+    "怕",
+    "惊",
+    "打怵",
+    "发毛",
+    "吓怕"
+  ],
+  "related": [
+    {
+      "concept": "xi-huan",
+      "type": "related"
+    }
+  ],
+  "etymology": [
+    {
+      "character": "惊",
+      "note": "“惊”从马、敬声，本义是马受惊，引申为畏惧。粤语（geng1）、客家话、闽南语（kiann）、潮汕话、福州话至今都把“害怕”单说一个“惊”字；山东济南常说“打怵”，东北口语常说“发毛”，南京话说“吓怕”。",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn",
+        "editorial"
+      ]
+    }
+  ],
+  "expressions": [
+    {
+      "dialect": "beijinghua",
+      "form": "害怕",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "hàipà"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "dongbeihua",
+      "form": "发毛",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "fāmáo"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "心里发慌害怕；也说“害怕”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "xinan-guanhua",
+      "form": "害怕",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "口语也说“虚”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "lanyin-guanhua",
+      "form": "怯乎",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“害怕”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "taiyuanhua",
+      "form": "害怕",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "xianhua",
+      "form": "怯火",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“害怕”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "jinanhua",
+      "form": "打怵",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也说“害怕”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wuhanhua",
+      "form": "吓不过",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也单说“怕”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "nanjinghua",
+      "form": "吓怕",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也单说“怕”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "guangzhouhua",
+      "form": "惊",
+      "orthography": "本字",
+      "etymon": "惊",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "geng1"
+      },
+      "example": "唔使惊，爸爸喺度。",
+      "example_gloss": "不用怕，爸爸在这儿。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "hongkong-cantonese",
+      "form": "惊",
+      "orthography": "本字",
+      "etymon": "惊",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "geng1"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "chaoshanhua",
+      "form": "惊",
+      "orthography": "本字",
+      "etymon": "惊",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "fujian-minnan",
+      "form": "惊",
+      "orthography": "本字",
+      "etymon": "惊",
+      "romanization": {
+        "scheme": "台罗",
+        "text": "kiann"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "fuzhouhua",
+      "form": "惊",
+      "orthography": "本字",
+      "etymon": "惊",
+      "romanization": {
+        "scheme": "平话字",
+        "text": "giăng"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "shanghaihua",
+      "form": "怕",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也说“吓”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "suzhouhua",
+      "form": "怕",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“吓”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wenzhouhua",
+      "form": "怕",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“吓”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "hakkahua",
+      "form": "惊",
+      "orthography": "本字",
+      "etymon": "惊",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也说“怕畏”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "changshahua",
+      "form": "怕",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“畏怯”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "nanchanghua",
+      "form": "怕",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    }
+  ]
+}

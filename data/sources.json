@@ -74,5 +74,24 @@
     "type": "literature",
     "title": "陆容《菽园杂记》卷一",
     "note": "明代笔记：“民间俗讳，各处有之，而吴中为甚。如舟行讳住、讳翻，以箸为快儿。”"
+  },
+  {
+    "id": "shuowen",
+    "type": "dictionary",
+    "title": "许慎《说文解字》",
+    "note": "东汉字书，水部：“沐，濯发也；浴，洒身也；洗，洒足也；澡，洒手也。”"
+  },
+  {
+    "id": "zhuzhici-hankou",
+    "type": "literature",
+    "title": "叶调元《汉口竹枝词》",
+    "year": 1850,
+    "note": "清道光年间印行，记汉口风俗与方言词（如“过早”）。"
+  },
+  {
+    "id": "bangua-luomazi",
+    "type": "romanization",
+    "title": "福州话平话字（Bàng-uâ-cê）",
+    "note": "闽东福州话罗马字拼音方案。"
   }
 ]

@@ -195,6 +195,82 @@
       "sources": [
         "wiktionary-dial-syn"
       ]
+    },
+    {
+      "dialect": "fuzhouhua",
+      "form": "客佻",
+      "orthography": "借音字",
+      "romanization": {
+        "scheme": "平话字",
+        "text": "káh-dièu"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "常记音写作“卡溜”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "nanjinghua",
+      "form": "玩",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "hongkong-cantonese",
+      "form": "玩",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "waan2"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "chaoshanhua",
+      "form": "𨑨迌",
+      "orthography": "借音字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "changshahua",
+      "form": "玩",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "nanchanghua",
+      "form": "昵",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“玩”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
     }
   ]
 }

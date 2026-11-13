@@ -369,5 +369,227 @@ export const films: readonly Film[] = [
         ]
       }
     ]
+  },
+  {
+    question: "chong-liang",
+    scenes: [
+      {
+        turn: 0, title: "冬天也冲凉", duration: 10,
+        cues: [
+          { kind: "sprite", icon: "❄️", path: [[230, 260]], size: 110, wobble: true, from: 0.3 },
+          { kind: "sprite", icon: "🚿", path: [[600, 440]], size: 190, from: 0.8 },
+          { kind: "bubble", at: [600, 320], text: "冲热水凉！", sub: "广州话：洗热水澡", from: 2 },
+          { kind: "text", at: [600, 820], text: "冲凉 = 洗澡", color: red, from: 5 }
+        ]
+      },
+      {
+        turn: 1, title: "南边夏天长", view: "map", duration: 10,
+        camera: [{ t: 0, at: [660, 730], zoom: 1.8 }],
+        cues: [
+          { kind: "highlight", at: [660, 755], size: [260, 150], color: "#ff9f43", from: 0.3 },
+          { kind: "bubble", at: places.guangzhou, text: "冲凉", sub: "粤语", side: "left", size: "s", from: 1.2 },
+          { kind: "bubble", at: places.meizhou, text: "冲凉", sub: "客家话", side: "top", size: "s", from: 2.8 },
+          { kind: "sprite", icon: "☀️", path: [[870, 640]], size: 80, wobble: true, from: 4 },
+          { kind: "text", at: [600, 110], text: "天热冲水图凉快，叫顺了嘴", from: 5.5 }
+        ]
+      },
+      {
+        turn: 2, title: "各地怎么说洗澡", view: "map", duration: 12,
+        cues: [
+          { kind: "bubble", at: places.beijing, text: "洗澡", side: "left", size: "s", from: 0.5 },
+          { kind: "bubble", at: places.shanghai, text: "汏浴", side: "right", size: "s", from: 1.8 },
+          { kind: "bubble", at: places.suzhou, text: "淴浴", side: "top", size: "s", from: 3.1 },
+          { kind: "bubble", at: places.fuzhou, text: "洗汤", side: "right", size: "s", from: 4.4 },
+          { kind: "bubble", at: places.xiamen, text: "洗身躯", side: "bottom", size: "s", from: 5.7 },
+          { kind: "text", at: [600, 110], text: "澡、浴、汤、冲凉各不同", from: 7.5 }
+        ]
+      },
+      {
+        turn: 3, title: "汤在古代是热水", duration: 10,
+        cues: [
+          { kind: "word", text: "汤", at: [320, 350], size: 210, caption: "古义：热水", color: red, from: 0.5 },
+          { kind: "arrow", path: [[490, 350], [720, 350]], draw: 0.8, from: 2 },
+          { kind: "word", text: "洗汤", at: [900, 350], size: 150, caption: "福州话：洗澡", color: brown, from: 3 },
+          { kind: "sprite", icon: "♨️", path: [[600, 640]], size: 130, from: 4.5 },
+          { kind: "text", at: [600, 820], text: "赴汤蹈火的「汤」也是热水", from: 6 }
+        ]
+      },
+      {
+        turn: 4, title: "沐、浴、洗、澡", duration: 11,
+        cues: [
+          { kind: "word", text: "沐", at: [180, 360], size: 155, caption: "洗头发", from: 0.5 },
+          { kind: "word", text: "浴", at: [460, 360], size: 155, caption: "洗身子", color: red, from: 1.8 },
+          { kind: "word", text: "洗", at: [740, 360], size: 155, caption: "洗脚", from: 3.1 },
+          { kind: "word", text: "澡", at: [1020, 360], size: 155, caption: "洗手", from: 4.4 },
+          { kind: "text", at: [600, 110], text: "东汉《说文解字》", size: "s", from: 0.3 },
+          { kind: "text", at: [600, 790], text: "汏浴、洗浴留住了老「浴」字", from: 6.5 }
+        ]
+      }
+    ]
+  },
+  {
+    question: "wen-bai",
+    scenes: [
+      {
+        turn: 0, title: "一个血，两个音", duration: 10,
+        cues: [
+          { kind: "word", text: "血", at: [600, 230], size: 180, color: red, from: 0.4 },
+          { kind: "arrow", path: [[520, 320], [320, 470]], draw: 0.8, from: 1.5 },
+          { kind: "word", text: "流血", at: [280, 580], size: 125, caption: "说话音 xiě", color: brown, from: 2.3 },
+          { kind: "arrow", path: [[680, 320], [880, 470]], draw: 0.8, from: 3.5 },
+          { kind: "word", text: "血液", at: [920, 580], size: 125, caption: "读书音 xuè", color: red, from: 4.3 },
+          { kind: "text", at: [600, 840], text: "两个都没错！", from: 6 }
+        ]
+      },
+      {
+        turn: 1, title: "声音像千层饼", duration: 11,
+        cues: [
+          { kind: "shape", shape: "pill", at: [600, 560], size: [560, 110], color: "#ffe2c4", text: "说话音", from: 0.6 },
+          { kind: "shape", shape: "pill", at: [600, 380], size: [560, 110], color: "#e1efff", text: "读书音", from: 2.6 },
+          { kind: "sprite", icon: "📚", path: [[600, 200]], size: 120, from: 4.2 },
+          { kind: "text", at: [600, 810], text: "一层叠一层，两套都留下", from: 6 }
+        ]
+      },
+      {
+        turn: 2, title: "成双成对的字音", duration: 10,
+        cues: [
+          { kind: "word", text: "掉色", at: [300, 310], size: 125, caption: "shǎi 说话", color: brown, from: 0.5 },
+          { kind: "word", text: "颜色", at: [900, 310], size: 125, caption: "sè 读书", from: 2 },
+          { kind: "word", text: "剥花生", at: [300, 610], size: 110, caption: "bāo 说话", color: brown, from: 3.8 },
+          { kind: "word", text: "剥削", at: [900, 610], size: 125, caption: "bō 读书", from: 5.2 },
+          { kind: "text", at: [600, 110], text: "普通话里也有几对", from: 6.8 }
+        ]
+      },
+      {
+        turn: 3, title: "大和学的两副面孔", view: "map", duration: 11,
+        camera: [{ t: 0, at: [810, 620], zoom: 1.7 }],
+        cues: [
+          { kind: "bubble", at: places.shanghai, text: "大人 · 大学", sub: "上海 du / da", side: "right", size: "s", from: 0.6 },
+          { kind: "bubble", at: places.xiamen, text: "大汉 · 大学", sub: "闽南 tuā / tāi", side: "right", size: "s", color: "#13a99a", from: 2.8 },
+          { kind: "bubble", at: places.xiamen, text: "学话 · 学校", sub: "闽南 o̍h / ha̍k", side: "bottom", size: "s", color: "#13a99a", from: 5 },
+          { kind: "text", at: [600, 110], text: "南方方言里成双的字更多", from: 7 }
+        ]
+      },
+      {
+        turn: 4, title: "问问题和姓问", duration: 10,
+        cues: [
+          { kind: "word", text: "问路", at: [300, 380], size: 145, caption: "说话音 men", color: brown, from: 0.6 },
+          { kind: "word", text: "学问", at: [900, 380], size: 145, caption: "读书音 ven", color: red, from: 2.8 },
+          { kind: "text", at: [600, 110], text: "日常小词 vs 书本大词", from: 4.8 },
+          { kind: "text", at: [600, 800], text: "两套读音，分工清楚", from: 6.2 }
+        ]
+      }
+    ]
+  },
+  {
+    question: "mian-shan",
+    scenes: [
+      {
+        turn: 0, title: "洗面 = 洗脸", view: "map", duration: 11,
+        cues: [
+          { kind: "bubble", at: places.beijing, text: "洗脸", side: "left", size: "s", from: 0.5 },
+          { kind: "bubble", at: places.shanghai, text: "面孔 · 揩面", side: "right", size: "s", from: 1.8 },
+          { kind: "bubble", at: places.fuzhou, text: "洗面", side: "right", size: "s", from: 3.1 },
+          { kind: "bubble", at: places.xiamen, text: "洗面", side: "bottom", size: "s", from: 4.4 },
+          { kind: "bubble", at: places.guangzhou, text: "洗面", side: "left", size: "s", from: 5.7 },
+          { kind: "text", at: [600, 110], text: "南方好多地方：面 = 脸", from: 7.2 }
+        ]
+      },
+      {
+        turn: 1, title: "面和脸的变迁", duration: 10,
+        cues: [
+          { kind: "word", text: "面", at: [300, 340], size: 200, caption: "古：整张脸", color: red, from: 0.5 },
+          { kind: "word", text: "脸", at: [900, 340], size: 200, caption: "古：两颊小块", color: brown, from: 2.5 },
+          { kind: "text", at: [600, 790], text: "后来北方拿「脸」代表整张脸", from: 5.2 }
+        ]
+      },
+      {
+        turn: 2, title: "木兰诗里的着衫", duration: 10,
+        cues: [
+          { kind: "sprite", icon: "👕", path: [[600, 560]], size: 170, from: 0.4 },
+          { kind: "word", text: "着", at: [280, 290], size: 175, caption: "古：穿", color: red, from: 1.2 },
+          { kind: "word", text: "衫", at: [920, 290], size: 175, caption: "衣服", color: brown, from: 2.8 },
+          { kind: "text", at: [600, 110], text: "著我旧时裳", size: "s", from: 0.3 },
+          { kind: "text", at: [600, 820], text: "着衫 = 穿衣服", from: 5.2 }
+        ]
+      },
+      {
+        turn: 3, title: "衣裳和衫裤", view: "map", duration: 11,
+        cues: [
+          { kind: "bubble", at: places.beijing, text: "衣裳", side: "left", size: "s", from: 0.5 },
+          { kind: "bubble", at: places.xian, text: "衣裳", side: "left", size: "s", from: 1.8 },
+          { kind: "bubble", at: places.shanghai, text: "衣裳", side: "right", size: "s", from: 3.1 },
+          { kind: "bubble", at: places.meizhou, text: "衫裤", side: "top", size: "s", from: 4.4 },
+          { kind: "bubble", at: places.guangzhou, text: "衫", side: "left", size: "s", from: 5.7 },
+          { kind: "text", at: [600, 110], text: "上衣下裳 vs 衫裤", from: 7.2 }
+        ]
+      },
+      {
+        turn: 4, title: "睇、眙、瞅", view: "map", duration: 11,
+        cues: [
+          { kind: "bubble", at: places.harbin, text: "瞅", sub: "东北话", side: "bottom", size: "s", from: 0.5 },
+          { kind: "bubble", at: places.taiyuan, text: "瞭", sub: "太原话", side: "left", size: "s", from: 2 },
+          { kind: "bubble", at: places.wenzhou, text: "眙", sub: "温州话", side: "right", size: "s", from: 3.5 },
+          { kind: "bubble", at: places.guangzhou, text: "睇", sub: "粤语·潮汕", side: "left", size: "s", from: 5 },
+          { kind: "text", at: [600, 110], text: "目字旁里藏着古人的看", from: 6.8 }
+        ]
+      }
+    ]
+  },
+  {
+    question: "zan-ruan",
+    scenes: [
+      {
+        turn: 0, title: "算不算上你？", duration: 11,
+        cues: [
+          { kind: "shape", shape: "rect", at: [310, 440], size: [430, 360], color: "#f3f8ff", from: 0.3 },
+          { kind: "word", text: "阮", at: [310, 340], size: 150, caption: "guán 不算你", color: brown, from: 0.8 },
+          { kind: "sprite", icon: "👦👩", path: [[310, 550]], size: 95, from: 1.5 },
+          { kind: "shape", shape: "rect", at: [890, 440], size: [430, 360], color: "#fff4e0", from: 2.8 },
+          { kind: "word", text: "咱", at: [890, 340], size: 150, caption: "lán 算上你！", color: red, from: 3.3 },
+          { kind: "sprite", icon: "👦👩🧒", path: [[890, 550]], size: 95, from: 4 },
+          { kind: "text", at: [600, 830], text: "闽南话分得清清楚楚", from: 6 }
+        ]
+      },
+      {
+        turn: 1, title: "咱们和我们", duration: 10,
+        cues: [
+          { kind: "sprite", icon: "👩‍🏫", path: [[260, 520]], size: 175, from: 0.4 },
+          { kind: "sprite", icon: "🧒", path: [[880, 540]], size: 165, from: 1 },
+          { kind: "bubble", at: [880, 430], text: "老师，我们先回家啦！", sub: "不能说「咱们」", size: "s", from: 2 },
+          { kind: "text", at: [600, 820], text: "说「咱们」就把老师也拉回家了", from: 5 }
+        ]
+      },
+      {
+        turn: 2, title: "一条严格的线", view: "map", duration: 10,
+        camera: [{ t: 0, at: [755, 735], zoom: 2 }],
+        cues: [
+          { kind: "pin", at: places.xiamen, text: "厦门", side: "left", from: 0.5 },
+          { kind: "bubble", at: places.xiamen, text: "咱 · 阮", sub: "算你 · 不算你", side: "right", size: "s", from: 1.4 },
+          { kind: "pin", at: places.shantou, text: "汕头", side: "left", from: 3.2 },
+          { kind: "bubble", at: places.shantou, text: "俺 · 阮", sub: "潮汕话也分", side: "bottom", size: "s", from: 4.1 },
+          { kind: "text", at: [600, 110], text: "闽南、潮汕绝不混用", from: 6 }
+        ]
+      },
+      {
+        turn: 3, title: "亲热的胶己人", duration: 10,
+        cues: [
+          { kind: "word", text: "胶己人", at: [600, 320], size: 150, caption: "潮汕话：自己人", color: red, from: 0.5 },
+          { kind: "sprite", icon: "🍵", path: [[600, 600]], size: 140, from: 2.5 },
+          { kind: "text", at: [600, 810], text: "一喊胶己人，就把你圈进「咱」", from: 4.8 }
+        ]
+      },
+      {
+        turn: 4, title: "各地的我们", view: "map", duration: 12,
+        cues: [
+          { kind: "bubble", at: places.jinan, text: "俺们", side: "right", size: "s", from: 0.5 },
+          { kind: "bubble", at: places.shanghai, text: "阿拉", side: "right", size: "s", from: 1.8 },
+          { kind: "bubble", at: places.fuzhou, text: "侬家", side: "right", size: "s", from: 3.1 },
+          { kind: "bubble", at: places.meizhou, text: "𠊎兜", side: "top", size: "s", from: 4.4 },
+          { kind: "bubble", at: places.guangzhou, text: "我哋", side: "left", size: "s", from: 5.7 },
+          { kind: "text", at: [600, 110], text: "一说「我们」就露出家乡", from: 7.5 }
+        ]
+      }
+    ]
   }
 ];

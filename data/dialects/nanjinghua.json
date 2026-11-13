@@ -5,7 +5,7 @@
   "region": "南京",
   "dialect_family": "官话",
   "family_slug": "mandarin",
-  "overview": "江苏南京一带的话，属于江淮官话。喝茶说“吃茶”，没有说“没得”。",
+  "overview": "江苏南京一带的话，属于江淮官话。既有北方官话的好懂，又像南方话一样保留了短促的入声。",
   "classification": {
     "path": [
       "官话",
@@ -27,50 +27,71 @@
   ],
   "vocabulary": [
     {
-      "term": "没得",
-      "weight": 1,
-      "description": "没有。",
-      "example": ""
-    },
-    {
-      "term": "吃茶",
-      "weight": 1,
-      "description": "喝茶。",
-      "example": ""
+      "term": "哪块",
+      "weight": 2.6,
+      "description": "哪里、哪儿。",
+      "example": "你到哪块去啊？"
     },
     {
       "term": "明儿个",
-      "weight": 1,
+      "weight": 2.4,
       "description": "明天。",
-      "example": ""
+      "example": "明儿个一道去逛公园。"
     },
     {
-      "term": "娃儿",
-      "weight": 1,
-      "description": "小孩。",
-      "example": ""
+      "term": "聒白",
+      "weight": 2.6,
+      "description": "聊天、闲聊，也说“聒聒”。",
+      "example": "吃罢晚饭坐下聒白。"
     },
     {
-      "term": "冰棒",
-      "weight": 1,
-      "description": "冰棍。",
-      "example": ""
+      "term": "吓怕",
+      "weight": 2.2,
+      "description": "害怕。",
+      "example": "天黑走路别吓怕。"
+    },
+    {
+      "term": "夜里头",
+      "weight": 2.2,
+      "description": "晚上、夜里。",
+      "example": "夜里头风有点凉。"
     }
   ],
-  "grammar_features": [],
-  "phonological_features": [],
-  "expressions": [
+  "grammar_features": [
     {
-      "text": "明儿个",
-      "meaning": "明天。"
-    },
+      "name": "处所词“这块／哪块”",
+      "keywords": [
+        "哪块",
+        "这块"
+      ],
+      "weight": 1.7,
+      "description": "江淮官话常用“块”表示位置，问“哪里”说“哪块”。",
+      "example": "书放在哪块？"
+    }
+  ],
+  "phonological_features": [
+    {
+      "name": "有入声、n 和 l 常不分",
+      "markers": [
+        "哪块",
+        "聒白"
+      ],
+      "description": "江淮官话在官话家族里很特别：保留了入声，而且不少字 n、l 读成一个音。",
+      "example": "南京城墙高又长。"
+    }
+  ],
+  "expressions": [
     {
       "text": "吃茶",
       "meaning": "喝茶。"
     },
     {
-      "text": "娃儿",
-      "meaning": "小孩。"
+      "text": "婆婆",
+      "meaning": "外婆（南京话里也可指奶奶）。"
+    },
+    {
+      "text": "点心",
+      "meaning": "早饭、早点。"
     }
   ]
 }

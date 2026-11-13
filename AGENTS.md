@@ -35,7 +35,7 @@
 | `#/` | 首页：3D 小星球、5 个主题、方言地图和游戏入口 | `src/pages/HomePage.tsx` |
 | `#/topic/<主题>` | 一个主题的问题列表 | `src/pages/QuestionListPage.tsx` |
 | `#/q/<问题id>` | 一问一答 + 讲解动画 + 听一听 + 方言词 + 给大人 | `src/pages/QuestionPage.tsx` |
-| `#/map[/<概念>]` | 方言地图：一个词在 19 个方言点怎么说，方言点档案 | `src/pages/MapPage.tsx` |
+| `#/map[/<概念>]` | 方言地图：一个词在 20 个方言点怎么说，方言点档案 | `src/pages/MapPage.tsx` |
 | `#/game` | 猜猜是哪里话 | `src/pages/GamePage.tsx` |
 | `#/sheet[/<问题id>]` | **只在开发服务器里有**：把每部动画每场戏的最后一刻排成总览，检查挤不挤 | `src/pages/SheetPage.tsx` |
 

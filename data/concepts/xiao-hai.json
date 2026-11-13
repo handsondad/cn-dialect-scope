@@ -251,6 +251,21 @@
       "sources": [
         "wiktionary-dial-syn"
       ]
+    },
+    {
+      "dialect": "fuzhouhua",
+      "form": "儿囝",
+      "orthography": "本字",
+      "romanization": {
+        "scheme": "平话字",
+        "text": "niê-giāng"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
     }
   ]
 }

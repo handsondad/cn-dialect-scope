@@ -5,7 +5,7 @@
   "region": "武汉",
   "dialect_family": "官话",
   "family_slug": "mandarin",
-  "overview": "湖北武汉一带的话，属于西南官话。外婆叫“家家”，小孩叫“小伢”，回家叫“落屋”。",
+  "overview": "湖北武汉一带的话，属于西南官话。吃早饭叫“过早”，问什么说“么事”，语速快而爽利。",
   "classification": {
     "path": [
       "官话",
@@ -23,54 +23,77 @@
   },
   "sources": [
     "wiktionary-dial-syn",
-    "language-atlas-2012"
+    "language-atlas-2012",
+    "zhuzhici-hankou"
   ],
   "vocabulary": [
     {
-      "term": "家家",
-      "weight": 1,
-      "description": "外婆，也说“家婆”。",
-      "example": ""
-    },
-    {
-      "term": "小伢",
-      "weight": 1,
-      "description": "小孩。",
-      "example": ""
+      "term": "过早",
+      "weight": 3.0,
+      "description": "吃早饭。",
+      "example": "今朝过早吃热干面。"
     },
     {
       "term": "么事",
-      "weight": 1,
-      "description": "什么。",
-      "example": ""
+      "weight": 2.8,
+      "description": "什么、什么事。",
+      "example": "你在做么事？"
+    },
+    {
+      "term": "家家",
+      "weight": 2.5,
+      "description": "外婆，也说“家婆”。",
+      "example": "放学去家家屋里。"
+    },
+    {
+      "term": "小伢",
+      "weight": 2.5,
+      "description": "小孩，也单说“伢”。",
+      "example": "这小伢蛮听话。"
     },
     {
       "term": "落屋",
-      "weight": 1,
+      "weight": 2.4,
       "description": "回家。",
-      "example": ""
-    },
-    {
-      "term": "冇得",
-      "weight": 1,
-      "description": "没有。",
-      "example": ""
+      "example": "天黑了快点落屋。"
     }
   ],
-  "grammar_features": [],
-  "phonological_features": [],
+  "grammar_features": [
+    {
+      "name": "“么事／么样”疑问词",
+      "keywords": [
+        "么事",
+        "么样"
+      ],
+      "weight": 1.8,
+      "description": "武汉话问“什么”说“么事”，问“怎么”说“么样”。",
+      "example": "这事要么样办？"
+    }
+  ],
+  "phonological_features": [
+    {
+      "name": "鼻音与边音常混读",
+      "markers": [
+        "过早",
+        "落屋",
+        "么事"
+      ],
+      "description": "武汉话和周边不少南方官话一样，开头是 n 和 l 的字常常读成同一个音。",
+      "example": "吃碗热干面过早。"
+    }
+  ],
   "expressions": [
     {
-      "text": "家家",
-      "meaning": "外婆。"
+      "text": "睡瞌睡",
+      "meaning": "睡觉。"
     },
     {
-      "text": "么事",
-      "meaning": "什么。"
+      "text": "标致",
+      "meaning": "漂亮、好看。"
     },
     {
-      "text": "小伢",
-      "meaning": "小孩。"
+      "text": "闲扯",
+      "meaning": "聊天、闲谈。"
     }
   ]
 }

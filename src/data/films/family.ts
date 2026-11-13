@@ -330,5 +330,62 @@ export const films: readonly Film[] = [
         ]
       }
     ]
+  },
+  {
+    question: "nanjing-hua",
+    scenes: [
+      {
+        turn: 0, title: "南京的江淮官话", view: "map", duration: 11,
+        camera: [{ t: 0, at: [760, 490], zoom: 1.8 }],
+        cues: [
+          { kind: "highlight", at: [770, 490], size: [210, 150], color: familyColor.mandarin, from: 0.3 },
+          { kind: "pin", at: places.nanjing, text: "南京", side: "left", color: familyColor.mandarin, from: 1 },
+          { kind: "bubble", at: places.nanjing, text: "到哪块去？", sub: "到哪里去？", side: "top", size: "s", from: 2.2 },
+          { kind: "bubble", at: [places.nanjing[0], places.nanjing[1] + 20], text: "坐下聒白", sub: "坐下聊天", side: "bottom", size: "s", from: 4.2 },
+          { kind: "text", at: [600, 110], text: "长江淮河之间：江淮官话", from: 6.2 }
+        ]
+      },
+      {
+        turn: 1, title: "留着短短的入声", duration: 11,
+        cues: [
+          { kind: "word", text: "一", at: [190, 340], size: 155, caption: "短！", color: "#e5483b", motion: "pulse", from: 0.5 },
+          { kind: "word", text: "六", at: [460, 340], size: 155, caption: "短！", color: "#e5483b", motion: "pulse", from: 1.5 },
+          { kind: "word", text: "七", at: [740, 340], size: 155, caption: "短！", color: "#e5483b", motion: "pulse", from: 2.5 },
+          { kind: "word", text: "八", at: [1010, 340], size: 155, caption: "短！", color: "#e5483b", motion: "pulse", from: 3.5 },
+          { kind: "text", at: [600, 780], text: "官话家族里少见的入声", from: 5.5 }
+        ]
+      },
+      {
+        turn: 2, title: "南北之间的桥", view: "map", duration: 11,
+        camera: [{ t: 0, at: [790, 470], zoom: 1.7 }],
+        cues: [
+          { kind: "pin", at: places.beijing, text: "北方官话", side: "left", color: familyColor.mandarin, from: 0.4 },
+          { kind: "arrow", path: [[735, 300], [780, 475]], color: familyColor.mandarin, draw: 1, from: 1.2 },
+          { kind: "pin", at: places.nanjing, text: "南京", side: "left", color: "#e5483b", from: 2.2 },
+          { kind: "pin", at: places.suzhou, text: "吴语邻居", side: "bottom", color: familyColor.wu, from: 3.4 },
+          { kind: "bubble", at: places.nanjing, text: "吃茶", sub: "和江南一样", side: "top", size: "s", color: familyColor.wu, from: 4.5 },
+          { kind: "text", at: [600, 840], text: "词像北方，调留江南", from: 6.5 }
+        ]
+      },
+      {
+        turn: 3, title: "明朝初年的都城", duration: 10,
+        cues: [
+          { kind: "sprite", icon: "🏯", path: [[340, 430]], size: 200, from: 0.4 },
+          { kind: "label", at: [340, 325], pos: [340, 200], text: "六百年前：南京", color: "#e5483b", from: 1.2 },
+          { kind: "sprite", icon: "📖", path: [[860, 430]], size: 180, from: 2.6 },
+          { kind: "label", at: [860, 335], pos: [860, 200], text: "当年的通行官话", from: 3.4 },
+          { kind: "text", at: [600, 800], text: "读书人和外国人都照着学", from: 5.5 }
+        ]
+      },
+      {
+        turn: 4, title: "官话的接力棒", view: "map", duration: 10,
+        cues: [
+          { kind: "pin", at: places.nanjing, text: "南京", side: "right", color: familyColor.mandarin, from: 0.5 },
+          { kind: "arrow", path: [places.nanjing, places.beijing], text: "迁都北京", color: "#e5483b", draw: 1.2, from: 1.8 },
+          { kind: "pin", at: places.beijing, text: "北京", side: "left", color: "#e5483b", from: 3.2 },
+          { kind: "text", at: [600, 840], text: "北京话接过了接力棒", from: 5.5 }
+        ]
+      }
+    ]
   }
 ];

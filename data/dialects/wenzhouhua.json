@@ -5,7 +5,7 @@
   "region": "温州",
   "dialect_family": "吴语",
   "family_slug": "wu",
-  "overview": "浙江温州一带的话，属于吴语瓯江片，和上海话、苏州话又很不一样：今天说“该日”，回家说“走归”。",
+  "overview": "浙江温州一带的话，属于吴语瓯江片。群山阻隔让它和上海话、苏州话也很不一样：今天说“该日”，回家说“走归”。",
   "classification": {
     "path": [
       "吴语",
@@ -27,55 +27,71 @@
   "vocabulary": [
     {
       "term": "该日",
-      "weight": 1,
+      "weight": 2.8,
       "description": "今天。",
-      "example": ""
+      "example": "该日天色蛮好。"
     },
     {
       "term": "走归",
-      "weight": 1,
+      "weight": 2.8,
       "description": "回家。",
-      "example": ""
+      "example": "日头落山快走归。"
+    },
+    {
+      "term": "天光",
+      "weight": 2.6,
+      "description": "早饭（早餐）。",
+      "example": "早起先吃天光。"
     },
     {
       "term": "细儿",
-      "weight": 1,
+      "weight": 2.5,
       "description": "小孩。",
-      "example": ""
+      "example": "屋里细儿真灵。"
     },
     {
-      "term": "箸",
-      "weight": 1,
-      "description": "筷子。",
-      "example": ""
-    },
-    {
-      "term": "徛",
-      "weight": 1,
-      "description": "站。",
-      "example": ""
-    },
-    {
-      "term": "渠",
-      "weight": 1,
-      "description": "他、她。",
-      "example": ""
+      "term": "眙",
+      "weight": 2.4,
+      "description": "看。",
+      "example": "去江心屿眙一眙。"
     }
   ],
-  "grammar_features": [],
-  "phonological_features": [],
+  "grammar_features": [
+    {
+      "name": "第三人称“渠”与修饰后置",
+      "keywords": [
+        "渠",
+        "人客"
+      ],
+      "weight": 1.8,
+      "description": "温州话说“他”用古老的“渠”，不少词和闽语、粤语一样说成“人客”“闹热”。",
+      "example": "渠该日屋里有人客。"
+    }
+  ],
+  "phonological_features": [
+    {
+      "name": "保留浊声母与古雅读音",
+      "markers": [
+        "该日",
+        "走归",
+        "天光"
+      ],
+      "description": "保留了大量古汉语音韵特点，又经过独特演变，外地人听起来非常难猜。",
+      "example": "坐下来讲闲谈。"
+    }
+  ],
   "expressions": [
     {
-      "text": "该日",
-      "meaning": "今天。"
+      "text": "讲闲谈",
+      "meaning": "聊天、闲聊。"
     },
     {
-      "text": "走归",
-      "meaning": "回家。"
+      "text": "生好",
+      "meaning": "长得好看、漂亮。"
     },
     {
-      "text": "细儿",
-      "meaning": "小孩。"
+      "text": "物事",
+      "meaning": "东西、物品。"
     }
   ]
 }

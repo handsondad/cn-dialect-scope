@@ -287,6 +287,22 @@
       "sources": [
         "wiktionary-dial-syn"
       ]
+    },
+    {
+      "dialect": "fuzhouhua",
+      "form": "无",
+      "orthography": "本字",
+      "etymon": "无",
+      "romanization": {
+        "scheme": "平话字",
+        "text": "mò̤"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
     }
   ]
 }

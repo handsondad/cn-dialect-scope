@@ -203,6 +203,18 @@
       "sources": [
         "wiktionary-dial-syn"
       ]
+    },
+    {
+      "dialect": "fuzhouhua",
+      "form": "冰箸",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "“箸”是筷子、小棍。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
     }
   ]
 }

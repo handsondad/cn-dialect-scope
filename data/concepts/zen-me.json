@@ -1,0 +1,294 @@
+{
+  "slug": "zen-me",
+  "headword": "怎么",
+  "gloss": "询问方式、原因或状况。",
+  "category": "疑问",
+  "aliases": [
+    "咋",
+    "咋个",
+    "么样",
+    "哪能",
+    "点样",
+    "按怎",
+    "做呢"
+  ],
+  "related": [
+    {
+      "concept": "shen-me",
+      "type": "related"
+    }
+  ],
+  "etymology": [
+    {
+      "character": "咋",
+      "note": "北方和西南口语常说合音味十足的“咋／咋个”；吴语上海说“哪能”、苏州说“捺亨”；粤语说“点／点样”；闽南语说“按怎”，潮汕话说“做呢”。",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn",
+        "editorial"
+      ]
+    }
+  ],
+  "expressions": [
+    {
+      "dialect": "beijinghua",
+      "form": "怎么",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "zěnme"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "dongbeihua",
+      "form": "咋",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "zǎ"
+      },
+      "example": "这事儿咋整？",
+      "example_gloss": "这件事怎么办？",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也说“咋整”“怎么”。",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "xinan-guanhua",
+      "form": "咋个",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也说“啷个”“咋”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "lanyin-guanhua",
+      "form": "咋",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "taiyuanhua",
+      "form": "咋",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“咋底”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "xianhua",
+      "form": "咋",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“咋样儿”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "jinanhua",
+      "form": "怎么",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wuhanhua",
+      "form": "么样",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也说“哪样”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "nanjinghua",
+      "form": "怎么",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "guangzhouhua",
+      "form": "点样",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "dim2 joeng6-2"
+      },
+      "example": "呢个点样整呀？",
+      "example_gloss": "这个怎么做呀？",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也单说“点”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "hongkong-cantonese",
+      "form": "点样",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "dim2 joeng6-2"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也单说“点”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "chaoshanhua",
+      "form": "做呢",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "fujian-minnan",
+      "form": "按怎",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "台罗",
+        "text": "án-tsuánn"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "fuzhouhua",
+      "form": "怎其",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "平话字",
+        "text": "căng-gì"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“怎”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "shanghaihua",
+      "form": "哪能",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "suzhouhua",
+      "form": "捺亨",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wenzhouhua",
+      "form": "訾那",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“訾那能”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "hakkahua",
+      "form": "仰般",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“仰仔”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "changshahua",
+      "form": "何什",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“何里”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "nanchanghua",
+      "form": "啷",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“啷样”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    }
+  ]
+}

@@ -252,6 +252,22 @@
       "sources": [
         "wiktionary-dial-syn"
       ]
+    },
+    {
+      "dialect": "fuzhouhua",
+      "form": "箸",
+      "orthography": "本字",
+      "etymon": "箸",
+      "romanization": {
+        "scheme": "平话字",
+        "text": "dê̤ṳ"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
     }
   ]
 }

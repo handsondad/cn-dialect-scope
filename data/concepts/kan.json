@@ -1,0 +1,290 @@
+{
+  "slug": "kan",
+  "headword": "看",
+  "gloss": "把目光投向人或东西。",
+  "category": "动作",
+  "aliases": [
+    "瞅",
+    "瞧",
+    "睇",
+    "眙",
+    "睄",
+    "瞭",
+    "相"
+  ],
+  "related": [],
+  "etymology": [
+    {
+      "character": "睇",
+      "note": "古汉语“睇”指斜视、注视（如《楚辞》“既含睇兮又宜笑”），粤语、潮汕话保留为日常的“看”（粤拼 tai2）。温州话说“眙”，也是先秦古书里表示注视的老字；东北话常说“瞅”，太原话常说“瞭”。",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn",
+        "editorial"
+      ]
+    }
+  ],
+  "expressions": [
+    {
+      "dialect": "beijinghua",
+      "form": "看",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "kàn"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "口语也常说“瞧”“瞅”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "dongbeihua",
+      "form": "瞅",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "chǒu"
+      },
+      "example": "你瞅啥呢？",
+      "example_gloss": "你看什么呢？",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也说“看”“瞧”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "xinan-guanhua",
+      "form": "看",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "lanyin-guanhua",
+      "form": "看",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "taiyuanhua",
+      "form": "瞭",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“看”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "xianhua",
+      "form": "看",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "jinanhua",
+      "form": "看",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wuhanhua",
+      "form": "睄",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“看”“瞄”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "nanjinghua",
+      "form": "看",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“瞧”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "guangzhouhua",
+      "form": "睇",
+      "orthography": "本字",
+      "etymon": "睇",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "tai2"
+      },
+      "example": "去睇戏啦。",
+      "example_gloss": "去看戏／看电影啦。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "hongkong-cantonese",
+      "form": "睇",
+      "orthography": "本字",
+      "etymon": "睇",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "tai2"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "chaoshanhua",
+      "form": "睇",
+      "orthography": "本字",
+      "etymon": "睇",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "fujian-minnan",
+      "form": "看",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "台罗",
+        "text": "khuànn"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "fuzhouhua",
+      "form": "看",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "平话字",
+        "text": "káng"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“觑”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "shanghaihua",
+      "form": "看",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "suzhouhua",
+      "form": "看",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wenzhouhua",
+      "form": "眙",
+      "orthography": "本字",
+      "etymon": "眙",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也说“张”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "hakkahua",
+      "form": "看",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“睐”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "changshahua",
+      "form": "看",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "nanchanghua",
+      "form": "相",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“看”“望”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    }
+  ]
+}

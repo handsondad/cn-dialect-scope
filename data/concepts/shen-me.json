@@ -274,6 +274,21 @@
       "sources": [
         "wiktionary-dial-syn"
       ]
+    },
+    {
+      "dialect": "fuzhouhua",
+      "form": "什乇",
+      "orthography": "俗字",
+      "romanization": {
+        "scheme": "平话字",
+        "text": "sié-nó̤h"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
     }
   ]
 }

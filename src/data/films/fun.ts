@@ -372,5 +372,111 @@ export const films: readonly Film[] = [
         ]
       }
     ]
+  },
+  {
+    question: "guo-zao",
+    scenes: [
+      {
+        turn: 0, title: "武汉的过早", duration: 10,
+        cues: [
+          { kind: "sprite", icon: "🍜", path: [[320, 460]], size: 200, from: 0.4 },
+          { kind: "word", text: "过早", at: [840, 360], size: 185, caption: "武汉话：吃早饭", color: red, from: 1.5 },
+          { kind: "text", at: [600, 810], text: "像过节一样吃早饭！", from: 5 }
+        ]
+      },
+      {
+        turn: 1, title: "早饭的名字", view: "map", duration: 11,
+        cues: [
+          { kind: "bubble", at: places.wuhan, text: "过早", side: "left", size: "s", from: 0.5 },
+          { kind: "bubble", at: places.nanjing, text: "点心", side: "top", size: "s", from: 2 },
+          { kind: "bubble", at: places.wenzhou, text: "天光", side: "right", size: "s", from: 3.5 },
+          { kind: "bubble", at: places.xiamen, text: "早起顿", side: "right", size: "s", from: 5 },
+          { kind: "text", at: [600, 110], text: "一顿早饭，各地叫法不同", from: 6.8 }
+        ]
+      },
+      {
+        turn: 2, title: "婆婆到底是谁", duration: 11,
+        cues: [
+          { kind: "word", text: "婆婆", at: [600, 220], size: 165, color: red, from: 0.4 },
+          { kind: "arrow", path: [[510, 310], [310, 470]], draw: 0.8, from: 1.6 },
+          { kind: "word", text: "奶奶", at: [280, 580], size: 135, caption: "成都 · 南昌", color: brown, from: 2.5 },
+          { kind: "arrow", path: [[690, 310], [890, 470]], draw: 0.8, from: 3.8 },
+          { kind: "word", text: "外婆", at: [920, 580], size: 135, caption: "广州（奶奶叫阿嫲）", color: red, from: 4.6 },
+          { kind: "text", at: [600, 830], text: "同一个词，换城就换人！", from: 6.5 }
+        ]
+      },
+      {
+        turn: 3, title: "各地怎么喊奶奶", view: "map", duration: 12,
+        cues: [
+          { kind: "bubble", at: places.suzhou, text: "好婆", side: "top", size: "s", from: 0.5 },
+          { kind: "bubble", at: places.shanghai, text: "阿奶", side: "right", size: "s", from: 1.8 },
+          { kind: "bubble", at: places.changsha, text: "娭毑", side: "left", size: "s", from: 3.1 },
+          { kind: "bubble", at: places.fuzhou, text: "依妈", side: "right", size: "s", from: 4.4 },
+          { kind: "bubble", at: places.xiamen, text: "阿妈", side: "bottom", size: "s", from: 5.7 },
+          { kind: "bubble", at: places.guangzhou, text: "阿嫲", side: "left", size: "s", from: 7 },
+          { kind: "text", at: [600, 110], text: "都是爸爸的妈妈", from: 8.5 }
+        ]
+      },
+      {
+        turn: 4, title: "好乖 = 好漂亮", duration: 10,
+        cues: [
+          { kind: "word", text: "乖", at: [600, 260], size: 190, color: brown, from: 0.4 },
+          { kind: "label", at: [520, 320], pos: [290, 520], text: "北京：听话懂事", from: 1.8 },
+          { kind: "label", at: [680, 320], pos: [910, 520], text: "四川·长沙：真漂亮", color: red, from: 3.4 },
+          { kind: "myth", wrong: "字写得一样，意思肯定一样", right: "换个地方，亲人称呼和词义都会变", from: 5.2 }
+        ]
+      }
+    ]
+  },
+  {
+    question: "m-goi",
+    scenes: [
+      {
+        turn: 0, title: "两种谢谢", duration: 11,
+        cues: [
+          { kind: "sprite", icon: "🫖", path: [[300, 560]], size: 150, from: 0.4 },
+          { kind: "word", text: "唔该", at: [300, 290], size: 150, caption: "倒茶·帮忙", color: brown, from: 1 },
+          { kind: "sprite", icon: "🧧", path: [[900, 560]], size: 150, from: 2.8 },
+          { kind: "word", text: "多谢", at: [900, 290], size: 150, caption: "礼物·红包", color: red, from: 3.4 },
+          { kind: "text", at: [600, 820], text: "粤语里两句分工清楚", from: 5.8 }
+        ]
+      },
+      {
+        turn: 1, title: "唔该 = 不该劳烦", duration: 10,
+        cues: [
+          { kind: "word", text: "唔", at: [280, 340], size: 185, caption: "不", from: 0.5 },
+          { kind: "word", text: "该", at: [580, 340], size: 185, caption: "应该", from: 1.6 },
+          { kind: "arrow", path: [[710, 340], [830, 340]], draw: 0.7, from: 2.8 },
+          { kind: "word", text: "唔该", at: [1000, 340], size: 135, caption: "劳驾 · 谢谢", color: red, from: 3.6 },
+          { kind: "text", at: [600, 790], text: "真不该劳烦你！", from: 5.5 }
+        ]
+      },
+      {
+        turn: 2, title: "千万别说反啦", duration: 10,
+        cues: [
+          { kind: "sprite", icon: "🎁", path: [[600, 330]], size: 180, from: 0.4 },
+          { kind: "myth", wrong: "收红包和礼物也随便说唔该", right: "帮忙说唔该，收礼郑重说多谢", from: 3.2 }
+        ]
+      },
+      {
+        turn: 3, title: "暖心的谢谢", view: "map", duration: 11,
+        camera: [{ t: 0, at: [755, 700], zoom: 1.9 }],
+        cues: [
+          { kind: "bubble", at: places.meizhou, text: "恁仔细", sub: "客家话", side: "top", size: "s", from: 0.6 },
+          { kind: "bubble", at: places.shantou, text: "㩼谢", sub: "潮汕：很多谢", side: "bottom", size: "s", from: 2.5 },
+          { kind: "bubble", at: places.xiamen, text: "劳力", sub: "闽南：谢谢出力", side: "right", size: "s", from: 4.4 },
+          { kind: "text", at: [600, 110], text: "每句谢谢都很有心意", from: 6.5 }
+        ]
+      },
+      {
+        turn: 4, title: "对唔住和歹势", view: "map", duration: 10,
+        cues: [
+          { kind: "bubble", at: places.shanghai, text: "勿好意思", side: "right", size: "s", from: 0.5 },
+          { kind: "bubble", at: places.xiamen, text: "歹势", sub: "pháinn-sè", side: "right", size: "s", from: 2.3 },
+          { kind: "bubble", at: places.guangzhou, text: "对唔住", side: "left", size: "s", from: 4.1 },
+          { kind: "text", at: [600, 110], text: "礼貌话走到哪儿都受欢迎", from: 6 }
+        ]
+      }
+    ]
   }
 ];

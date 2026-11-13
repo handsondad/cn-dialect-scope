@@ -51,7 +51,7 @@ test("动画里的城市和知识库里方言点的位置一致", () => {
   const same = {
     guangzhou: "guangzhouhua", hongkong: "hongkong-cantonese", shanghai: "shanghaihua", suzhou: "suzhouhua",
     chengdu: "xinan-guanhua", changsha: "changshahua", nanchang: "nanchanghua", shantou: "chaoshanhua",
-    meizhou: "hakkahua", xiamen: "fujian-minnan", lanzhou: "lanyin-guanhua", beijing: "beijinghua",
+    meizhou: "hakkahua", xiamen: "fujian-minnan", fuzhou: "fuzhouhua", lanzhou: "lanyin-guanhua", beijing: "beijinghua",
     harbin: "dongbeihua", taiyuan: "taiyuanhua", xian: "xianhua", jinan: "jinanhua",
     wuhan: "wuhanhua", nanjing: "nanjinghua", wenzhou: "wenzhouhua"
   };

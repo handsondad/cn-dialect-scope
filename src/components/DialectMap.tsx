@@ -10,22 +10,23 @@ const pillOffset: Readonly<Record<string, Point>> = {
   beijinghua: [-10, -108],
   dongbeihua: [-110, 40],
   taiyuanhua: [-105, -88],
-  jinanhua: [135, -45],
+  jinanhua: [135, -52],
   xianhua: [-15, -72],
   "lanyin-guanhua": [-20, -82],
   "xinan-guanhua": [-40, 84],
   wuhanhua: [-85, -50],
   nanjinghua: [-58, -74],
   changshahua: [-125, -18],
-  nanchanghua: [36, 52],
-  suzhouhua: [115, -82],
-  shanghaihua: [145, 8],
-  wenzhouhua: [125, 0],
-  guangzhouhua: [-165, 16],
-  "hongkong-cantonese": [-10, 78],
-  chaoshanhua: [125, 68],
-  hakkahua: [-135, -42],
-  "fujian-minnan": [145, -10]
+  nanchanghua: [26, 6],
+  suzhouhua: [110, -116],
+  shanghaihua: [145, -28],
+  wenzhouhua: [135, -34],
+  guangzhouhua: [-165, 22],
+  "hongkong-cantonese": [-10, 82],
+  chaoshanhua: [125, 102],
+  hakkahua: [-140, -34],
+  "fujian-minnan": [155, 44],
+  fuzhouhua: [160, 0]
 };
 
 export type MapMark = "right" | "wrong" | "option";
@@ -58,7 +59,7 @@ export function DialectMap({ dialects, pillText, selected, family, marks, onSele
     }
   };
   return (
-    <svg className="dialect-map" viewBox="205 15 950 905" role="group" aria-label={label}>
+    <svg className="dialect-map" viewBox="205 15 960 920" role="group" aria-label={label}>
       <rect x={0} y={0} width={1200} height={950} fill="#c4e2f5" pointerEvents="none" />
       <MapBackdrop labels={!marks} />
       {shown.map((dialect) => {

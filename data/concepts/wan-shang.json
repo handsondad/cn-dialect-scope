@@ -1,0 +1,301 @@
+{
+  "slug": "wan-shang",
+  "headword": "晚上",
+  "gloss": "太阳落山以后、天黑下来的时间。",
+  "category": "时间",
+  "aliases": [
+    "夜里",
+    "晚黑",
+    "暗暝",
+    "暗晡头",
+    "后晌",
+    "下黑儿",
+    "黑咧"
+  ],
+  "related": [
+    {
+      "concept": "jin-tian",
+      "type": "related"
+    },
+    {
+      "concept": "yue-liang",
+      "type": "related"
+    }
+  ],
+  "etymology": [
+    {
+      "character": "暝",
+      "note": "古汉语常用“夜”“暮”“暝”指夜晚。闽南语“暗暝”、潮汕话“暝暗”、福州话“暝晡”保留了古“暝”字；吴语、湘语多说“夜里”；粤语说“夜晚／晚黑”；北方口语常以天黑表时间，如东北“下黑儿”、西安“黑咧”、成都“黑了”。",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn",
+        "editorial"
+      ]
+    }
+  ],
+  "expressions": [
+    {
+      "dialect": "beijinghua",
+      "form": "晚上",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "wǎnshang"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "老北京土话也说“晚半晌儿”“后晌”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "dongbeihua",
+      "form": "下黑儿",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "xiàhēir"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“晚上”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "xinan-guanhua",
+      "form": "黑了",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“晚上”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "lanyin-guanhua",
+      "form": "晚夕",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "taiyuanhua",
+      "form": "黑夜",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“黑咾”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "xianhua",
+      "form": "黑咧",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "jinanhua",
+      "form": "后晌",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“晚上”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wuhanhua",
+      "form": "晚上",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“黑了”“夜晚”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "nanjinghua",
+      "form": "夜里头",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“晚上”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "guangzhouhua",
+      "form": "夜晚",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "je6 maan5"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也常说“晚黑”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "hongkong-cantonese",
+      "form": "晚黑",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "maan5 hak1"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也说“夜晚”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "chaoshanhua",
+      "form": "暝暗",
+      "orthography": "本字",
+      "etymon": "暝",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "fujian-minnan",
+      "form": "暗暝",
+      "orthography": "本字",
+      "etymon": "暝",
+      "romanization": {
+        "scheme": "台罗",
+        "text": "àm-mî"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也说“暗时”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "fuzhouhua",
+      "form": "暝晡",
+      "orthography": "本字",
+      "etymon": "暝",
+      "romanization": {
+        "scheme": "平话字",
+        "text": "màng-buŏ"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "shanghaihua",
+      "form": "夜里",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也说“夜里向”“夜头”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "suzhouhua",
+      "form": "夜里",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也说“夜里向”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "wenzhouhua",
+      "form": "夜里",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“黄昏”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "hakkahua",
+      "form": "暗晡头",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“暗晡夜”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "changshahua",
+      "form": "夜里",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“夜间子”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "nanchanghua",
+      "form": "夜晚",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "也说“夜里”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "slug": "xie-xie",
+  "headword": "谢谢",
+  "gloss": "对别人的帮忙或礼物表示感谢。",
+  "category": "礼貌",
+  "aliases": [
+    "多谢",
+    "唔该",
+    "谢谢侬",
+    "恁仔细",
+    "㩼谢",
+    "劳力"
+  ],
+  "related": [],
+  "etymology": [
+    {
+      "character": "谢",
+      "note": "粤语把感谢分得很细：别人顺手帮忙、指路、倒茶说“唔该”（本义“不该劳烦你”），收到礼物、红包或重谢说“多谢”。客家话梅县常说“恁仔细”，潮汕话说“㩼谢”（很多谢）。",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn",
+        "editorial"
+      ]
+    }
+  ],
+  "expressions": [
+    {
+      "dialect": "beijinghua",
+      "form": "谢谢",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "xièxie"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "dongbeihua",
+      "form": "谢谢",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "汉语拼音",
+        "text": "xièxie"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "xinan-guanhua",
+      "form": "谢谢",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "lanyin-guanhua",
+      "form": "谢谢",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "taiyuanhua",
+      "form": "谢谢",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "xianhua",
+      "form": "谢谢",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "jinanhua",
+      "form": "谢谢",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "wuhanhua",
+      "form": "谢谢",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "nanjinghua",
+      "form": "谢谢",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "guangzhouhua",
+      "form": "唔该",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "m4 goi1"
+      },
+      "example": "唔该晒！",
+      "example_gloss": "太谢谢啦！（谢人帮忙）",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "谢别人帮忙说“唔该”，收礼物说“多谢”（do1 ze6）。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "guangzhouhua",
+      "form": "多谢",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "do1 ze6"
+      },
+      "example": "多谢你嘅礼物。",
+      "example_gloss": "谢谢你的礼物。",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "hongkong-cantonese",
+      "form": "唔该",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "粤拼",
+        "text": "m4 goi1"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "收礼物或重谢说“多谢”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "chaoshanhua",
+      "form": "㩼谢",
+      "orthography": "本字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "“㩼”在潮汕话里是“多”的意思。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "fujian-minnan",
+      "form": "多谢",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "台罗",
+        "text": "to-siā"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也常说“劳力”（lōo-la̍t）、“感谢”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "fuzhouhua",
+      "form": "谢谢",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "note": "劳烦别人也说“起动”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "shanghaihua",
+      "form": "谢谢侬",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也说“谢谢”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "suzhouhua",
+      "form": "谢谢",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "editorial"
+      ]
+    },
+    {
+      "dialect": "wenzhouhua",
+      "form": "谢谢你",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "hakkahua",
+      "form": "恁仔细",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "high",
+      "note": "也说“多谢”。",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "changshahua",
+      "form": "多谢",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    },
+    {
+      "dialect": "nanchanghua",
+      "form": "多谢",
+      "orthography": "通用字",
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
+    }
+  ]
+}

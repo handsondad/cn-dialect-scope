@@ -272,5 +272,121 @@ export const films: readonly Film[] = [
         ]
       }
     ]
+  },
+  {
+    question: "wenzhou-hua",
+    scenes: [
+      {
+        turn: 0, title: "群山和大海围着", view: "map", duration: 11,
+        camera: [{ t: 0, at: [600, 450], zoom: 1 }, { t: 2, at: [835, 595], zoom: 2 }],
+        cues: [
+          { kind: "pin", at: places.shanghai, text: "上海", side: "right", color: "#3d9be9", from: 2.2 },
+          { kind: "pin", at: places.wenzhou, text: "温州", side: "right", color: "#3d9be9", from: 3 },
+          { kind: "sprite", icon: "⛰️", path: [[800, 595]], size: 34, from: 3.8 },
+          { kind: "sprite", icon: "⛰️", path: [[810, 650]], size: 34, from: 4.1 },
+          { kind: "sprite", icon: "⛰️", path: [[845, 570]], size: 34, from: 4.4 },
+          { kind: "text", at: [600, 110], text: "三面大山，东边大海", from: 6 }
+        ]
+      },
+      {
+        turn: 1, title: "该日、走归、天光", duration: 11,
+        cues: [
+          { kind: "word", text: "该日", at: [230, 340], size: 135, caption: "今天", color: "#3d9be9", from: 0.5 },
+          { kind: "word", text: "走归", at: [600, 340], size: 135, caption: "回家", color: "#3d9be9", from: 2.2 },
+          { kind: "word", text: "天光", at: [970, 340], size: 135, caption: "早饭", color: "#b4621a", from: 4 },
+          { kind: "sprite", icon: "🌅", path: [[970, 610]], size: 120, from: 5 },
+          { kind: "text", at: [600, 820], text: "天一亮就吃的那顿饭", from: 6.5 }
+        ]
+      },
+      {
+        turn: 2, title: "吴语的老印记", duration: 11,
+        cues: [
+          { kind: "shape", shape: "pill", at: [250, 260], size: [260, 90], color: "#e1efff", text: "上海话", from: 0.5 },
+          { kind: "shape", shape: "pill", at: [600, 260], size: [260, 90], color: "#e1efff", text: "苏州话", from: 1.2 },
+          { kind: "shape", shape: "pill", at: [950, 260], size: [260, 90], color: "#e1efff", text: "温州话", from: 1.9 },
+          { kind: "pulse", at: [600, 480], radius: 95, color: "#3d9be9", from: 3 },
+          { kind: "word", text: "物事", at: [600, 650], size: 130, caption: "东西", color: "#3d9be9", from: 4.5 },
+          { kind: "text", at: [600, 840], text: "嗓子嗡嗡响：都是吴语", from: 6.5 }
+        ]
+      },
+      {
+        turn: 3, title: "两边都沾一点", view: "map", duration: 11,
+        camera: [{ t: 0, at: [800, 640], zoom: 1.9 }],
+        cues: [
+          { kind: "bubble", at: places.shanghai, text: "物事", sub: "像北边吴语", side: "right", size: "s", color: "#3d9be9", from: 0.5 },
+          { kind: "pin", at: places.wenzhou, text: "温州", side: "left", color: "#3d9be9", from: 2 },
+          { kind: "bubble", at: places.wenzhou, text: "箸 · 徛", sub: "筷子 · 站", side: "right", size: "s", color: teal, from: 3 },
+          { kind: "bubble", at: places.xiamen, text: "箸 · 徛", sub: "像南边闽语", side: "right", size: "s", color: teal, from: 4.8 },
+          { kind: "text", at: [600, 110], text: "两省交界，两边都像一点", from: 6.5 }
+        ]
+      },
+      {
+        turn: 4, title: "不是密码是家乡话", duration: 10,
+        cues: [
+          { kind: "sprite", icon: "🧳", path: [[260, 390], [940, 390]], size: 140, travel: 3, from: 0.5 },
+          { kind: "word", text: "温州话", at: [600, 220], size: 120, color: "#3d9be9", from: 1.5 },
+          { kind: "myth", wrong: "温州话是故意编出来的暗号", right: "大山留住的古老吴语，亲切的家乡话", from: 4 }
+        ]
+      }
+    ]
+  },
+  {
+    question: "luo-yu",
+    scenes: [
+      {
+        turn: 0, title: "北边下雨，南边落雨", view: "map", duration: 11,
+        cues: [
+          { kind: "bubble", at: places.beijing, text: "下雨", side: "right", size: "s", from: 0.5 },
+          { kind: "bubble", at: places.taiyuan, text: "下雨", side: "left", size: "s", from: 1.4 },
+          { kind: "bubble", at: places.shanghai, text: "落雨", side: "right", size: "s", color: "#3d9be9", from: 2.6 },
+          { kind: "bubble", at: places.changsha, text: "落雨", side: "left", size: "s", color: "#e8578a", from: 3.6 },
+          { kind: "bubble", at: places.guangzhou, text: "落雨", side: "left", size: "s", color: red, from: 4.6 },
+          { kind: "bubble", at: places.xiamen, text: "落雨", side: "right", size: "s", color: teal, from: 5.6 },
+          { kind: "text", at: [600, 110], text: "一条整齐的南北线", from: 7.2 }
+        ]
+      },
+      {
+        turn: 1, title: "花落和雨落", duration: 10,
+        cues: [
+          { kind: "flow", path: [[350, 120], [350, 720]], icon: "💧", count: 5, speed: 180, size: 12, from: 0.3 },
+          { kind: "flow", path: [[850, 120], [850, 720]], icon: "💧", count: 5, speed: 180, size: 12, from: 0.6 },
+          { kind: "word", text: "落雨", at: [350, 390], size: 145, caption: "古话·南方留着", color: "#3d9be9", from: 1.2 },
+          { kind: "word", text: "下雨", at: [850, 390], size: 145, caption: "北方改口", color: "#f39c34", from: 3 },
+          { kind: "text", at: [600, 820], text: "从天上掉下来，都说得通", from: 5.5 }
+        ]
+      },
+      {
+        turn: 2, title: "江边两种都说", view: "map", duration: 10,
+        camera: [{ t: 0, at: [530, 540], zoom: 1.7 }],
+        cues: [
+          { kind: "pin", at: places.wuhan, text: "武汉", side: "right", from: 0.5 },
+          { kind: "bubble", at: places.wuhan, text: "下雨 · 落雨", side: "top", size: "s", from: 1.5 },
+          { kind: "pin", at: places.chengdu, text: "成都", side: "left", from: 3.2 },
+          { kind: "bubble", at: places.chengdu, text: "落雨 · 下雨", side: "bottom", size: "s", from: 4.2 },
+          { kind: "text", at: [600, 110], text: "交汇的地方，两种都能听见", from: 6 }
+        ]
+      },
+      {
+        turn: 3, title: "落水和荡雨", view: "map", duration: 10,
+        camera: [{ t: 0, at: [755, 700], zoom: 2 }],
+        cues: [
+          { kind: "bubble", at: places.meizhou, text: "落水", sub: "客家话", side: "left", size: "s", color: green, from: 0.6 },
+          { kind: "bubble", at: places.fuzhou, text: "荡雨", sub: "福州话", side: "top", size: "s", color: "#0e86b8", from: 2.6 },
+          { kind: "bubble", at: places.xiamen, text: "落雨", sub: "闽南话", side: "right", size: "s", color: teal, from: 4.4 },
+          { kind: "text", at: [600, 840], text: "雨本来就是天上的水！", from: 6 }
+        ]
+      },
+      {
+        turn: 4, title: "晚上的名字", view: "map", duration: 12,
+        cues: [
+          { kind: "bubble", at: places.harbin, text: "下黑儿", side: "bottom", size: "s", from: 0.5 },
+          { kind: "bubble", at: places.xian, text: "黑咧", side: "left", size: "s", from: 1.8 },
+          { kind: "bubble", at: places.shanghai, text: "夜里", side: "right", size: "s", color: "#3d9be9", from: 3.1 },
+          { kind: "bubble", at: places.guangzhou, text: "晚黑", side: "left", size: "s", color: red, from: 4.4 },
+          { kind: "bubble", at: places.xiamen, text: "暗暝", side: "right", size: "s", color: teal, from: 5.7 },
+          { kind: "text", at: [600, 855], text: "天黑了，各地叫法也成片", from: 7.5 }
+        ]
+      }
+    ]
   }
 ];

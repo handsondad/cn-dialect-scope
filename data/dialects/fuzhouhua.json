@@ -1,0 +1,110 @@
+{
+  "slug": "fuzhouhua",
+  "order": 20,
+  "name": "福州话",
+  "region": "福州",
+  "dialect_family": "闽东语",
+  "family_slug": "mindong",
+  "overview": "闽东语代表，本地常叫“平话”。虽然和厦门闽南话同在福建，山海阻隔让两边说话很不一样。",
+  "classification": {
+    "path": [
+      "闽语",
+      "闽东区",
+      "侯官片"
+    ],
+    "reference": "language-atlas-2012",
+    "confidence": "medium"
+  },
+  "point": {
+    "name": "福州",
+    "province": "福建",
+    "lat": 26.08,
+    "lon": 119.3
+  },
+  "sources": [
+    "wiktionary-dial-syn",
+    "language-atlas-2012",
+    "bangua-luomazi"
+  ],
+  "vocabulary": [
+    {
+      "term": "什乇",
+      "weight": 2.8,
+      "description": "什么。",
+      "example": "伊名什乇？"
+    },
+    {
+      "term": "客佻",
+      "weight": 2.8,
+      "description": "玩耍，常记音写作“卡溜”。",
+      "example": "今旦去三坊七巷客佻。"
+    },
+    {
+      "term": "依妈",
+      "weight": 2.6,
+      "description": "奶奶（祖母）。",
+      "example": "依妈煮早未？"
+    },
+    {
+      "term": "荡雨",
+      "weight": 2.6,
+      "description": "下雨。",
+      "example": "今旦外头荡雨。"
+    },
+    {
+      "term": "捌",
+      "weight": 2.4,
+      "description": "知道、认识。",
+      "example": "我伓捌字。"
+    }
+  ],
+  "grammar_features": [
+    {
+      "name": "“依-”亲属前缀",
+      "keywords": [
+        "依妈",
+        "依公",
+        "依奶"
+      ],
+      "weight": 1.8,
+      "description": "福州话称呼家里长辈常加前缀“依”，如依妈（奶奶）、依公（爷爷）。",
+      "example": "依妈带儿囝去公园。"
+    },
+    {
+      "name": "“什乇”疑问与“伓”否定",
+      "keywords": [
+        "什乇",
+        "伓"
+      ],
+      "weight": 1.8,
+      "description": "疑问用“什乇”（什么），否定用“伓”（不）。",
+      "example": "什乇事计？"
+    }
+  ],
+  "phonological_features": [
+    {
+      "name": "连读变音丰富",
+      "markers": [
+        "客佻",
+        "什乇",
+        "攀讲"
+      ],
+      "description": "两个字连在一起读时，声母、韵母和声调常常都会跟着变。",
+      "example": "坐下来攀讲。"
+    }
+  ],
+  "expressions": [
+    {
+      "text": "攀讲",
+      "meaning": "聊天、闲谈。"
+    },
+    {
+      "text": "儿囝",
+      "meaning": "小孩、孩子。"
+    },
+    {
+      "text": "食茶",
+      "meaning": "喝茶。"
+    }
+  ]
+}

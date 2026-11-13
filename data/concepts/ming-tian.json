@@ -254,6 +254,21 @@
       "sources": [
         "wiktionary-dial-syn"
       ]
+    },
+    {
+      "dialect": "fuzhouhua",
+      "form": "明旦",
+      "orthography": "通用字",
+      "romanization": {
+        "scheme": "平话字",
+        "text": "mìng-dáng"
+      },
+      "register": "口语",
+      "status": "常用",
+      "confidence": "medium",
+      "sources": [
+        "wiktionary-dial-syn"
+      ]
     }
   ]
 }
