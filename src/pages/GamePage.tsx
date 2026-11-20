@@ -1,4 +1,4 @@
-import { useMemo, useState, type CSSProperties } from "react";
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import { Avatar } from "../components/Avatar";
 import { DialectMap, type MapMark } from "../components/DialectMap";
 import { SayButton } from "../components/SayButton";
@@ -30,9 +30,21 @@ export function GamePage({ onBack, backLabel, onMap }: Props) {
   const [score, setScore] = useState(0);
   const done = index >= rounds.length;
   const round = rounds[index];
+  const answered = useRef(false);
+  const nextRef = useRef<HTMLButtonElement>(null);
+  const againRef = useRef<HTMLButtonElement>(null);
+  const optionsRef = useRef<HTMLDivElement>(null);
+
+  // 选完答案选项都变成 disabled、换题时整块重画，焦点会掉回页面开头；用键盘玩的要接着能按
+  useEffect(() => {
+    if (!answered.current) return;
+    const target = picked ? nextRef.current : done ? againRef.current : optionsRef.current?.querySelector("button");
+    target?.focus();
+  }, [picked, index, done]);
 
   const choose = (slug: string) => {
     if (picked) return;
+    answered.current = true;
     setPicked(slug);
     if (slug === round.answer) setScore(score + 1);
   };
@@ -75,7 +87,7 @@ export function GamePage({ onBack, backLabel, onMap }: Props) {
           <p className="game-line"><Avatar who="nian" /><span>我答对了 {score} 题！</span></p>
           <p className="game-line"><Avatar who="dad" /><span>{cheer(score)}</span></p>
           <div className="game-actions">
-            <button type="button" className="game-next" onClick={again}>再来一局 ↻</button>
+            <button ref={againRef} type="button" className="game-next" onClick={again}>再来一局 ↻</button>
             <button type="button" className="game-secondary" onClick={() => onMap()}>去方言地图 🗺️</button>
           </div>
         </section>
@@ -87,7 +99,7 @@ export function GamePage({ onBack, backLabel, onMap }: Props) {
               <b style={{ fontFamily: fontFamily.kai }}>{round.prompt}</b>
               <SayButton voice={round.voice} text={round.prompt} label="听一听" />
             </p>
-            <div className="game-options">
+            <div ref={optionsRef} className="game-options">
               {round.options.map((slug) => {
                 const option = dialectBySlug(slug);
                 if (!option) return null;
@@ -113,7 +125,7 @@ export function GamePage({ onBack, backLabel, onMap }: Props) {
                 </span>
               </p>
               <DialectMap dialects={atlas.dialects} marks={marks} label="这一题的三个地方在地图上的位置" />
-              <button type="button" className="game-next" onClick={next}>{index + 1 < rounds.length ? "下一题 →" : "看看我得了几颗星 ⭐"}</button>
+              <button ref={nextRef} type="button" className="game-next" onClick={next}>{index + 1 < rounds.length ? "下一题 →" : "看看我得了几颗星 ⭐"}</button>
             </div>
           )}
         </section>

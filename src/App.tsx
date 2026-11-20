@@ -17,9 +17,19 @@ type Route =
   | { page: "game" }
   | { page: "sheet"; question?: string };
 
+function decodeParam(raw: string | undefined) {
+  if (!raw) return undefined;
+  try {
+    return decodeURIComponent(raw);
+  } catch {
+    // 断掉的分享链接（#/map/%E4%B8）解不开，当成没写参数，不要整页白屏
+    return undefined;
+  }
+}
+
 function parseRoute(hash: string): Route {
   const [, page, rawParam] = hash.replace(/^#/, "").split("/");
-  const param = rawParam ? decodeURIComponent(rawParam) : undefined;
+  const param = decodeParam(rawParam);
   if (page === "topic" && param && topicById(param)) return { page: "list", topic: param as TopicId };
   if (page === "q" && param && questionById(param)) return { page: "question", id: param };
   if (page === "map") return { page: "map", concept: param && conceptBySlug(param) ? param : undefined };
@@ -34,8 +44,7 @@ export const mapHash = (concept?: string) => (concept ? `#/map/${encodeURICompon
 function App() {
   const { heard, markHeard } = useHeardQuestions();
   const [route, setRoute] = useState(() => parseRoute(window.location.hash));
-  /** 从哪个列表、哪个问题进来的，返回时回到那里而不是一直跳回首页 */
-  const lastList = useRef<TopicId | null>(null);
+  /** 从哪个问题进的地图和游戏，返回时回到那个问题而不是一直跳回首页 */
   const lastQuestion = useRef<string | null>(null);
 
   useEffect(() => {
@@ -47,14 +56,7 @@ function App() {
   // 地图上换一个词只换气泡，不要跳回页面顶上
   const routeKey = route.page === "map" ? "map" : JSON.stringify(route);
   useEffect(() => {
-    if (route.page === "home") {
-      lastList.current = null;
-      lastQuestion.current = null;
-    }
-    if (route.page === "list") {
-      lastList.current = route.topic;
-      lastQuestion.current = null;
-    }
+    if (route.page === "home" || route.page === "list") lastQuestion.current = null;
     if (route.page === "question") lastQuestion.current = route.id;
     window.scrollTo(0, 0);
   }, [routeKey]);
@@ -67,10 +69,10 @@ function App() {
   if (route.page === "question") {
     const question = questionById(route.id);
     if (question) {
-      const back = lastList.current ?? question.topic;
+      // 返回按钮上写的是这个问题的主题，就回这个主题；从「小念还想问」跳到别的主题也一样
       return (
         <QuestionPage key={question.id} question={question} heard={heard} onHeard={markHeard}
-          onBack={() => go(listHash(back))} onOpen={openQuestion} onMap={openMap} />
+          onBack={() => go(listHash(question.topic))} onOpen={openQuestion} onMap={openMap} />
       );
     }
   }
